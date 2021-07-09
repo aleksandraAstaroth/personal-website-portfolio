@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import About from "../components/about"
+import Skills from "../components/skills"
 
 const Index = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
