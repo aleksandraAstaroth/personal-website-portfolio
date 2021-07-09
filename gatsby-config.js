@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Aleksandra Rzepecka`,
+    description: `Front-End Developer Portfolio`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Aleksandra Rzepecka`,
+      summary: `An aspiring Front-End Developer with infinite curiosity to learn new things and build visually pleasing, responsive web applications .`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Front-End Developer Portfolio`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      linkedin: `https://www.linkedin.com/in/aleksandra-r-74722b155/`,
     },
   },
   plugins: [
