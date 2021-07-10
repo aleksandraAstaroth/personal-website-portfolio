@@ -16,6 +16,7 @@ const Index = ({ data, location }) => {
             <SEO title="Home" />
             <Hero />
             <About />
+            <Skills />
         </Layout>
     )}
 export default Index
