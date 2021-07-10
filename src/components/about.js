@@ -1,4 +1,5 @@
 import React from "react"
+import CTA from "../components/cta"
 
 const About = () => {
 return (
@@ -37,9 +38,8 @@ return (
             <p>Trying to see the value of the process itself, looking deeper into it and not only the end result.
             I believe that base for working towards sustainable and effective solutions  during development process is established already during <em>The Thinking Process</em> through
             multidimensionally analysing the problem to understand it, estimate the scope, and from there work towards solution by utilising knowledge, skills and creativity.</p>
-            <p>And <em>yes</em>, I enjoy discussing and sharing perspectives! If your outlook on things is alike, or completely different -  I would love to listen and learn!</p>
-            <a href="mailto:aleksandra.rzepecka@outlook.com" className="cta-btn">Let's Talk</a>
     </div>
+    <CTA ctaHeading="And yes, I enjoy discussing and sharing perspectives! If your outlook on things is alike, or completely different -  I would love to listen and learn!" ctaBtnText="Let's Talk"></CTA>
     </section>
 )
 }
