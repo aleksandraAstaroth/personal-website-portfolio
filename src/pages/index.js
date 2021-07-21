@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Hero from "../components/hero"
 import About from "../components/about"
 import Skills from "../components/skills"
+import Portfolio from "../components/portfolio"
 
 const Index = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -17,6 +18,7 @@ const Index = ({ data, location }) => {
             <Hero />
             <About />
             <Skills />
+            <Portfolio />
         </Layout>
     )}
 export default Index

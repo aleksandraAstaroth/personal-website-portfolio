@@ -25,10 +25,10 @@ const Layout = ({ location, title, children, description}) => {
         <a href="/" className="nav-logo">{title}<br/>
           <span>{description}</span></a>
         <ul className="desktop-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">Get to know me</a></li>
-          <li><a href="/skills">Skills</a></li>
-          <li><a href="/portfolio">Portfolio</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">Get to know me</Link></li>
+          <li><Link to="/skills">Skills</Link></li>
+          <li><Link to="/portfolio">Portfolio</Link></li>
         </ul>
       </nav>
 
