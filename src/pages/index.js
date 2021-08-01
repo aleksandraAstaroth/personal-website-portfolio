@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/layout2"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import About from "../components/about"
@@ -22,6 +22,7 @@ const Index = ({ data, location }) => {
         </Layout>
     )}
 export default Index
+
 
 export const pageQuery = graphql`
   query {
