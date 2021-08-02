@@ -9,12 +9,18 @@ export default function Layout({ location, title, children, description}) {
     if (isRootPath) {
         header = (
         <header className="global-header">
-          <h1 className="main-heading">
-            <Link to="/">{title}<br/>
-            <span>{'{ '}{description}{' }'}</span>
-            </Link>
-          </h1>
-          <Navbar />
+          <section id="header-fixed">
+                <div className="page-title-wrapper">
+                    <h1 className="main-heading">
+                        <Link to="/">{title}<br/>
+                        <span>{'{'}{description}{'}'}</span>
+                        </Link>
+                    </h1>
+                    </div>
+                <div className="navbar-wrapper">
+                    <Navbar />
+                </div>
+            </section>
         </header>
         )
       } else {
@@ -26,7 +32,6 @@ export default function Layout({ location, title, children, description}) {
       }
     return (
         <div className="layout">
-            
             <header>{header}</header>
             <main>{children}</main>
             <footer>
