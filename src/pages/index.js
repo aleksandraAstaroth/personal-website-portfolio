@@ -13,7 +13,7 @@ const Index = ({ data, location }) => {
     const siteDescription = data.site.siteMetadata?.description || `Description`
     console.log(data.site.siteMetadata)
     return (
-        <Layout location={location} title={siteTitle} description={siteDescription}>
+        <Layout location={location} description={siteDescription}>
             <SEO title="Home" />
             <Hero />
             <About />

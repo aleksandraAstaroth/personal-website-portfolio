@@ -2,7 +2,7 @@ import React from'react';
 import { Link } from "gatsby"
 import Navbar from '../components/navbar';
 
-export default function Layout({ location, title, children, description}) {
+export default function Layout({ location, children, description}) {
     const rootPath = `${__PATH_PREFIX__}/`
     const isRootPath = location.pathname === rootPath
     let header
@@ -12,8 +12,8 @@ export default function Layout({ location, title, children, description}) {
           <section id="header-fixed">
                 <div className="page-title-wrapper">
                     <h1 className="main-heading">
-                        <Link to="/">{title}<br/>
-                        <span>{'{'}{description}{'}'}</span>
+                        <Link to="/"><span className="mh-title"><b>Alek<span>sa</span>n<span>d</span>ra R<span>ze</span>pec<span>ka</span></b></span>
+                        <span className="mh-description"><span className="brackets">{'{ '}</span>{description}<span className="brackets">{' }'}</span></span>
                         </Link>
                     </h1>
                     </div>
@@ -25,9 +25,7 @@ export default function Layout({ location, title, children, description}) {
         )
       } else {
         header = (
-          <Link className="header-link-home" to="/">
-            {title}
-          </Link>
+          <Link className="header-link-home" to="/">Aleksandra Rzepecka</Link>
         )
       }
     return (

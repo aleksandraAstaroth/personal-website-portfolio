@@ -49,7 +49,6 @@ body {
   width: 100%;
   z-index: 10;
   padding: 0 3.5rem;
-  border: 2px solid white;
 }
 
 .page-title-wrapper {
@@ -57,19 +56,120 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: left;
+  line-height: 1.5rem;
 }
 
-.main-heading {
+.mh-title {
+  display: block;
   position: relative;
   font-weight: 300;
   letter-spacing: 0.5rem;
   font-size: 1.5rem;
+  text-shadow: 0 0 2px var(--white), 0 0 5px var(--white), 0 0 10px var(--neon-color-pink), 0 0 15px var(--neon-color-pink), 0 0 20px var(--neon-color-pink), 0 0 25px var(--neon-color-pink), 0 0 30px var(--neon-color-pink);
 }
 
-.main-heading span {
+.mh-description {
   font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 0.225rem;
+}
+
+.brackets {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-shadow: 0 0 2px var(--white), 0 0 5px var(--neon-color-turquoise), 0 0 10px var(--neon-color-turquoise), 0 0 15px var(--neon-color-turquoise), 0 0 20px var(--neon-color-turquoise), 0 0 25px var(--neon-color-turquoise), 0 0 30px var(--neon-color-turquoise);
+}
+
+.mh-title b span {
+  -webkit-animation: blink linear infinite 2s;
+          animation: blink linear infinite 2s;
+}
+
+.mh-title b span:nth-of-type(2) {
+  -webkit-animation: blink linear infinite 3s;
+          animation: blink linear infinite 3s;
+}
+
+.mh-title b span:nth-of-type(3) {
+  -webkit-animation: blink linear infinite 3s;
+          animation: blink linear infinite 3s;
+}
+
+.mh-title b span:nth-of-type(4) {
+  -webkit-animation: blink linear infinite 6s;
+          animation: blink linear infinite 6s;
+}
+
+.sub b span {
+  -webkit-animation: blink linear infinite 3s;
+          animation: blink linear infinite 3s;
+}
+
+@-webkit-keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79% {
+    color: #333;
+  }
+  80% {
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79% {
+    color: #333;
+  }
+  80% {
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
 }
 
 nav ul {
@@ -115,6 +215,8 @@ h1 {
   font-weight: 600;
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 0.15rem;
+  -webkit-animation: neonGlow 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          animation: neonGlow 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .text3 {
@@ -126,15 +228,13 @@ h1 {
 }
 
 .text3::after {
-  content: "_";
-  width: 1rem;
-  height: 3rem;
-  background: white;
+  content: "|";
+  background: var(--white);
   opacity: 0;
-  -webkit-animation: cursor 1.2s infinite;
-          animation: cursor 1.2s infinite;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  -webkit-animation: cursor 1.5s infinite;
+          animation: cursor 1.5s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   display: inline;
 }
 
@@ -176,19 +276,19 @@ h1 {
 
 @-webkit-keyframes neonGlow {
   0% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 22px rgba(255, 255, 255, 0.8), 0 0 40px var(--neon-color-pink), 0 0 60px var(--neon-color-pink), 0 0 80px var(--neon-color-pink), 0 0 100px var(--neon-color-pink), 0 0 140px var(--neon-color-pink), 0 0 200px var(--neon-color-pink);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 22px var(--neon-color-pink), 0 0 40px var(--neon-color-pink), 0 0 60px var(--neon-color-pink), 0 0 80px var(--neon-color-pink), 0 0 100px var(--neon-color-pink);
   }
   100% {
-    text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 8px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px var(--neon-color-turquoise), 0 0 30px var(--neon-color-turquoise), 0 0 40px var(--neon-color-turquoise), 0 0 50px var(--neon-color-turquoise), 0 0 80px var(--neon-color-turquoise);
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 8px rgba(255, 255, 255, 0.8), 0 0 10px var(--neon-color-pink), 0 0 20px var(--neon-color-pink), 0 0 30px var(--neon-color-pink), 0 0 40px var(--neon-color-pink), 0 0 50px var(--neon-color-pink);
   }
 }
 
 @keyframes neonGlow {
   0% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 22px rgba(255, 255, 255, 0.8), 0 0 40px var(--neon-color-pink), 0 0 60px var(--neon-color-pink), 0 0 80px var(--neon-color-pink), 0 0 100px var(--neon-color-pink), 0 0 140px var(--neon-color-pink), 0 0 200px var(--neon-color-pink);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 22px var(--neon-color-pink), 0 0 40px var(--neon-color-pink), 0 0 60px var(--neon-color-pink), 0 0 80px var(--neon-color-pink), 0 0 100px var(--neon-color-pink);
   }
   100% {
-    text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 8px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px var(--neon-color-turquoise), 0 0 30px var(--neon-color-turquoise), 0 0 40px var(--neon-color-turquoise), 0 0 50px var(--neon-color-turquoise), 0 0 80px var(--neon-color-turquoise);
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 8px rgba(255, 255, 255, 0.8), 0 0 10px var(--neon-color-pink), 0 0 20px var(--neon-color-pink), 0 0 30px var(--neon-color-pink), 0 0 40px var(--neon-color-pink), 0 0 50px var(--neon-color-pink);
   }
 }
 /*# sourceMappingURL=style.css.map */
