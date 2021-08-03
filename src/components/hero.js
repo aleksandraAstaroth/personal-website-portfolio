@@ -9,9 +9,9 @@ const Hero = () => {
                 <h1>
                     <span className="text1">hi there, </span>
                     I’m <span className="text2">Aleksandra, </span>
-                    <span className="text3">An aspiring <span className="text4">Front-End Developer</span> with infinite curiosity to learn new things </span>
+                    <span className="text3">An aspiring <span className="text4">Front-End Developer</span><br/> with infinite curiosity to learn new things </span>
                 </h1>
-                <p>By combining creativity and problem solving with my big-picture mindset, I strive to create visually pleasing, responsive web applications that meet your needs in multidimensional aspects.</p>
+                <p>By combining creativity and problem solving with my big-picture mindset, I strive to create visually pleasing, responsive web applications that meet your needs <br/> in multidimensional aspects.</p>
                 <div className="hero-btns">
                     <Link to="#about" className="neutral-link-btn">Learn more about me</Link>
                     <a href="mailto:aleksandra.rzepecka@outlook.com" className="cta-btn">Let's Talk</a>

@@ -148,7 +148,7 @@ a {
   width: 50%;
 }
 h1 {
-  font-weight: normal;
+  font-weight: 300;
 }
 .text2, .text4 {
   font-weight: 600;
@@ -160,7 +160,9 @@ h1 {
   display: block;
 }
 .hero-intro p {
-  font-weight: lighter;
+  font-weight: 100;
+  width: 75%;
+  line-height: 1.5rem;
 }
 .text3::after {
   content: "|";

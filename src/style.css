@@ -208,7 +208,7 @@ a {
 }
 
 h1 {
-  font-weight: normal;
+  font-weight: 300;
 }
 
 .text2, .text4 {
@@ -224,7 +224,9 @@ h1 {
 }
 
 .hero-intro p {
-  font-weight: lighter;
+  font-weight: 100;
+  width: 75%;
+  line-height: 1.5rem;
 }
 
 .text3::after {
