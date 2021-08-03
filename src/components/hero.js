@@ -14,7 +14,7 @@ const Hero = () => {
                 <p>By combining creativity and problem solving with my big-picture mindset, I strive to create visually pleasing, responsive web applications that meet your needs <br/> in multidimensional aspects.</p>
                 <div className="hero-btns">
                     <Link to="#about" className="neutral-link-btn">Learn more about me</Link>
-                    <a href="mailto:aleksandra.rzepecka@outlook.com" className="cta-btn">Let's Talk</a>
+                    <CTA ctaBtnText="Let's Talk" />
                 </div>
             </div>
             <div className="hero-img"></div>

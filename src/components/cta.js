@@ -1,14 +1,16 @@
 import React from "react"
 
-const CTA = ({ctaHeading, ctaBtnText}) => {
+const CTA = ({ctaBtnText}) => {
 
     return (
         <div className="cta-section">
             <div className="cta-wrapper">
-                <h3>{ctaHeading}</h3>
-                <a href="mailto:aleksandra.rzepecka@outlook.com" className="cta-btn">{ctaBtnText}</a>
+                <a href="mailto:aleksandra.rzepecka@outlook.com" className="cta-btn">{ctaBtnText}
+    <span aria-hidden className="cta-btn__glitch">{ctaBtnText}</span>
+                    <span aria-hidden className="cta-btn__tag">AR</span>
+                </a>
             </div>
         </div>
     )
 }
-export default CTA
+export default CTA;
