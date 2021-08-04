@@ -1,6 +1,6 @@
 import React from "react"
-import CTA from "../components/cta"
-import { Link } from "gatsby"
+import Button from "../components/button"
+
 
 const Hero = () => {
     return (
@@ -13,8 +13,12 @@ const Hero = () => {
                 </h1>
                 <p>By combining creativity and problem solving with my big-picture mindset, I strive to create visually pleasing, responsive web applications that meet your needs <br/> in multidimensional aspects.</p>
                 <div className="hero-btns">
-                    <Link to="#about" className="neutral-link-btn">Learn more about me</Link>
-                    <CTA ctaBtnText="Let's Talk" />
+                    <Button text="Let's Talk" />
+                <button className="scroll-btn">
+                    <span className="arrow"></span>
+                    <span className="arrow"></span>
+                    <span className="arrow"></span>
+            </button>
                 </div>
             </div>
             <div className="hero-img"></div>

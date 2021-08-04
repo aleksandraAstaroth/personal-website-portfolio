@@ -1,5 +1,5 @@
 import React from "react"
-import CTA from "../components/cta";
+import CTA from "./button";
 
 const About = () => {
 return (
