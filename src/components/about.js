@@ -1,10 +1,10 @@
 import React from "react"
-import CTA from "./button";
+import Button from "./button";
 
 const About = () => {
 return (
-    <section id="about-section">
-        <div className="about-wrapper">
+    <section id="about">
+        <div className="about-me-wrapper">
             <h2>About me:</h2>
             <p>My name is Aleksandra Rzepecka. I’m front-end developer student based in Stockholm. 
                 I got very <em>inquisitive</em> mind; that means constant quesioning, analysing and looking at the process from different perspectives.</p> 
@@ -39,7 +39,7 @@ return (
                 I believe that base for working towards sustainable and effective solutions  during development process is established already during <em>The Thinking Process</em> through
                 multidimensionally analysing the problem to understand it, estimate the scope, and from there work towards solution by utilising knowledge, skills and creativity.</p>
         </div>
-        <CTA ctaHeading="And yes, I enjoy discussing and sharing perspectives! If your outlook on things is alike, or completely different -  I would love to listen and learn!" ctaBtnText="Let's Talk"></CTA>
+        <Button ctaHeading="And yes, I enjoy discussing and sharing perspectives! If your outlook on things is alike, or completely different -  I would love to listen and learn!" text="Let's Talk" />
     </section>
 )
 }

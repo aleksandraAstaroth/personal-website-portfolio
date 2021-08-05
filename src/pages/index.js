@@ -7,9 +7,10 @@ import Hero from "../components/hero"
 import About from "../components/about"
 import Skills from "../components/skills"
 import Portfolio from "../components/portfolio"
+import "normalize.css"
 
 const Index = ({ data, location }) => {
-    const siteTitle = data.site.siteMetadata?.title || `Title`
+    // const siteTitle = data.site.siteMetadata?.title || `Title`
     const siteDescription = data.site.siteMetadata?.description || `Description`
     console.log(data.site.siteMetadata)
     return (
@@ -17,8 +18,8 @@ const Index = ({ data, location }) => {
             <SEO title="Home" />
             <Hero />
             <About />
-            <Skills />
             <Portfolio />
+            <Skills />
         </Layout>
     )}
 export default Index

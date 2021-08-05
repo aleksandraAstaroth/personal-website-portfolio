@@ -28,6 +28,7 @@ body {
   height: 100vh;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .global-header {
@@ -47,11 +48,25 @@ height: 15vh;
   z-index: 10;
   padding: 0 3.5rem;
 }
+.active {
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 -1px 10px 3px rgb(53, 223, 223);
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+}
 .page-title-wrapper {
   position: relative;
   display: flex;
   text-align: left;
   line-height: 1.5rem;
+}
+.main-heading {
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+.show {
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
 }
 
 .mh-title {
@@ -68,23 +83,24 @@ height: 15vh;
   font-size: 1rem ;
   letter-spacing: 0.225rem;
   }
+
   .brackets {
     font-size: 1.3rem;
     font-weight: 300;
-    text-shadow: 0 0 2px var(--white), 0 0 5px var(--neon-color-turquoise), 0 0 10px var(--neon-color-turquoise), 0 0 15px var(--neon-color-turquoise), 0 0 20px var(--neon-color-turquoise), 0 0 25px var(--neon-color-turquoise), 0 0 30px var(--neon-color-turquoise);
+    text-shadow: 0 0 2px var(--white),
+                 0 0 5px var(--neon-color-turquoise),
+                 0 0 10px var(--neon-color-turquoise),
+                 0 0 15px var(--neon-color-turquoise),
+                 0 0 20px var(--neon-color-turquoise),
+                 0 0 25px var(--neon-color-turquoise),
+                 0 0 30px var(--neon-color-turquoise);
   }
 
 	.mh-title b span{
 		animation: blink linear infinite 2s;
 	  }
 	  .mh-title b span:nth-of-type(2){
-		animation: blink linear infinite 10s;
-	  }
-	  .mh-title b span:nth-of-type(3){
-		animation: blink linear infinite 3s;
-	  }
-	  .mh-title b span:nth-of-type(4){
-		animation: blink linear infinite 6s;
+		animation: blink linear infinite 7s;
 	  }
 	  .sub b span {
 		animation: blink linear infinite 8s;
@@ -139,7 +155,8 @@ a {
   height: 90vh;
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   text-align: left;
 }
@@ -310,7 +327,8 @@ cursor: pointer;
   text-align: center;
   padding: 0.5rem 2.5rem;
   clip-path: var(--clip);
-  text-shadow: 2px 2px var(--shadow-primary), -2px -2px var(--shadow-secondary);
+  text-shadow: 2px 2px var(--shadow-primary),
+               -2px -2px var(--shadow-secondary);
   animation: glitch 2s infinite;
   display: none;
 }
@@ -397,40 +415,34 @@ cursor: pointer;
 --primary-hue: 260;
 }
 
-.scroll-btn {
-  width: 6rem;
-  height: 6rem;
+.scroll-mark-wrapper {
+  top: 1.5rem;
   position: relative;
-  background: transparent;
-  border-radius: 50%;
-  box-shadow: 0 0 2px var(--neon-color-turquoise),0 0 4px var(--neon-color-turquoise), 0 0 8px var(--neon-color-turquoise), inset 0 0 8px var(--neon-color-turquoise);
-  animation: pulse 2s linear 1s infinite;
-  border: none;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  color: var(--neon-color-turquoise);
+  font-weight: 200;
+  letter-spacing: 0.05em;
 }
+
+
 .arrow {
   position: absolute;
   width: 28px;
-  height: 8px;
+  height: 6px;
   opacity: 0;
   transform: scale3d(0.5, 0.5, 0.5);
   animation: move 3s ease-out infinite;
 }
 .arrow:first-child {
-  animation: move 3s ease-out 1s infinite;
-}
-
-.arrow:nth-child(2) {
-  animation: move 3s ease-out 2s infinite;
-}
+   animation: move 3s ease-out 1s infinite;
+ }
 
 .arrow:before,
 .arrow:after {
   content: ' ';
   position: absolute;
-  top: 0;
+  top: 7px;
   height: 100%;
   width: 51%;
   background: var(--neon-color-turquoise);
@@ -464,4 +476,23 @@ cursor: pointer;
     opacity: 0;
     transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
   }
+}
+
+#about, #skills, #portfolio{
+  height: 90vh;
+  width: 100vw;
+  position: relative;
+}
+.about-me-wrapper {
+ margin-top: 15rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+
+//<------------------------PROJECT CARD------------------------------------->
+
+.project-container {
+  display: flex;
 }

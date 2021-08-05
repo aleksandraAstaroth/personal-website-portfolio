@@ -25,6 +25,7 @@ body {
   height: 100vh;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .global-header {
@@ -51,6 +52,16 @@ body {
   padding: 0 3.5rem;
 }
 
+.active {
+  background: rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 -1px 10px 3px #35dfdf;
+          box-shadow: 0 -1px 10px 3px #35dfdf;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .page-title-wrapper {
   position: relative;
   display: -webkit-box;
@@ -58,6 +69,18 @@ body {
   display: flex;
   text-align: left;
   line-height: 1.5rem;
+}
+
+.main-heading {
+  opacity: 0;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
 }
 
 .mh-title {
@@ -87,18 +110,8 @@ body {
 }
 
 .mh-title b span:nth-of-type(2) {
-  -webkit-animation: blink linear infinite 10s;
-          animation: blink linear infinite 10s;
-}
-
-.mh-title b span:nth-of-type(3) {
-  -webkit-animation: blink linear infinite 3s;
-          animation: blink linear infinite 3s;
-}
-
-.mh-title b span:nth-of-type(4) {
-  -webkit-animation: blink linear infinite 6s;
-          animation: blink linear infinite 6s;
+  -webkit-animation: blink linear infinite 7s;
+          animation: blink linear infinite 7s;
 }
 
 .sub b span {
@@ -193,9 +206,13 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -603,32 +620,24 @@ h1 {
   --primary-hue: 260;
 }
 
-.scroll-btn {
-  width: 6rem;
-  height: 6rem;
+.scroll-mark-wrapper {
+  top: 1.5rem;
   position: relative;
-  background: transparent;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 2px var(--neon-color-turquoise), 0 0 4px var(--neon-color-turquoise), 0 0 8px var(--neon-color-turquoise), inset 0 0 8px var(--neon-color-turquoise);
-          box-shadow: 0 0 2px var(--neon-color-turquoise), 0 0 4px var(--neon-color-turquoise), 0 0 8px var(--neon-color-turquoise), inset 0 0 8px var(--neon-color-turquoise);
-  -webkit-animation: pulse 2s linear 1s infinite;
-          animation: pulse 2s linear 1s infinite;
-  border: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  color: var(--neon-color-turquoise);
+  font-weight: 200;
+  letter-spacing: 0.05em;
 }
 
 .arrow {
   position: absolute;
   width: 28px;
-  height: 8px;
+  height: 6px;
   opacity: 0;
   -webkit-transform: scale3d(0.5, 0.5, 0.5);
           transform: scale3d(0.5, 0.5, 0.5);
@@ -641,16 +650,11 @@ h1 {
           animation: move 3s ease-out 1s infinite;
 }
 
-.arrow:nth-child(2) {
-  -webkit-animation: move 3s ease-out 2s infinite;
-          animation: move 3s ease-out 2s infinite;
-}
-
 .arrow:before,
 .arrow:after {
   content: ' ';
   position: absolute;
-  top: 0;
+  top: 7px;
   height: 100%;
   width: 51%;
   background: var(--neon-color-turquoise);
@@ -709,5 +713,31 @@ h1 {
     -webkit-transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
             transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
   }
+}
+
+#about, #skills, #portfolio {
+  height: 90vh;
+  width: 100vw;
+  position: relative;
+}
+
+.about-me-wrapper {
+  margin-top: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

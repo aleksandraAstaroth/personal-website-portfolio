@@ -1,15 +1,15 @@
 import React from "react";
-import { Link } from "gatsby";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 export default function Navbar() {
     return (
         <nav>
             <ul>
-                <li><Link className="nav-link" to="/">Home</Link></li>
-                <li><Link className="nav-link" to="#about">Get to know me</Link></li>
-                <li><Link className="nav-link" to="#skills">Skills</Link></li>
-                <li><Link className="nav-link" to="#portfolio">Portfolio</Link></li>
-                <li><Link className="nav-link" to="/portfolio">Contact</Link></li>
+                <li><AnchorLink className="nav-link" to="/">Home</AnchorLink></li>
+                <li><AnchorLink className="nav-link" to="#about">Get to know me</AnchorLink></li>
+                <li><AnchorLink  className="nav-link" to="#skills">Skills</AnchorLink></li>
+                <li><AnchorLink  className="nav-link" to="#portfolio">Portfolio</AnchorLink></li>
+                <li><AnchorLink  className="nav-link" to="#portfolio">Contact</AnchorLink ></li>
             </ul>
         </nav>
     )

@@ -1,5 +1,7 @@
 import React from "react"
 import Button from "../components/button"
+import "normalize.css"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 
 const Hero = () => {
@@ -14,14 +16,14 @@ const Hero = () => {
                 <p>By combining creativity and problem solving with my big-picture mindset, I strive to create visually pleasing, responsive web applications that meet your needs <br/> in multidimensional aspects.</p>
                 <div className="hero-btns">
                     <Button text="Let's Talk" />
-                <button className="scroll-btn">
-                    <span className="arrow"></span>
-                    <span className="arrow"></span>
-                    <span className="arrow"></span>
-            </button>
                 </div>
             </div>
-            <div className="hero-img"></div>
+            <AnchorLink className="scroll-mark-wrapper" to="#about">
+                <span className="scroll-text">Scroll down</span>
+                <span className="arrow"></span>
+                <span className="arrow"></span>
+                <span className="arrow"></span>
+            </AnchorLink>
         </section>
     )
 }
