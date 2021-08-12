@@ -1,0 +1,7 @@
+  <svg width="360" height="287" viewBox="0 0 360 287" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <pattern id="the-image" x="0" y="0" patternUnits="userSpaceOnUse" height="300" width="400">
+            </pattern>
+        </defs>
+    <path d="M336 287V0H49L0 41V287H336Z" stroke="pink" fill="url(#the-image)"/>
+</svg>

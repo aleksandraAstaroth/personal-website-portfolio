@@ -23,17 +23,24 @@ $easeInOutQuad: cubic-bezier(0.455, 0.030, 0.515, 0.955);
 
 body {
   background-color:var(--background-color);
-  background-image: url("assets/images/Lines.png");
+  background-image: url("./assets/images/Lines.png");
   color: var(--white);
   height: 100vh;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
-  scroll-behavior: smooth;
+  position: relative;
+
+}
+#landing-page-hero,
+#about,
+#skills,
+#portfolio {
+  height: 90vh;
+  width: 100vw;
 }
 
 .global-header {
 width: 100%;
-position: relative;
 height: 15vh;
 }
 
@@ -55,7 +62,6 @@ height: 15vh;
   transition: 0.3s;
 }
 .page-title-wrapper {
-  position: relative;
   display: flex;
   text-align: left;
   line-height: 1.5rem;
@@ -71,7 +77,6 @@ height: 15vh;
 
 .mh-title {
   display: block;
-  position: relative;
   font-weight: 300;
   letter-spacing: 0.5rem;
   font-size: 1.5rem;
@@ -152,8 +157,6 @@ a {
   color: var(--white);
 }
 #landing-page-hero {
-  height: 90vh;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -417,14 +420,12 @@ cursor: pointer;
 
 .scroll-mark-wrapper {
   top: 1.5rem;
-  position: relative;
   display: flex;
   justify-content: center;
   color: var(--neon-color-turquoise);
   font-weight: 200;
   letter-spacing: 0.05em;
 }
-
 
 .arrow {
   position: absolute;
@@ -437,6 +438,9 @@ cursor: pointer;
 .arrow:first-child {
    animation: move 3s ease-out 1s infinite;
  }
+ .arrow:nth-child(2){
+  animation: move 3s ease-out 1s infinite;
+}
 
 .arrow:before,
 .arrow:after {
@@ -478,11 +482,6 @@ cursor: pointer;
   }
 }
 
-#about, #skills, #portfolio{
-  height: 90vh;
-  width: 100vw;
-  position: relative;
-}
 .about-me-wrapper {
  margin-top: 15rem;
  display: flex;
@@ -492,7 +491,18 @@ cursor: pointer;
 
 
 //<------------------------PROJECT CARD------------------------------------->
-
-.project-container {
+#portfolio {
   display: flex;
+  justify-content: center;
+}
+.preview-img {
+  width: 25rem;
+  height: 20rem;
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 15%, 15% 0);
+}
+.preview-img img {
+  max-width: 25rem;
+  object-fit: contain;
+  border: 3px solid red;
+  border-top: none;
 }

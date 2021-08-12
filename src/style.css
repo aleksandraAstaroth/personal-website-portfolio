@@ -20,17 +20,24 @@
 
 body {
   background-color: var(--background-color);
-  background-image: url("assets/images/Lines.png");
+  background-image: url("./assets/images/Lines.png");
   color: var(--white);
   height: 100vh;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
-  scroll-behavior: smooth;
+  position: relative;
+}
+
+#landing-page-hero,
+#about,
+#skills,
+#portfolio {
+  height: 90vh;
+  width: 100vw;
 }
 
 .global-header {
   width: 100%;
-  position: relative;
   height: 15vh;
 }
 
@@ -63,7 +70,6 @@ body {
 }
 
 .page-title-wrapper {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,7 +91,6 @@ body {
 
 .mh-title {
   display: block;
-  position: relative;
   font-weight: 300;
   letter-spacing: 0.5rem;
   font-size: 1.5rem;
@@ -201,8 +206,6 @@ a {
 }
 
 #landing-page-hero {
-  height: 90vh;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -622,7 +625,6 @@ h1 {
 
 .scroll-mark-wrapper {
   top: 1.5rem;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,6 +648,11 @@ h1 {
 }
 
 .arrow:first-child {
+  -webkit-animation: move 3s ease-out 1s infinite;
+          animation: move 3s ease-out 1s infinite;
+}
+
+.arrow:nth-child(2) {
   -webkit-animation: move 3s ease-out 1s infinite;
           animation: move 3s ease-out 1s infinite;
 }
@@ -715,12 +722,6 @@ h1 {
   }
 }
 
-#about, #skills, #portfolio {
-  height: 90vh;
-  width: 100vw;
-  position: relative;
-}
-
 .about-me-wrapper {
   margin-top: 15rem;
   display: -webkit-box;
@@ -735,9 +736,27 @@ h1 {
           justify-content: center;
 }
 
-.project-container {
+#portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.preview-img {
+  width: 25rem;
+  height: 20rem;
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 15%, 15% 0);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 15%, 15% 0);
+}
+
+.preview-img img {
+  max-width: 25rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 3px solid red;
+  border-top: none;
 }
 /*# sourceMappingURL=style.css.map */

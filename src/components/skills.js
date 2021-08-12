@@ -48,13 +48,6 @@ const Skills = () => {
                         </ul>
                     </div>
                     <div className="skill-area">
-                        <h4>Game Development (learning goals) </h4>
-                        <ul>
-                            <li>C# (basic knowledge)</li>
-                            <li>Unity Engine (basic knowledge)</li>
-                        </ul>
-                    </div>
-                    <div className="skill-area">
                         <h4>Other</h4>
                         <ul>
                             <li>Adobe Photoshop</li>
