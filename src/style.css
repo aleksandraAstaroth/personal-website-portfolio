@@ -764,24 +764,9 @@ h1 {
   text-transform: uppercase;
 }
 
-.project-img-wrapper {
-  min-height: 285px;
-  position: relative;
-}
-
-.tag-list {
-  list-style-type: none;
-  letter-spacing: 0.1rem;
-  font-weight: 300;
-  font-size: 0.7rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1rem;
-}
-
-.tag-list:before, .tag-list:after {
-  content: "  : :  ";
+.project-info {
+  position: absolute;
+  margin-left: 1rem;
 }
 
 .project-info h5 {
@@ -808,11 +793,75 @@ h1 {
   font-weight: lighter;
 }
 
-.project-info a:before {
+.project-info a::before {
   content: "[ ";
 }
 
-.project-info a:after {
+.project-info a::after {
   content: " ]";
+}
+
+.tag-list {
+  list-style-type: none;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  font-size: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.tag-list:before, .tag-list:after {
+  content: "  : :  ";
+}
+
+.project-inner-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.project-inner-container:hover {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  outline: 10px solid turquoise;
+}
+
+.project-inner-container:hover .project-info > * {
+  -webkit-transform: translate3d(0, -1.2rem, 0);
+          transform: translate3d(0, -1.2rem, 0);
+  -webkit-transition: 220ms;
+  transition: 220ms;
+}
+
+.project-inner-container:hover .project-info .tag-list {
+  -webkit-transition-delay: 0ms;
+          transition-delay: 0ms;
+}
+
+.project-inner-container:hover .project-info h5 {
+  -webkit-transition-delay: 60ms;
+          transition-delay: 60ms;
+}
+
+.project-inner-container:hover .project-info hr {
+  -webkit-transition-delay: 110ms;
+          transition-delay: 110ms;
+}
+
+.project-inner-container:hover .project-info p {
+  -webkit-transition-delay: 150ms;
+          transition-delay: 150ms;
+}
+
+.project-inner-container:hover .project-info div {
+  opacity: 1;
+  -webkit-transition-delay: 210ms;
+          transition-delay: 210ms;
 }
 /*# sourceMappingURL=style.css.map */
