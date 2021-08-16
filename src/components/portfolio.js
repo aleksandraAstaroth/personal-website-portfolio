@@ -1,18 +1,30 @@
 import React from 'react'
 import Card from "../components/projectcard"
-import ProjectImage from "../components/project-image"
 
 const Portfolio = () => {
 
     return(
         <section id="portfolio">
-            <Card  projectName="A-Frame Game" projectInfo="ssdvgsfsfvsdvsfvsfvbsfbvsdvsd sdvsdvsd 
-            sdvfsdv"  projectLink="https://github.com/aleksandraAstaroth/neon-pomodoro-app" projectLinkName="click here"/>
-            <ProjectImage src="pomodoro.png" alt="pomodoro project preview" />
-            <Card projectName="Neon pomodoro" projectInfo="dsfsdvdf afafa efaefae" projectLink="https://github.com/aleksandraAstaroth/neon-pomodoro-app" projectLinkName="click here"
+            <Card projectName="A-Frame Game"
+                  tags={["A-Frame", "Gatsby"]}
+                  projectInfo="ssdvgsfsfvsdvsfvsfvbsfbvsdvsd sdvsdvsd 
+                               sdvfsdv"  
+                  projectLink="https://github.com/aleksandraAstaroth/neon-pomodoro-app" 
+                  projectLinkText="click here" 
+                  projectPreview="pomodoro.png"/>
+            <Card projectName="Pomodoro Timer" 
+                  tags={["React", "Pomodoro"]}
+                  projectInfo="dsfsdvdf afafa efaefae" 
+                  projectLink="https://github.com/aleksandraAstaroth/neon-pomodoro-app" 
+                  projectLinkText="click here" 
+                  projectPreview="tinynightmare.png"
              />
-             <ProjectImage src="tinynightmare.png" alt="tiny nightmare project preview" />
-            
+            <Card projectName="Tic-Tac-Toe"
+                  tags={["A-Frame", "Gatsby"]}
+                   projectInfo="VanilaJS Tic-Tac-Toe project" 
+                   projectLink="https://github.com/aleksandraAstaroth/neon-pomodoro-app" 
+                   projectLinkText="click here" 
+                   projectPreview="tictactoe.png" />
         </section>
     )
 }

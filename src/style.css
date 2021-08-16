@@ -737,26 +737,86 @@ h1 {
 }
 
 #portfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  background: #6b0066;
+  background: linear-gradient(144deg, #6b0066 0%, #191125 25%, #181125 27%, #101022 50%, #111a24 75%, #00626b 100%);
 }
 
-.preview-img {
-  width: 25rem;
-  height: 20rem;
-  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 15%, 15% 0);
-          clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 15%, 15% 0);
+.project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
-.preview-img img {
-  max-width: 25rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border: 3px solid red;
-  border-top: none;
+.project-img-wrapper {
+  min-height: 285px;
+  position: relative;
+}
+
+.project-inner-container {
+  position: relative;
+  background-color: #000000c9;
+  -webkit-animation: textColor 10s ease infinite;
+          animation: textColor 10s ease infinite;
+}
+
+.project-inner-container:after {
+  position: absolute;
+  content: "";
+  top: 5vw;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 85%;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  -webkit-filter: blur(5vw);
+  -moz-filter: blur(5vw);
+  -ms-filter: blur(5vw);
+  filter: blur(5vw);
+  background: -webkit-gradient(linear, right top, left top, from(var(--neon-color-turquoise)), to(var(--neon-color-pink)));
+  background: linear-gradient(270deg, var(--neon-color-turquoise), var(--neon-color-pink));
+  -webkit-animation: animateGlow 10s ease infinite;
+          animation: animateGlow 10s ease infinite;
+}
+
+@-webkit-keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

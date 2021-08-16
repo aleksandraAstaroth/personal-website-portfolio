@@ -492,17 +492,57 @@ cursor: pointer;
 
 //<------------------------PROJECT CARD------------------------------------->
 #portfolio {
+ display: grid;
+ justify-content: center;
+ align-items: center;
+ grid-template-columns: repeat(3, 1fr);
+ background: rgb(107,0,102);
+background: linear-gradient(144deg, rgba(107,0,102,1) 0%, rgba(25,17,37,1) 25%, rgba(24,17,37,1) 27%, rgba(16,16,34,1) 50%, rgba(17,26,36,1) 75%, rgba(0,98,107,1) 100%);
+}
+.project-container {
   display: flex;
-  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  height: 100%;
 }
-.preview-img {
-  width: 25rem;
-  height: 20rem;
-  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 15%, 15% 0);
+
+.project-img-wrapper {
+  min-height: 285px;
+  // clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 15%, 15% 0);
+  position: relative;
 }
-.preview-img img {
-  max-width: 25rem;
-  object-fit: contain;
-  border: 3px solid red;
-  border-top: none;
+@mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $duration) {
+  &:after {
+    position: absolute;
+    content: "";
+    top: $y;
+    left: $x;
+    right: 0;
+    z-index: -1;
+    height: 85%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale($size);
+    -webkit-filter: blur($spread);
+    -moz-filter: blur($spread);
+    -ms-filter: blur($spread);
+    filter: blur($spread);
+    background: linear-gradient(270deg, $colorA, $colorB);
+    animation: animateGlow $duration ease infinite;
+    
+    @keyframes animateGlow {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+  }
+}
+
+.project-inner-container {
+  position: relative;
+  background-color: #000000c9;
+  // border: 1px solid turquoise;
+  animation: textColor 10s ease infinite;
+  @include backlight(0, 5vw, 5vw, 0.75, var(--neon-color-turquoise), var(--neon-color-pink), 10s);
+    
 }
