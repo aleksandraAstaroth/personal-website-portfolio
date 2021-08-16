@@ -5,7 +5,7 @@ const Tags = ({tagList}) => {
     let tags = tagList
 
     return ( 
-    <ul>{tags.map((tag, i) => <li key={i}>{tag}</li>)}</ul>
+    <ul className="tag-list">{tags.map((tag, i) => <li key={i}>{tag}</li>)}</ul>
     )}
 
 Tags.propTypes = {

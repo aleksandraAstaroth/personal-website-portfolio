@@ -504,6 +504,9 @@ background: linear-gradient(144deg, rgba(107,0,102,1) 0%, rgba(25,17,37,1) 25%, 
   justify-self: center;
   align-items: center;
   height: 100%;
+  font-family: 'Rajdhani', sans-serif;
+  text-transform: uppercase;
+
 }
 
 .project-img-wrapper {
@@ -511,38 +514,48 @@ background: linear-gradient(144deg, rgba(107,0,102,1) 0%, rgba(25,17,37,1) 25%, 
   // clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 15%, 15% 0);
   position: relative;
 }
-@mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $duration) {
-  &:after {
-    position: absolute;
-    content: "";
-    top: $y;
-    left: $x;
-    right: 0;
-    z-index: -1;
-    height: 85%;
-    width: 100%;
-    margin: 0 auto;
-    transform: scale($size);
-    -webkit-filter: blur($spread);
-    -moz-filter: blur($spread);
-    -ms-filter: blur($spread);
-    filter: blur($spread);
-    background: linear-gradient(270deg, $colorA, $colorB);
-    animation: animateGlow $duration ease infinite;
-    
-    @keyframes animateGlow {
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-    }
+
+
+.tag-list {
+  list-style-type: none;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  font-size: 0.7rem;
+  display: flex;
+  gap: 1rem;
+
+  &:before, &:after {
+    content: "  : :  ";
   }
 }
+.project-info {
 
-.project-inner-container {
-  position: relative;
-  background-color: #000000c9;
-  // border: 1px solid turquoise;
-  animation: textColor 10s ease infinite;
-  @include backlight(0, 5vw, 5vw, 0.75, var(--neon-color-turquoise), var(--neon-color-pink), 10s);
-    
+  & h5 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.6rem;
+  }
+  & hr {
+    border-bottom: none;
+  }
+  & p {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    text-transform: none;
+    letter-spacing: 0.05rem;
+  }
+  & a {
+    letter-spacing: 0.3rem;
+    font-weight: lighter;
+
+    &:before {
+      content: "[ ";
+    }
+    &:after {
+      content: " ]";
+    }
+  }
+
 }

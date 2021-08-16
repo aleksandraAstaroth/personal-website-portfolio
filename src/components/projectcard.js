@@ -12,8 +12,9 @@ const Card = (props) => {
                         <ProjectImage className="project-img" src={props.projectPreview} alt="project preview image" />
                     </div>
                     <div className="project-info">
+                        <Tags className="tag-container"tagList={props.tags}/>
                         <h5>{props.projectName}</h5>
-                        <Tags className="tag-list" tagList={props.tags}/>
+                        <hr></hr>
                         <p>{props.projectInfo}</p>
                         <a href={props.projectLink}>{props.projectLinkText}</a>
                     </div>

@@ -760,6 +760,8 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  font-family: 'Rajdhani', sans-serif;
+  text-transform: uppercase;
 }
 
 .project-img-wrapper {
@@ -767,56 +769,50 @@ h1 {
   position: relative;
 }
 
-.project-inner-container {
-  position: relative;
-  background-color: #000000c9;
-  -webkit-animation: textColor 10s ease infinite;
-          animation: textColor 10s ease infinite;
+.tag-list {
+  list-style-type: none;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  font-size: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
 }
 
-.project-inner-container:after {
-  position: absolute;
-  content: "";
-  top: 5vw;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 85%;
-  width: 100%;
-  margin: 0 auto;
-  -webkit-transform: scale(0.75);
-          transform: scale(0.75);
-  -webkit-filter: blur(5vw);
-  -moz-filter: blur(5vw);
-  -ms-filter: blur(5vw);
-  filter: blur(5vw);
-  background: -webkit-gradient(linear, right top, left top, from(var(--neon-color-turquoise)), to(var(--neon-color-pink)));
-  background: linear-gradient(270deg, var(--neon-color-turquoise), var(--neon-color-pink));
-  -webkit-animation: animateGlow 10s ease infinite;
-          animation: animateGlow 10s ease infinite;
+.tag-list:before, .tag-list:after {
+  content: "  : :  ";
 }
 
-@-webkit-keyframes animateGlow {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.project-info h5 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.6rem;
 }
 
-@keyframes animateGlow {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.project-info hr {
+  border-bottom: none;
+}
+
+.project-info p {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  text-transform: none;
+  letter-spacing: 0.05rem;
+}
+
+.project-info a {
+  letter-spacing: 0.3rem;
+  font-weight: lighter;
+}
+
+.project-info a:before {
+  content: "[ ";
+}
+
+.project-info a:after {
+  content: " ]";
 }
 /*# sourceMappingURL=style.css.map */
