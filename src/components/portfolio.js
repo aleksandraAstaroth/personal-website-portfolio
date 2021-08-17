@@ -13,7 +13,7 @@ const Portfolio = () => {
                   projectLinkText="click here" 
                   projectPreview="pomodoro.png"/>
             <Card projectName="Pomodoro Timer" 
-                  tags={["React", "Pomodoro"]}
+                  tags={["React", "Pomodoro", "this"]}
                   projectInfo="dsfsdvdf afafa efaefae" 
                   projectLink="https://github.com/aleksandraAstaroth/neon-pomodoro-app" 
                   projectLinkText="click here" 

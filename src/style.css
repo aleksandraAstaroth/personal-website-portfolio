@@ -788,6 +788,12 @@ h1 {
   letter-spacing: 0.05rem;
 }
 
+.project-info div {
+  position: absolute;
+  padding-top: 0.5rem;
+  opacity: 0;
+}
+
 .project-info a {
   letter-spacing: 0.3rem;
   font-weight: lighter;
@@ -826,17 +832,24 @@ h1 {
           align-items: flex-end;
 }
 
+.project-inner-container .project-info > * {
+  -webkit-transition: opacity 200ms, -webkit-transform 200ms;
+  transition: opacity 200ms, -webkit-transform 200ms;
+  transition: transform 200ms, opacity 200ms;
+  transition: transform 200ms, opacity 200ms, -webkit-transform 200ms;
+}
+
 .project-inner-container:hover {
   -webkit-transition: 300ms;
   transition: 300ms;
   outline: 10px solid turquoise;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .project-inner-container:hover .project-info > * {
-  -webkit-transform: translate3d(0, -1.2rem, 0);
-          transform: translate3d(0, -1.2rem, 0);
-  -webkit-transition: 220ms;
-  transition: 220ms;
+  -webkit-transform: translate3d(0, -2rem, 0);
+          transform: translate3d(0, -2rem, 0);
 }
 
 .project-inner-container:hover .project-info .tag-list {
@@ -861,7 +874,7 @@ h1 {
 
 .project-inner-container:hover .project-info div {
   opacity: 1;
-  -webkit-transition-delay: 210ms;
-          transition-delay: 210ms;
+  -webkit-transition-delay: 190ms;
+          transition-delay: 190ms;
 }
 /*# sourceMappingURL=style.css.map */
