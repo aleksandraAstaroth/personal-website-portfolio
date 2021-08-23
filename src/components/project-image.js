@@ -18,14 +18,14 @@ images: allFile(filter: {extension: {regex: "/(png)/"}}) {
          gatsbyImageData(
            width: 500
            height: 320
-           quality: 100
+           quality: 95
            placeholder: BLURRED
          )
        }
      }
    }
  }
-}`);
+}`)
     const match = useMemo(
         () => data.images.edges.find(({ node }) => src === node.relativePath),
         [data, src]

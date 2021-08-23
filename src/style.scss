@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 
 
 $easeInOutQuad: cubic-bezier(0.455, 0.030, 0.515, 0.955);
@@ -496,6 +497,7 @@ cursor: pointer;
  justify-content: center;
  align-items: center;
  grid-template-columns: repeat(3, 1fr);
+
  background: rgb(107,0,102);
  background: linear-gradient(144deg, rgba(107,0,102,1) 0%, rgba(25,17,37,1) 25%, rgba(24,17,37,1) 27%, rgba(16,16,34,1) 50%, rgba(17,26,36,1) 75%, rgba(0,98,107,1) 100%);
 }
@@ -513,6 +515,8 @@ cursor: pointer;
 .project-info {
   position: absolute;
   margin-left: 1rem;
+
+  
 
   & h5 {
   font-size: 1.7rem;
@@ -549,8 +553,8 @@ cursor: pointer;
       content: " ]";
     }
   }
-
-}
+  
+  }
 .tag-list {
   list-style-type: none;
   letter-spacing: 0.1rem;
@@ -563,10 +567,13 @@ cursor: pointer;
     content: "  : :  ";
   }
 }
+
 .project-inner-container {
   position: relative;
   display: flex;
   align-items: flex-end;
+
+  
 
 .project-info > * {
   transition: transform 200ms, opacity 200ms;
@@ -602,40 +609,56 @@ cursor: pointer;
   }
 }
 
+//<------------------- ABOUT ------------------->
+#about {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+#container {
+  text-align: center;
+  vertical-align: middle;
+  width: 30%;
+}
 
+.about-sign {
+  -webkit-transform: matrix3d(0.77,0,0.64,.001,0.00,1,0.00,0,-0.64,0,0.77,0,0,0,0,1);
+  color: #A9FFDC;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 5vw;
+  line-height: 5vw;
+  text-shadow: 0vw 0vw 3vw #F40A35;
+  transform: matrix3d(0.77,0,0.64,.001,0.00,1,0.00,0,-0.64,0,0.77,0,0,0,0,1);
+  text-shadow: 
+  -.1vw 0vw .25vw #A9FFDC, -.2vw 0vw .25vw #A9FFDC, -.4vw 0vw .25vw #A9FFDC, 
+  -.1vw 0vw .1vw #00CC2A, -.2vw 0vw .1vw #00CC2A, -.4vw 0vw .1vw #00CC2A,
+  -.1vw 0vw .8vw #00CC2A, -.2vw 0vw .8vw #00CC2A, -.4vw 0vw .8vw #00CC2A, .2vw 0vw .5vw #00CC2A,
+  -.1vw 0vw .5vw #00CC2A, -.2vw 0vw .5vw #00CC2A, -.4vw 0vw .5vw #00CC2A, 
+  -.1vw 0vw 10vw #16FA19, -.2vw 0vw 10vw #16FA19, -.4vw 0vw 10vw #16FA19;
+}
+.fa-heart-o {
+  color: #FBB4FF;
+  text-shadow: 
+-.1vw 0vw .25vw #FBB4FF, -.2vw 0vw .25vw #FBB4FF, -.4vw 0vw .25vw #FBB4FF, 
+-.1vw 0vw 1vw #E82FF5, -.2vw 0vw .8vw #E82FF5, -.4vw 0vw .8vw #E82FF5, .2vw 0vw .5vw #E82FF5,
+-.1vw 0vw 10vw #CB16FA, -.2vw 0vw 10vw #CB16FA, -.4vw 0vw 10vw #CB16FA;
+}
 
+.about-me-facts {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.about-me-text {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-// .project-info {
-//   margin: 1rem 1rem auto;
-//   position: absolute;
-
-//   & h5 {
-//   font-size: 1.7rem;
-//   font-weight: 400;
-//   letter-spacing: 0.3rem;
-//   padding-top: 0.3rem;
-//   padding-bottom: 0.6rem;
-//   }
-//   & hr {
-//     border-bottom: none;
-//   }
-//   & p {
-//     padding-top: 0.5rem;
-//     padding-bottom: 1rem;
-//     text-transform: none;
-//     letter-spacing: 0.05rem;
-//   }
-//   & a {
-//     letter-spacing: 0.3rem;
-//     font-weight: lighter;
-//     display: none;
-
-//     &:before {
-//       content: "[ ";
-//     }
-//     &:after {
-//       content: " ]";
-//     }
-//   }
-
-// }
+  & button {
+    width: 15%;
+  }
+}
