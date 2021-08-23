@@ -3,23 +3,23 @@ import Button from "./button";
 import Expand from "react-expand-animated";
 import FadeIn from 'react-fade-in';
 
-
 const About = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpenText1, setIsOpenText1] = useState(false)
+    const [isOpenText2, setIsOpenText2] = useState(false)
     const [textFadeIn, setTextFadeIn] = useState(false)
     const [deleteButton, setDeleteButton] = useState(false)
 
-
   const handleClick = () => {
     console.log("Button clicked")
-    setIsOpen(true)
-    setDeleteButton(true)
-    setTimeout(() => {
-        setTextFadeIn(true)}, 10000)
+    setIsOpenText1(true)
+    setTimeout(() => {setDeleteButton(true)}, 200)
+    setTimeout(() => {setIsOpenText2(true)}, 5000)
+    setTimeout(() => {setTextFadeIn(true)}, 4000)
   }
 const buttonProps = { 
 className: deleteButton ? "delete" : ""
 }
+
 
 return (
     <section id="about">
@@ -40,23 +40,22 @@ return (
 
                 <p>Here’s a glimpse of my background that shaped me, so that it can help you get a sense of what kind of person I am:</p>
                 <button {...buttonProps} onClick={handleClick}>Click here</button>
-                <Expand open={isOpen} duration={1000}>
+                <Expand open={isOpenText1}>
                         <ul className="about-me-facts">
-                        <FadeIn className="facts" delay={1500} transitionDuration={800}>
+                        <FadeIn className="facts" delay={1200} transitionDuration={800}>
                             <li>As a teenager I became licenced glider pilot.</li>
                             <li>I came to Sweden 5 years ago, on my own, with a plan and money... that I haven’t had.</li>
                             <li>I worked in retail. I've also worked various fast-pace service jobs in the restaurant industry. And my latest job position I’ve had (before starting my frontend education) was a dog walker/caretaker.</li>
                             <li>I enjoy exploring new ways of self-expression. During that time as a hobby I practiced mixing techno music, which resulted in a few dj gigs around Stockholm.</li>
-                            <li>I modelled for a few internationally recognized alternative clothing brands when I was growing my social media reach through collaborations. Along with that, I picked up interest in photography and photo editing using Adobe programs.</li>
+                            <li>I also collaborated with a few internationally recognized alternative clothing brands when I was growing my social media reach. Along with that, I picked up interest in photography and photo editing using Adobe programs.</li>
                         </FadeIn>
                         </ul>
                </Expand>
-
+               <Expand open={isOpenText2}>
                 <FadeIn className="about-me-text-2" visible={textFadeIn} delay={3000} transitionDuration={1000}>
                     <p>Upon getting an insight into my experiences, it should be easier to tie other traits into the picture.<br/>
                     Each experience has taught me something valuable that helped me in other settings, but in a different form.</p>
-                    <p>Experimenting with creative softwares has led me to becoming <del>obsessed</del> <ins>passionate</ins> about coding and development, which allows me to create new value utilising already gained skills/perspectives/experiences as contributions to new solutions-
-                    depending on a given problem. 
+                    <p>Experimenting with creative softwares has led me to becoming <del>obsessed</del> <ins>passionate</ins> about coding and development, which allows me to create new value utilising already gained skills/perspectives/experiences as contributions to new solutions
 
                     <em> Taking chances</em> and <em>calculating risks</em>, required <strong><em>resourcefullness</em></strong>, <strong><em>flexibility</em></strong> and <strong><em>adaptation</em></strong> to new situations. 
                     Deep diving head-first into new settings was always conscious choice of forcing my development and challenging myself in unknown areas.</p>
@@ -64,6 +63,7 @@ return (
                     <p> My extroverted nature of a curious kid plays probably the biggest role; through socialising, empathy, and A LOT OF QUESTIONS <em>(yes, I am THAT person)</em> I got to learn new things and understand different perspectives - <em>see the bigger picture</em>, analyse it, and look for learning opportunities. 
                     </p>
                  </FadeIn>
+                 </Expand>
                 
                 <Button text="Let's Talk" />
         </div>
