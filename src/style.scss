@@ -651,7 +651,7 @@ cursor: pointer;
   justify-content: center;
   gap: 0.5rem;
 }
-.about-me-text {
+.about-me-text{
   width: 50%;
   height: 80%;
   display: flex;
@@ -661,4 +661,10 @@ cursor: pointer;
   & button {
     width: 15%;
   }
+}
+.about-me-text-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
