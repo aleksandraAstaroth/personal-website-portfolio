@@ -1,25 +1,26 @@
 import React, {useState} from "react"
 import Button from "./button";
 import Expand from "react-expand-animated";
-import { Typewriter } from 'react-typewriting-effect'
 import FadeIn from 'react-fade-in';
 
 
 const About = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [fadeIn, setFadeIn] = useState(false)
+    const [textFadeIn, setTextFadeIn] = useState(false)
+    const [deleteButton, setDeleteButton] = useState(false)
 
-  const toggle = () => {
+
+  const handleClick = () => {
     console.log("Button clicked")
     setIsOpen(true)
-    if(isOpen){
-        setIsOpen(false)
-    }
+    setDeleteButton(true)
+    setTimeout(() => {
+        setTextFadeIn(true)}, 10000)
   }
-  const typingComplete = () => {
-      console.log("typing complete")
-      setFadeIn(true)
-  }
+const buttonProps = { 
+className: deleteButton ? "delete" : ""
+}
+
 return (
     <section id="about">
         <div id="container">
@@ -38,22 +39,20 @@ return (
                 It all starts with the mindset. I want to give you an insight into <em>how</em> I think, <em>what</em> actions I take, and <em>why</em> I do it this way.</p>
 
                 <p>Here’s a glimpse of my background that shaped me, so that it can help you get a sense of what kind of person I am:</p>
-                <button onClick={toggle}>Click here</button>
-                <Expand open={isOpen} duration={500}>
+                <button {...buttonProps} onClick={handleClick}>Click here</button>
+                <Expand open={isOpen} duration={1000}>
                         <ul className="about-me-facts">
+                        <FadeIn className="facts" delay={1500} transitionDuration={800}>
                             <li>As a teenager I became licenced glider pilot.</li>
                             <li>I came to Sweden 5 years ago, on my own, with a plan and money... that I haven’t had.</li>
-                            <li>I started out working in retail. I also worked various fast-pace service jobs in the restaurant industry. And my latest position I’ve had,  before starting my frontend education, was a dog walker/caretaker at the dog day care.</li>
-                            <li>I’ve also enjoyed exploring new exciting ways of self-expression. During that time as a hobby I practiced mixing techno music, which resulted in a few dj gigs around Stockholm.</li>
-                            <li>I also modelled for a few internationally recognized alternative clothing brands when I was growing my social media reach through collaborations. Along with that, I picked up interest in photography and photo editing using Adobe programs.</li>
+                            <li>I worked in retail. I've also worked various fast-pace service jobs in the restaurant industry. And my latest job position I’ve had (before starting my frontend education) was a dog walker/caretaker.</li>
+                            <li>I enjoy exploring new ways of self-expression. During that time as a hobby I practiced mixing techno music, which resulted in a few dj gigs around Stockholm.</li>
+                            <li>I modelled for a few internationally recognized alternative clothing brands when I was growing my social media reach through collaborations. Along with that, I picked up interest in photography and photo editing using Adobe programs.</li>
+                        </FadeIn>
                         </ul>
-                </Expand>
-                <Typewriter
-                    string="...but...where am I going with it?"
-                    delay={100}
-                    onComplete={typingComplete}
-                 />
-                <FadeIn className="about-me-text-2" visible={fadeIn}>
+               </Expand>
+
+                <FadeIn className="about-me-text-2" visible={textFadeIn} delay={3000} transitionDuration={1000}>
                     <p>Upon getting an insight into my experiences, it should be easier to tie other traits into the picture.<br/>
                     Each experience has taught me something valuable that helped me in other settings, but in a different form.</p>
                     <p>Experimenting with creative softwares has led me to becoming <del>obsessed</del> <ins>passionate</ins> about coding and development, which allows me to create new value utilising already gained skills/perspectives/experiences as contributions to new solutions-
@@ -66,7 +65,7 @@ return (
                     </p>
                  </FadeIn>
                 
-                <Button ctaHeading="And yes, I enjoy discussing and sharing perspectives! If your outlook on things is alike, or completely different -  I would love to listen and learn!" text="Let's Talk" />
+                <Button text="Let's Talk" />
         </div>
     
     </section>
