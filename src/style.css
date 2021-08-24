@@ -971,6 +971,26 @@ h1 {
   width: 15%;
 }
 
+.about-me-text .cta-btn {
+  position: relative;
+  left: 65%;
+}
+
+.about-me-question {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 5em;
+}
+
+.about-me-question button {
+  width: 100%;
+}
+
 .about-me-text-2 {
   display: -webkit-box;
   display: -ms-flexbox;

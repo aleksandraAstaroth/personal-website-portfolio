@@ -681,6 +681,19 @@ cursor: pointer;
   & button {
     width: 15%;
   }
+  & .cta-btn {
+    position: relative;
+    left: 65%;
+  }
+}
+.about-me-question {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5em;
+  & button {
+    width: 100%;
+  }
 }
 .about-me-text-2 {
   display: flex;
