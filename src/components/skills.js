@@ -1,9 +1,12 @@
 import React from "react";
+import HardSkillsIcon from "../assets/images/HardSkills.svg"
+import SoftSkillsIcon from "../assets/images/SoftSkills.svg"
 
 const Skills = () => {
     return(
         <section id="skills">
             <h2>Skills</h2>
+            <img src={HardSkillsIcon} />
             <div className="hard-skills-wrapper">
                 <h3>Hard Skills</h3>
                 <div className="skills-wrapper">
@@ -57,6 +60,7 @@ const Skills = () => {
                     </div>
                 </div>
             <div className="soft-skills-wrapper">
+            <img src={SoftSkillsIcon} />
             <h3>Soft Skills</h3>
                 <div className="skills-wrapper"></div>
                 <ul>
