@@ -880,7 +880,7 @@ h1 {
 }
 
 #about {
-  height: 100vh;
+  height: 120vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -951,6 +951,7 @@ h1 {
   font-weight: bold;
   width: 1em;
   margin-left: -1em;
+  text-shadow: 0 0 5px var(--neon-color-turquoise);
 }
 
 .about-me-text {
