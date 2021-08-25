@@ -705,3 +705,55 @@ cursor: pointer;
 .delete {
   display: none;
 }
+
+// ----------------------------Skills ------------
+#skills {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.skills-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 4rem;
+
+  & h3 {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
+  & h4 {
+    padding-bottom: 1rem;
+  }
+  & img {
+    max-width: 15rem;
+    height: auto;
+  }
+  & li {
+    list-style: none;
+    &::before {
+      content: "\2022";
+      color: turquoise; 
+      display: inline-block; 
+      font-weight: bold;
+      width: 1em; 
+      margin-left: 1em;
+      text-shadow: 0 0 5px var(--neon-color-turquoise);
+    }
+  }
+
+}
+.hard-skills-wrapper {
+  width: 50%;
+  & .skills-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+}
+

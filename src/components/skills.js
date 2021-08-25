@@ -5,78 +5,79 @@ import SoftSkillsIcon from "../assets/images/SoftSkills.svg"
 const Skills = () => {
     return(
         <section id="skills">
-            <h2>Skills</h2>
-            <img src={HardSkillsIcon} />
+            <div className="skills-wrapper">
             <div className="hard-skills-wrapper">
+                <div className="icon-wrapper">
+                    <img src={HardSkillsIcon} />
                 <h3>Hard Skills</h3>
-                <div className="skills-wrapper">
-                    <div className="skill-area">
-                        <h4>Web Development</h4>
+                </div>
+                <div className="skills-area">
                         <div className="department">
-                            <h5>Front-End Development</h5>
+                            <h4>Front-End Development</h4>
                             <ul>
                                 <li>HTML5/CSS3</li>
                                 <li>SCSS</li>
                                 <li>JavaScript</li>
                                 <li>React</li>
                                 <li>GatsbyJS</li>
-                                <li>Figma(UI/UX design/wireframing/prototyping)</li>
+                                <li>Figma (UX design / prototyping)</li>
                             </ul>
                         </div>
                         <div className="department">
-                            <h5>Back-End Development</h5>
+                            <h4>Back-End Development</h4>
                             <ul>
                                 <li>Node.js</li>
                                 <li>Express.js</li>
                             </ul>
                         </div>
                         <div className="department">
-                            <h5>WebGL</h5>
+                            <h4>WebGL</h4>
                             <ul>
                                 <li>A-Frame</li>
                                 <li>Three.js</li>
                             </ul>
                         </div>
-                    </div>
-                    <div className="skill-area">
+                      <div className="department">
                         <h4>App Development</h4>
                         <ul>
                             <li>React Native</li>
                         </ul>
-                    </div>
-                    <div className="skill-area">
+                     </div>
+                     <div className="department">
                         <h4>Version Control</h4>
                         <ul>
-                            <li>Git/Github</li>
+                            <li>Git / Github</li>
                         </ul>
                     </div>
-                    <div className="skill-area">
+                    <div className="department">
                         <h4>Other</h4>
                         <ul>
                             <li>Adobe Photoshop</li>
                             <li>Adobe Lightroom</li>
                         </ul>
-                    </div>
+                        </div>
                     </div>
                 </div>
             <div className="soft-skills-wrapper">
-            <img src={SoftSkillsIcon} />
-            <h3>Soft Skills</h3>
-                <div className="skills-wrapper"></div>
-                <ul>
-                    
-                <li>Big-picture thinking</li>
-                <li>Problem solving</li>
-                <li>Pattern recognition</li>
-                <li>Analytical skills</li>
-                <li>Teamwork & Collaboration</li>
-                <li>Empathy/Emotional Intelligence</li>
-                <li>Open Communication</li> 
-                <li>Self-awareness</li>
-                <li>Resourcefullness</li>
-                <li>Adaptability</li>
-                <li>Working remotely</li>
-                </ul>
+                <div className="icon-wrapper">
+                    <img src={SoftSkillsIcon} />
+                    <h3>Soft Skills</h3>
+                </div>
+                <div className="skills-area"></div>
+                        <ul>
+                            <li>Big-picture thinking</li>
+                            <li>Problem solving</li>
+                            <li>Pattern recognition</li>
+                            <li>Analytical skills</li>
+                            <li>Teamwork & Collaboration</li>
+                            <li>Empathy/Emotional Intelligence</li>
+                            <li>Open Communication</li> 
+                            <li>Self-awareness</li>
+                            <li>Resourcefullness</li>
+                            <li>Adaptability</li>
+                            <li>Working remotely</li>
+                        </ul>
+                    </div>
                 </div>
         </section>
     )
