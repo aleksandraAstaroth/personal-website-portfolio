@@ -897,13 +897,13 @@ h1 {
 
 .about-sign {
   -webkit-transform: matrix3d(0.77, 0, 0.64, 0.001, 0, 1, 0, 0, -0.64, 0, 0.77, 0, 0, 0, 0, 1);
-  color: #A9FFDC;
+  color: #a9f6ff;
   font-family: 'Rajdhani', sans-serif;
   font-size: 5vw;
   line-height: 5vw;
   text-shadow: 0vw 0vw 3vw #F40A35;
   transform: matrix3d(0.77, 0, 0.64, 0.001, 0, 1, 0, 0, -0.64, 0, 0.77, 0, 0, 0, 0, 1);
-  text-shadow: -.1vw 0vw .25vw #A9FFDC, -.2vw 0vw .25vw #A9FFDC, -.4vw 0vw .25vw #A9FFDC,  -.1vw 0vw .1vw #00CC2A, -.2vw 0vw .1vw #00CC2A, -.4vw 0vw .1vw #00CC2A, -.1vw 0vw .8vw #00CC2A, -.2vw 0vw .8vw #00CC2A, -.4vw 0vw .8vw #00CC2A, .2vw 0vw .5vw #00CC2A, -.1vw 0vw .5vw #00CC2A, -.2vw 0vw .5vw #00CC2A, -.4vw 0vw .5vw #00CC2A,  -.1vw 0vw 10vw #16FA19, -.2vw 0vw 10vw #16FA19, -.4vw 0vw 10vw #16FA19;
+  text-shadow: -0.1vw 0vw 0.25vw #a9f6ff, -0.2vw 0vw 0.25vw #a9f6ff, -0.4vw 0vw 0.25vw #a9f6ff, -0.1vw 0vw 0.1vw #00ccc9, -0.2vw 0vw 0.1vw #00ccc9, -0.4vw 0vw 0.1vw #00ccc9, -0.1vw 0vw 0.8vw #00ccc9, -0.2vw 0vw 0.8vw #00ccc9, -0.4vw 0vw 0.8vw #00ccc9, 0.2vw 0vw 0.5vw #00ccc9, -0.1vw 0vw 0.5vw #00ccc9, -0.2vw 0vw 0.5vw #00ccc9, -0.4vw 0vw 0.5vw #00ccc9, -0.1vw 0vw 10vw var(--neon-color-turquoise), -0.2vw 0vw 10vw var(--neon-color-turquoise), -0.4vw 0vw 10vw var(--neon-color-turquoise);
 }
 
 .fa-heart-o {
