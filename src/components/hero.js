@@ -13,7 +13,7 @@ const Hero = () => {
                     I’m <span className="text2">Aleksandra, </span>
                     <span className="text3">An aspiring <span className="text4">Front-End Developer</span><br/> with infinite curiosity to learn new things </span>
                 </h1>
-                <p>By combining creativity and problem solving with my big-picture mindset, I strive to create visually pleasing, responsive web applications that meet your needs <br/> in multidimensional aspects.</p>
+                <p>By combining creativity and problem solving with my big-picture mindset, I strive to create visually pleasing, responsive web applications that meet your needs in <br/>  multidimensional aspects.</p>
                 <div className="hero-btns">
                     <Button text="Let's Talk" />
                 </div>

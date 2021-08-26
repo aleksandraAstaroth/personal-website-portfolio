@@ -40,12 +40,12 @@ return (
             </div>
         </div>
         <div className="about-me-text">
-            <p>My name is Aleksandra. I’m front-end developer student based in Stockholm. 
-                I got very <em>inquisitive</em> mind; that means constant quesioning, analysing and looking at the process from different perspectives.</p> 
+            <p>My name is Aleksandra. I’m a front-end developer student based in Stockholm. 
+                I got a very <em>inquisitive</em> mind; that means constant quesioning, analysing and looking at processes from different perspectives.</p> 
                 
                 <p>Here’s where I should get to the point, list out my skills and show off my work...
                 I promise. I <em>will</em> get there...</p>
-                <p><em>But</em>, first thing that you should know about me - <strong><em>I am a big-picture thinker</em></strong>.<br/>
+                <p>First thing that you should know about me - <strong><em>I am a big-picture thinker</em></strong>.<br/>
                 It all starts with the mindset. I want to give you an insight into <em>how</em> I think, <em>what</em> actions I take, and <em>why</em> I do it this way.</p>
 
                 <p>Here’s a glimpse of my background that shaped me, so that it can help you get a sense of what kind of person I am. Each of these 5 points has taught me something valuable that helped me in other settings, but in a different form.</p>
@@ -53,15 +53,15 @@ return (
                 <Expand open={isOpenText1}>
                         <ul className="about-me-facts">
                         <FadeIn className="facts" delay={1000} transitionDuration={500} >
-                            <li>As a teenager I became licenced glider pilot.</li>
-                            <li>I came to Sweden 5 years ago, on my own, with a plan and money... that I haven’t had.</li>
-                            <li>I worked in retail. I've also worked various fast-pace service jobs in the restaurant industry. And my latest job position I’ve had (before starting my frontend education) was a dog walker/caretaker.</li>
-                            <li>I enjoy exploring new ways of self-expression. During that time as a hobby I practiced mixing techno music, which resulted in a few dj gigs around Stockholm.</li>
+                            <li>As a teenager I became a licenced glider pilot.</li>
+                            <li>I came to Sweden 5 years ago, on my own, with a plan and money... that I didn't have.</li>
+                            <li>I've worked in various fast-paced service jobs including retail and the restaurant industry. My latest job position (before starting my frontend education) was a dog walker/caretaker.</li>
+                            <li>I enjoy exploring new ways of self-expression. As a hobby I practiced mixing techno music, which resulted in a few dj gigs around Stockholm.</li>
                             <li>I also collaborated with a few internationally recognized alternative clothing brands when I was growing my social media reach. Along with that, I picked up interest in photography and photo editing using Adobe programs.</li>
                         </FadeIn>
                         </ul>
                         <FadeIn className="about-me-question" visible={showSecondButton}  delay={1000} transitionDuration={400}>
-                            <p>...where am I going with that?</p>
+                            <p>...where am I going with this?</p>
                             <button {...buttonProps2} onClick={handleClick2}>Get to understand me</button>
                         </FadeIn>
                </Expand>
@@ -73,7 +73,7 @@ return (
                     <p>Deep diving head-first into new settings was always conscious choice of forcing my development and challenging myself in unknown areas.</p>
                 
                     <p> My extroverted nature of a curious kid plays probably the biggest role; through socialising, empathy, and A LOT OF QUESTIONS <em>(yes, I am THAT person)</em> I got to learn new things and understand different perspectives - <em>see the bigger picture</em>, analyse it, and look for learning opportunities. <br/>
-                    If there's something I can learn from YOU - 
+                    Now that I've introduced myself, let's collaborate and create something awesome together!  
                     </p>
                  </FadeIn>
                  </Expand>
