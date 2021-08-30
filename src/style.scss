@@ -529,14 +529,13 @@ cursor: pointer;
   position: absolute;
   margin-left: 1rem;
 
-  
-
   & h5 {
   font-size: 1.7rem;
   font-weight: 400;
   letter-spacing: 0.3rem;
   padding-top: 0.3rem;
   padding-bottom: 0.6rem;
+ 
 
   }
   & hr {
@@ -594,15 +593,12 @@ cursor: pointer;
   display: flex;
   align-items: flex-end;
 
-  
-
 .project-info > * {
   transition: transform 200ms, opacity 200ms;
 }
 
   &:hover {
     transition: 300ms;
-    // outline: 5px solid turquoise;
     transform: scale(1.04);
   
       box-shadow:
@@ -633,6 +629,13 @@ cursor: pointer;
     }
       
   }
+}
+.gradient {
+  position: absolute;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(10deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.892) 10%, rgba(0, 0, 0, 0.639) 35%, rgba(25, 17, 37, 0) 64%);
+  height: 200px;
+  width: 500px;
 }
 
 //<------------------- ABOUT ------------------->

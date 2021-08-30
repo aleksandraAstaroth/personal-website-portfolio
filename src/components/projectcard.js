@@ -9,6 +9,7 @@ const Card = (props) => {
                         <div className="project-img-wrapper">
                             <ProjectImage className="project-img" src={props.projectPreview} alt="project preview image" />
                         </div>
+                        <div className="gradient"></div>
                         <div className="project-info">
                                 <Tags className="tag-container"tagList={props.tags}/>
                                 <h5>{props.projectName}</h5>
