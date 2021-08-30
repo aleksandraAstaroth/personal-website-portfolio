@@ -25,10 +25,10 @@ const About = () => {
     setTextFadeIn(true)
   }
 const buttonProps = { 
-className: deleteButton ? "delete" : ""
+className: deleteButton ? "delete" : "about-button"
 }
 const buttonProps2 = {
-    className: delete2ndButton ? "delete" : ""
+    className: delete2ndButton ? "delete" : "about-button"
 }
 
 return (
@@ -49,35 +49,41 @@ return (
                 It all starts with the mindset. I want to give you an insight into <em>how</em> I think, <em>what</em> actions I take, and <em>why</em> I do it this way.</p>
 
                 <p>Here’s a glimpse of my background that shaped me, so that it can help you get a sense of what kind of person I am. Each of these 5 points has taught me something valuable that helped me in other settings, but in a different form.</p>
-                <button {...buttonProps} onClick={handleClick}>Get to know me</button>
+                <button {...buttonProps} onClick={handleClick}> <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>Get to know me</button>
                 <Expand open={isOpenText1}>
                         <ul className="about-me-facts">
                         <FadeIn className="facts" delay={1000} transitionDuration={500} >
                             <li>As a teenager I became a licenced glider pilot.</li>
                             <li>I came to Sweden 5 years ago, on my own, with a plan and money... that I didn't have.</li>
-                            <li>I've worked in various fast-paced service jobs including retail and the restaurant industry. My latest job position (before starting my frontend education) was a dog walker/caretaker.</li>
+                            <li>I've worked in various fast-paced service jobs including retail and the restaurant industry. My latest job position (before starting my frontend education) was a dog walker.</li>
                             <li>I enjoy exploring new ways of self-expression. As a hobby I practiced mixing techno music, which resulted in a few dj gigs around Stockholm.</li>
                             <li>I also collaborated with a few internationally recognized alternative clothing brands when I was growing my social media reach. Along with that, I picked up interest in photography and photo editing using Adobe programs.</li>
                         </FadeIn>
                         </ul>
                         <FadeIn className="about-me-question" visible={showSecondButton}  delay={1000} transitionDuration={400}>
                             <p>...where am I going with this?</p>
-                            <button {...buttonProps2} onClick={handleClick2}>Get to understand me</button>
+                            <button {...buttonProps2} onClick={handleClick2}> <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>Get to understand me</button>
                         </FadeIn>
                </Expand>
                <Expand open={isOpenText2}>
                 <FadeIn className="about-me-text-2" visible={textFadeIn} delay={1000} transitionDuration={700}>
                     <p>Experimenting with creative softwares has led me to becoming <del>obsessed</del> <ins>passionate</ins> about coding and development, which allows me to create new value utilising already gained skills/perspectives/experiences as contributions to new solutions</p>
 
-                    <p><em> Taking chances</em> and <em>calculating risks</em>, required <strong><em>resourcefullness</em></strong>, <strong><em>flexibility</em></strong> and <strong><em>adaptation</em></strong> to new situations.</p>
-                    <p>Deep diving head-first into new settings was always conscious choice of forcing my development and challenging myself in unknown areas.</p>
+                    <p><em> Taking chances</em> and <em>calculating risks</em>, required <strong><em>resourcefullness</em></strong>, <strong><em>flexibility</em></strong> and <strong><em>adaptation</em></strong> to new situations. Therefore
+                    deep diving head-first into new settings was always conscious choice of forcing my development and challenging myself in unknown areas.</p>
                 
                     <p> My extroverted nature of a curious kid plays probably the biggest role; through socialising, empathy, and A LOT OF QUESTIONS <em>(yes, I am THAT person)</em> I got to learn new things and understand different perspectives - <em>see the bigger picture</em>, analyse it, and look for learning opportunities. <br/>
                     Now that I've introduced myself, let's collaborate and create something awesome together!  
                     </p>
+                    <Button text="Let's Talk" />
                  </FadeIn>
                  </Expand>
-                <Button text="Let's Talk" />
         </div>
     
     </section>

@@ -151,6 +151,14 @@ nav ul {
   gap: 2rem;
   font-weight: 100;
   font-size: 1rem;
+  & li:hover {
+    text-shadow: 0 0 2px var(--white),
+    0 0 5px var(--neon-color-turquoise),
+    0 0 10px var(--neon-color-turquoise),
+    0 0 15px var(--neon-color-turquoise),
+    0 0 20px var(--neon-color-turquoise),
+    0 0 25px var(--neon-color-turquoise);
+  }
 }
 
 a {
@@ -426,6 +434,14 @@ cursor: pointer;
   color: var(--neon-color-turquoise);
   font-weight: 200;
   letter-spacing: 0.05em;
+  &:hover {
+    text-shadow: 0 0 2px var(--white),
+    0 0 5px var(--neon-color-turquoise),
+    0 0 10px var(--neon-color-turquoise),
+    0 0 15px var(--neon-color-turquoise),
+    0 0 20px var(--neon-color-turquoise),
+    0 0 25px var(--neon-color-turquoise);
+  }
 }
 
 .arrow {
@@ -497,7 +513,6 @@ cursor: pointer;
  justify-content: center;
  align-items: center;
  grid-template-columns: repeat(3, 1fr);
-
  background: rgb(107,0,102);
  background: linear-gradient(144deg, rgba(107,0,102,1) 0%, rgba(25,17,37,1) 25%, rgba(24,17,37,1) 27%, rgba(16,16,34,1) 50%, rgba(17,26,36,1) 75%, rgba(0,98,107,1) 100%);
 }
@@ -509,8 +524,6 @@ cursor: pointer;
   font-family: 'Rajdhani', sans-serif;
   text-transform: uppercase;
 }
-
-  
 
 .project-info {
   position: absolute;
@@ -552,6 +565,14 @@ cursor: pointer;
     &::after {
       content: " ]";
     }
+    &:hover{
+      text-shadow: 0 0 2px var(--white),
+      0 0 5px var(--neon-color-turquoise),
+      0 0 10px var(--neon-color-turquoise),
+      0 0 15px var(--neon-color-turquoise),
+      0 0 20px var(--neon-color-turquoise),
+      0 0 25px var(--neon-color-turquoise);
+    }
   }
   
   }
@@ -581,9 +602,14 @@ cursor: pointer;
 
   &:hover {
     transition: 300ms;
-    outline: 10px solid turquoise;
+    // outline: 5px solid turquoise;
     transform: scale(1.04);
-
+  
+      box-shadow:
+      0 0 5px var(--neon-color-turquoise),
+      0 0 15px var(--neon-color-turquoise),
+      0 0 35px var(--neon-color-turquoise);
+  
     .project-info {
       & > * {
       transform: translate3d(0, -2rem, 0);
@@ -679,7 +705,9 @@ cursor: pointer;
   gap: 2rem;
 
   & button {
-    width: 15%;
+    width: 30%;
+    align-self: flex-end;
+    margin-right: 2rem;
   }
   & .cta-btn {
     position: relative;
@@ -756,4 +784,91 @@ align-items: center;
   align-items: center;
   align-self: center;
 }
+.about-me-question {
+  display: flex;
+  align-items: baseline;
+}
+.about-button {
+  background: none;
+  border: none;
+  position: relative;
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  color: var(--neon-color-turquoise);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 2px;
+  overflow: hidden;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+  &:hover {
+    box-shadow: 0 0 5px var(--neon-color-turquoise), 0 0 25px var(--neon-color-turquoise), 0 0 45px var(--neon-color-turquoise);
+    transition-delay: .4s;
+  }
+
+  & span {
+    position: absolute;
+    display: block;
+  }
+  
+  & span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--neon-color-turquoise));
+  }
+  
+  &:hover span:nth-child(1) {
+    left: 100%;
+    transition: .5s;
+  }
+  
+  
+  & span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(180deg, transparent, var(--neon-color-turquoise));  
+  }
+  
+  &:hover span:nth-child(2) {
+    top: 100%;
+    transition: .5s;
+    transition-delay: .1s;
+  }
+  
+  
+  & span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(270deg, transparent, var(--neon-color-turquoise));
+  }
+  
+  &:hover span:nth-child(3) {
+    right: 100%;
+    transition: .5s;
+    transition-delay: .2s;
+  }
+  
+  & span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(360deg, transparent, var(--neon-color-turquoise));
+  }
+  
+  &:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: .5s;
+    transition-delay: .3s;
+  }
+}
+
+
+
 
