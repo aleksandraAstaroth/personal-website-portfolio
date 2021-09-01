@@ -8,7 +8,7 @@ const Skills = () => {
             <div className="skills-wrapper">
             <div className="hard-skills-wrapper">
                 <div className="icon-wrapper">
-                    <img src={HardSkillsIcon} />
+                    <img src={HardSkillsIcon} alt="neon style icon depicting computer screen representing hard skills"/>
                 <h3>Hard Skills</h3>
                 </div>
                 <div className="skills-area">
@@ -60,7 +60,7 @@ const Skills = () => {
                 </div>
             <div className="soft-skills-wrapper">
                 <div className="icon-wrapper">
-                    <img src={SoftSkillsIcon} />
+                    <img src={SoftSkillsIcon} alt="neon style icon depicting a person with speech bubble, heart, light bulb ,representing soft skills" />
                     <h3>Soft Skills</h3>
                 </div>
                 <div className="skills-area"></div>

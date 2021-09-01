@@ -37,6 +37,10 @@ body {
   width: 100vw;
 }
 
+a:focus {
+  outline: 1px solid turquoise;
+}
+
 .global-header {
   width: 100%;
   height: 15vh;
@@ -359,7 +363,6 @@ h1 {
   font-size: var(--font-size);
   font-weight: bold;
   position: relative;
-  outline: transparent;
   letter-spacing: 0.1rem;
   border: 0;
   min-width: 8rem;
@@ -816,7 +819,7 @@ h1 {
   content: " ]";
 }
 
-.project-info a:hover {
+.project-info a:hover, .project-info a:focus {
   text-shadow: 0 0 2px var(--white), 0 0 5px var(--neon-color-turquoise), 0 0 10px var(--neon-color-turquoise), 0 0 15px var(--neon-color-turquoise), 0 0 20px var(--neon-color-turquoise), 0 0 25px var(--neon-color-turquoise);
 }
 
@@ -895,7 +898,7 @@ h1 {
 .gradient {
   position: absolute;
   background: black;
-  background: linear-gradient(10deg, black 0%, rgba(0, 0, 0, 0.892) 10%, rgba(0, 0, 0, 0.639) 35%, rgba(25, 17, 37, 0) 64%);
+  background: linear-gradient(15deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.892) 10%, rgba(0, 0, 0, 0.639) 35%, rgba(25, 17, 37, 0) 64%);
   height: 200px;
   width: 500px;
 }

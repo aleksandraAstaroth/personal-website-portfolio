@@ -6,21 +6,21 @@ const Portfolio = () => {
     return(
         <section id="portfolio">
             <Card projectName="A-Frame Game"
-                  tags={["A-Frame", "Gatsby"]}
-                  projectInfo="ssdvgsfsfvsdvsfvsfvbsfbvsdvsd sdvsdvsd 
-                               sdvfsdv"  
-                  projectLink="https://github.com/aleksandraAstaroth/neon-pomodoro-app" 
+                  tags={["A-Frame", "Javascript", "Three.js"]}
+                  projectInfo="Small 3D web based game/experience, built using A-Frame"  
+                  projectLink="https://github.com/aleksandraAstaroth/tiny-nightmares" 
                   projectLinkText="github" 
-                  projectPreview="pomodoro.png"/>
+                  projectPreview="tinynightmare.png"/>
+
             <Card projectName="Pomodoro Timer" 
-                  tags={["React", "Pomodoro", "this"]}
-                  projectInfo="dsfsdvdf afafa efaefae" 
+                  tags={["React", "SCSS", "CSS3"]}
+                  projectInfo="Timer for Pomodoro technique built with React" 
                   projectLink="https://github.com/aleksandraAstaroth/neon-pomodoro-app" 
-                  projectLinkText="github" 
-                  projectPreview="tinynightmare.png"
+                  projectLinkText="github"
+                  projectPreview="pomodoro.png"
              />
             <Card projectName="Tic-Tac-Toe"
-                  tags={["A-Frame", "Gatsby"]}
+                  tags={["Javascript", "CSS3"]}
                    projectInfo="VanilaJS Tic-Tac-Toe project" 
                    projectLink="https://github.com/aleksandraAstaroth/neon-pomodoro-app" 
                    projectLinkText="github" 
