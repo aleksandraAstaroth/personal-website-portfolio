@@ -26,18 +26,16 @@ body {
   background-color:var(--background-color);
   background-image: url("./assets/images/Lines.png");
   color: var(--white);
-  height: 100vh;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   position: relative;
-
 }
 #landing-page-hero,
 #about,
 #skills,
 #portfolio {
   height: 90vh;
-  width: 100vw;
+  width: 100%;
 }
 a:focus {
   outline: 1px solid turquoise;
@@ -313,14 +311,6 @@ cursor: pointer;
 .cta-btn::after {
   background: var(--primary);
 }
-// .link-btn::before {
-//   border: 5px solid var(--shadow-primary);
-//   transform: translate(var(--border), 0);
-// }
-// .link-btn::after {
-//   border: 5px solid var(--primary);
-// }
-
 .btn__tag {
   position: absolute;
   padding: 1px 4px;
@@ -708,6 +698,7 @@ cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  overflow: auto;
 
   & button {
     width: 30%;
@@ -873,7 +864,48 @@ align-items: center;
     transition-delay: .3s;
   }
 }
+//----------------------------------------------- MOBILE -----------------------------------
+@media only screen and (max-width: 600px) {
+ #landing-page-hero,
+ #about, 
+ #skills, 
+ #portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+ }
+ #landing-page-hero {
+  position: relative;
+  top: -3rem;
+ }
+
+.hero-intro {
+  display: inherit;
+  flex-direction: inherit;
+  justify-content: center;
+  align-items: inherit;
+  width: 80%;
+  text-align: center;
+  
+  & .text1 {
+    display: block;
+  }
+ & .text4 {
+   float: right;
+ }
+ & .cta-btn {
+   top: -1.5rem;
+   left: 13%;
+ }
+}
 
 
+  nav {
+   display: none;
+ }
+}
+//----------------------------------------------- TABLET -----------------------------------
+@media only screen and (max-width: 992px) {
 
-
+}

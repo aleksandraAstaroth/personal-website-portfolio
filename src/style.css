@@ -23,7 +23,6 @@ body {
   background-color: var(--background-color);
   background-image: url("./assets/images/Lines.png");
   color: var(--white);
-  height: 100vh;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   position: relative;
@@ -34,7 +33,7 @@ body {
 #skills,
 #portfolio {
   height: 90vh;
-  width: 100vw;
+  width: 100%;
 }
 
 a:focus {
@@ -989,6 +988,7 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2rem;
+  overflow: auto;
 }
 
 .about-me-text button {
@@ -1214,5 +1214,55 @@ h1 {
   transition: .5s;
   -webkit-transition-delay: .3s;
           transition-delay: .3s;
+}
+
+@media only screen and (max-width: 600px) {
+  #landing-page-hero,
+  #about,
+  #skills,
+  #portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #landing-page-hero {
+    position: relative;
+    top: -3rem;
+  }
+  .hero-intro {
+    display: inherit;
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    width: 80%;
+    text-align: center;
+  }
+  .hero-intro .text1 {
+    display: block;
+  }
+  .hero-intro .text4 {
+    float: right;
+  }
+  .hero-intro .cta-btn {
+    top: -1.5rem;
+    left: 13%;
+  }
+  nav {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
