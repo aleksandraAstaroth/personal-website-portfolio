@@ -9,6 +9,7 @@ import Skills from "../components/skills"
 import Portfolio from "../components/portfolio"
 import "normalize.css"
 
+
 const Index = ({ data, location }) => {
     // const siteTitle = data.site.siteMetadata?.title || `Title`
     const siteDescription = data.site.siteMetadata?.description || `Description`

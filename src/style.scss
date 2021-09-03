@@ -30,12 +30,14 @@ body {
   font-family: 'Montserrat', sans-serif;
   position: relative;
 }
+
 #landing-page-hero,
 #about,
 #skills,
 #portfolio {
-  height: 90vh;
-  width: 100%;
+  height: auto;
+  width: 100vw;
+  margin-bottom: 3rem;
 }
 a:focus {
   outline: 1px solid turquoise;
@@ -120,7 +122,7 @@ height: 15vh;
 		   color: #333;
 		}
 		80% {
-		  
+		
 		  text-shadow: none;
 		}
 		81% {
@@ -159,6 +161,26 @@ nav ul {
     0 0 20px var(--neon-color-turquoise),
     0 0 25px var(--neon-color-turquoise);
   }
+  & .mobile {
+    flex-direction: column;
+  }
+}
+.hamburger {
+  position: relative;
+  width: 2rem;
+  height: 1.2rem;
+  display: flex;
+  background: none;
+  outline: none; 
+  border: none;
+  flex-direction: column;
+  justify-content: space-between;
+  & span {
+    height: 2px;
+    width: 100%;
+    background: white;
+    border-radius: 1.5rem;
+}
 }
 
 a {
@@ -166,6 +188,7 @@ a {
   color: var(--white);
 }
 #landing-page-hero {
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -499,14 +522,19 @@ cursor: pointer;
 
 
 //<------------------------PROJECT CARD------------------------------------->
-#portfolio {
- display: grid;
+
+.cards-wrapper {
+  display: grid;
+  align-self: center;
+  margin: auto;
  justify-content: center;
  align-items: center;
  grid-template-columns: repeat(3, 1fr);
- background: rgb(107,0,102);
- background: linear-gradient(144deg, rgba(107,0,102,1) 0%, rgba(25,17,37,1) 25%, rgba(24,17,37,1) 27%, rgba(16,16,34,1) 50%, rgba(17,26,36,1) 75%, rgba(0,98,107,1) 100%);
+ width: 85%;
+ column-gap: 2rem;
+ row-gap: 2rem;
 }
+
 .project-container {
   display: flex;
   justify-self: center;
@@ -526,8 +554,6 @@ cursor: pointer;
   letter-spacing: 0.3rem;
   padding-top: 0.3rem;
   padding-bottom: 0.6rem;
- 
-
   }
   & hr {
     border-bottom: none;
@@ -631,7 +657,6 @@ cursor: pointer;
 
 //<------------------- ABOUT ------------------->
 #about {
-  height: 120vh;
   display: flex;
   justify-content: center;
 }
@@ -864,7 +889,6 @@ align-items: center;
   align-self: center;
 }
 
-
 //----------------------------------------------- MOBILE -----------------------------------
 @media only screen and (max-width: 600px) {
  #landing-page-hero,
@@ -875,8 +899,6 @@ align-items: center;
   flex-direction: column;
   align-items: center;
  }
-
-
  #landing-page-hero {
   position: relative;
   top: -3rem;
@@ -902,12 +924,11 @@ align-items: center;
  }
 }
 #about {
-  height: 250vh;
   overflow: auto;
 
   & button {
     align-self: initial;
-    width: 100%;
+    width: 70%;
   }
   
   & #container {
@@ -949,12 +970,51 @@ align-items: center;
     right: -27%;
   }
 }
-
-  nav {
-   display: none;
- }
+.cards-wrapper, .skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-//----------------------------------------------- TABLET -----------------------------------
-@media only screen and (max-width: 992px) {
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+}
+@media only screen and (min-width: 1024px) {
+  .hamburger {
+     display: none;
+   }
+ }
+@media only screen and (max-width: 1024px) {
+  .hamburger-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+nav ul{
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.mobile {
+  display: block;
+  position: fixed;
+  width: 40%;
+  background: rgb(107,0,102);
+  background: linear-gradient(144deg, rgba(107,0,102,1) 0%, rgba(25,17,37,1) 25%, rgba(24,17,37,1) 27%, rgba(16,16,34,1) 50%, rgba(17,26,36,1) 75%, rgba(0,98,107,1) 100%);
+  transition: all 0.5s ease-in-out;
+  right: 0;
+  overflow: hidden;
+  height: 100%;
+}
 
 }

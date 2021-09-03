@@ -32,8 +32,9 @@ body {
 #about,
 #skills,
 #portfolio {
-  height: 90vh;
-  width: 100%;
+  height: auto;
+  width: 100vw;
+  margin-bottom: 3rem;
 }
 
 a:focus {
@@ -208,12 +209,46 @@ nav ul li:hover {
   text-shadow: 0 0 2px var(--white), 0 0 5px var(--neon-color-turquoise), 0 0 10px var(--neon-color-turquoise), 0 0 15px var(--neon-color-turquoise), 0 0 20px var(--neon-color-turquoise), 0 0 25px var(--neon-color-turquoise);
 }
 
+nav ul .mobile {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hamburger {
+  position: relative;
+  width: 2rem;
+  height: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: none;
+  outline: none;
+  border: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hamburger span {
+  height: 2px;
+  width: 100%;
+  background: white;
+  border-radius: 1.5rem;
+}
+
 a {
   text-decoration: none;
   color: var(--white);
 }
 
 #landing-page-hero {
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -744,9 +779,12 @@ h1 {
           justify-content: center;
 }
 
-#portfolio {
+.cards-wrapper {
   display: -ms-grid;
   display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+  margin: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -755,8 +793,10 @@ h1 {
           align-items: center;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  background: #6b0066;
-  background: linear-gradient(144deg, #6b0066 0%, #191125 25%, #181125 27%, #101022 50%, #111a24 75%, #00626b 100%);
+  width: 85%;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  row-gap: 2rem;
 }
 
 .project-container {
@@ -900,7 +940,6 @@ h1 {
 }
 
 #about {
-  height: 120vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1259,14 +1298,13 @@ h1 {
     left: 13%;
   }
   #about {
-    height: 250vh;
     overflow: auto;
   }
   #about button {
     -ms-flex-item-align: initial;
         -ms-grid-row-align: initial;
         align-self: initial;
-    width: 100%;
+    width: 70%;
   }
   #about #container {
     width: 100%;
@@ -1314,8 +1352,75 @@ h1 {
     top: 2rem;
     right: -27%;
   }
-  nav {
+  .cards-wrapper, .skills-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .cards-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hamburger {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hamburger-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav ul {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+  }
+  .mobile {
+    display: block;
+    position: fixed;
+    width: 40%;
+    background: #6b0066;
+    background: linear-gradient(144deg, #6b0066 0%, #191125 25%, #181125 27%, #101022 50%, #111a24 75%, #00626b 100%);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    right: 0;
+    overflow: hidden;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
