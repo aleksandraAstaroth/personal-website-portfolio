@@ -7,18 +7,8 @@ export default function Layout({ location, children, description}) {
     const isRootPath = location.pathname === rootPath
 
     const [navChange, setNavChange] = useState(false)
-    const [hamburgerMenuDisplay, setHamburgerMenuDisplay] = useState(false)
-    const [mobileStyling, setMobileStyling] = useState(false);
+    // const [hamburgerMenuDisplay, setHamburgerMenuDisplay] = useState(false)
     
-    const navListProps = {
-        className: mobileStyling ? "mobile" : ""
-    }
-    const toggleHamburgerMenu = () => {
-        console.log("button clicked")
-        setMobileStyling(true)
-        setHamburgerMenuDisplay(!hamburgerMenuDisplay)
-    }
-
     const changeNavColor = () => {
         if (window.scrollY >= 360) {
             setNavChange(true);
@@ -41,18 +31,9 @@ export default function Layout({ location, children, description}) {
                             <span className="brackets">{'{ '}</span>{description}<span className="brackets">{' }'}</span></span>
                         </Link>
                     </h1>
-                    <div className="hamburger-wrapper">  
-                    <button className="hamburger" aria-label="hamburger-menu" onClick={toggleHamburgerMenu}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    </div>
                     </div>
                 <div className="navbar-wrapper">
-                <nav {...navListProps}>
-                 <Navbar />
-                </nav>
+                 <Navbar></Navbar>
                 </div>
             </section>
         </header>

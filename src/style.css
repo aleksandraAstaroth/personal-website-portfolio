@@ -1389,12 +1389,21 @@ h1 {
 
 @media only screen and (max-width: 1024px) {
   .hamburger-wrapper {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+  }
+  .hamburger:hover span {
+    -webkit-box-shadow: 0 0 2px var(--white), 0 0 5px var(--neon-color-turquoise), 0 0 10px var(--neon-color-turquoise), 0 0 15px var(--neon-color-turquoise);
+            box-shadow: 0 0 2px var(--white), 0 0 5px var(--neon-color-turquoise), 0 0 10px var(--neon-color-turquoise), 0 0 15px var(--neon-color-turquoise);
   }
   nav ul {
     position: relative;
@@ -1409,11 +1418,16 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
     text-align: left;
+    margin-top: 4rem;
+  }
+  nav ul.hide {
+    display: none;
   }
   .mobile {
     display: block;
     position: fixed;
     width: 40%;
+    top: 0;
     background: #6b0066;
     background: linear-gradient(144deg, #6b0066 0%, #191125 25%, #181125 27%, #101022 50%, #111a24 75%, #00626b 100%);
     -webkit-transition: all 0.5s ease-in-out;
@@ -1421,6 +1435,8 @@ h1 {
     right: 0;
     overflow: hidden;
     height: 100%;
+    -webkit-box-shadow: 0 0 5px var(--neon-color-pink), 0 0 15px var(--neon-color-pink), 0 0 20px var(--neon-color-pink);
+            box-shadow: 0 0 5px var(--neon-color-pink), 0 0 15px var(--neon-color-pink), 0 0 20px var(--neon-color-pink);
   }
 }
 /*# sourceMappingURL=style.css.map */
