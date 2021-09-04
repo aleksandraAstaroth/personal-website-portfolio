@@ -83,7 +83,13 @@ height: 15vh;
   font-weight: 300;
   letter-spacing: 0.5rem;
   font-size: 1.5rem;
-  text-shadow: 0 0 2px var(--white), 0 0 5px var(--white), 0 0 10px var(--neon-color-pink), 0 0 15px var(--neon-color-pink), 0 0 20px var(--neon-color-pink), 0 0 25px var(--neon-color-pink), 0 0 30px var(--neon-color-pink);
+  text-shadow: 0 0 2px var(--white),
+   0 0 5px var(--white),
+   0 0 10px var(--neon-color-pink),
+   0 0 15px var(--neon-color-pink),
+   0 0 20px var(--neon-color-pink),
+   0 0 25px var(--neon-color-pink),
+   0 0 30px var(--neon-color-pink);
 }
 
 .mh-description {
@@ -993,13 +999,36 @@ align-items: center;
    }
  }
 @media only screen and (max-width: 1024px) {
+#header-fixed {
+  padding: 0.1rem 2.5rem;
+}
+  .main-heading {
+  font-size: calc(90%);
+  padding: 0;
+}
+  .mh-title {
+    font-size: 1.1rem;
+    letter-spacing: 0.3rem;
+    font-weight: 300;
+    text-shadow: 0 0 2px var(--white),
+   0 0 5px var(--white),
+   0 0 10px var(--neon-color-pink),
+   0 0 15px var(--neon-color-pink),
+   0 0 20px var(--neon-color-pink),
+   0 0 25px var(--neon-color-pink);
+  }
+  .mh-description {
+  font-size: small;
+  letter-spacing: 0.12rem;
+  }
+
   .hamburger-wrapper {
     position: relative;
     display: flex;
     justify-content: center;
   }
   .hamburger {
-    position: absolute;
+    // position: absolute;
     cursor: pointer;
     &:hover {
       span {
@@ -1017,7 +1046,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   text-align: left;
-  margin-top: 4rem;
+  margin-top: 8rem;
   &.hide {
     display: none;
   }
@@ -1030,13 +1059,20 @@ nav ul {
   top: 0;
   background: rgb(107,0,102);
   background: linear-gradient(144deg, rgba(107,0,102,1) 0%, rgba(25,17,37,1) 25%, rgba(24,17,37,1) 27%, rgba(16,16,34,1) 50%, rgba(17,26,36,1) 75%, rgba(0,98,107,1) 100%);
-  transition: all 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   right: 0;
   overflow: hidden;
   height: 100%;
   box-shadow:  0 0 5px var(--neon-color-pink),
-  0 0 15px var(--neon-color-pink),
-  0 0 20px var(--neon-color-pink);
+  0 0 10px var(--neon-color-pink),
+  0 0 15px var(--neon-color-pink);
+ .hamburger-wrapper {
+   position: relative;
+   top: 1.7rem;
+   float: right;
+   right: 2.5rem;
+ }
+
 }
 
 }
