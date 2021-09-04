@@ -37,8 +37,14 @@ body {
   margin-bottom: 3rem;
 }
 
-a:focus {
-  outline: 1px solid turquoise;
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+a:focus:not(.scroll-mark-wrapper) {
+  text-decoration: line-through;
+  text-shadow: 0 0 2px var(--white), 0 0 5px var(--neon-color-turquoise), 0 0 10px var(--neon-color-turquoise), 0 0 15px var(--neon-color-turquoise), 0 0 20px var(--neon-color-turquoise);
 }
 
 .global-header {
@@ -242,11 +248,6 @@ nav ul .mobile {
   border-radius: 1.5rem;
 }
 
-a {
-  text-decoration: none;
-  color: var(--white);
-}
-
 #landing-page-hero {
   height: 90vh;
   display: -webkit-box;
@@ -358,12 +359,15 @@ h1 {
 }
 
 .hero-btns {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.cta-section {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
-  margin-top: 4rem;
-  float: left;
 }
 
 .cta-btn {
@@ -680,6 +684,7 @@ h1 {
 }
 
 .arrow {
+  margin-top: 1rem;
   position: absolute;
   width: 28px;
   height: 6px;
@@ -815,6 +820,7 @@ h1 {
 .project-info {
   position: absolute;
   margin-left: 1rem;
+  margin-bottom: 0.3rem;
 }
 
 .project-info h5 {
@@ -935,8 +941,8 @@ h1 {
   position: absolute;
   background: black;
   background: linear-gradient(15deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.892) 10%, rgba(0, 0, 0, 0.639) 35%, rgba(25, 17, 37, 0) 64%);
-  height: 200px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
 }
 
 #about {
@@ -954,20 +960,29 @@ h1 {
   width: 30%;
 }
 
-.about-sign {
-  -webkit-transform: matrix3d(0.77, 0, 0.64, 0.001, 0, 1, 0, 0, -0.64, 0, 0.77, 0, 0, 0, 0, 1);
+.about-sign, .portfolio-sign, .skills-sign {
   color: #a9f6ff;
   font-family: 'Rajdhani', sans-serif;
   font-size: 5vw;
   line-height: 5vw;
   text-shadow: 0vw 0vw 3vw #F40A35;
-  transform: matrix3d(0.77, 0, 0.64, 0.001, 0, 1, 0, 0, -0.64, 0, 0.77, 0, 0, 0, 0, 1);
   text-shadow: -0.1vw 0vw 0.25vw #a9f6ff, -0.2vw 0vw 0.25vw #a9f6ff, -0.4vw 0vw 0.25vw #a9f6ff, -0.1vw 0vw 0.1vw #00ccc9, -0.2vw 0vw 0.1vw #00ccc9, -0.4vw 0vw 0.1vw #00ccc9, -0.1vw 0vw 0.8vw #00ccc9, -0.2vw 0vw 0.8vw #00ccc9, -0.4vw 0vw 0.8vw #00ccc9, 0.2vw 0vw 0.5vw #00ccc9, -0.1vw 0vw 0.5vw #00ccc9, -0.2vw 0vw 0.5vw #00ccc9, -0.4vw 0vw 0.5vw #00ccc9, -0.1vw 0vw 10vw var(--neon-color-turquoise), -0.2vw 0vw 10vw var(--neon-color-turquoise), -0.4vw 0vw 10vw var(--neon-color-turquoise);
 }
 
 .fa-heart-o {
   color: #FBB4FF;
   text-shadow: -.1vw 0vw .25vw #FBB4FF, -.2vw 0vw .25vw #FBB4FF, -.4vw 0vw .25vw #FBB4FF,  -.1vw 0vw 1vw #E82FF5, -.2vw 0vw .8vw #E82FF5, -.4vw 0vw .8vw #E82FF5, .2vw 0vw .5vw #E82FF5, -.1vw 0vw 10vw #CB16FA, -.2vw 0vw 10vw #CB16FA, -.4vw 0vw 10vw #CB16FA;
+}
+
+.about-sign, .skills-sign {
+  transform: matrix3d(0.77, 0, 0.64, 0.001, 0, 1, 0, 0, -0.64, 0, 0.77, 0, 0, 0, 0, 1);
+  -webkit-transform: matrix3d(0.77, 0, 0.64, 0.001, 0, 1, 0, 0, -0.64, 0, 0.77, 0, 0, 0, 0, 1);
+}
+
+.portfolio-sign {
+  transform: matrix3d(-0.77, 0, -0.64, -0.001, 0, 1, 0, 0, 0.64, 0, 0.77, 0, 0, 0, 0, 1);
+  -webkit-transform: matrix3d(0.77, 0, -0.64, -0.001, 0, 1, 0, 0, 0.64, 0, 0.77, 0, 0, 0, 0, 1);
+  margin-left: 10rem;
 }
 
 .about-me-facts {
@@ -1252,7 +1267,7 @@ h1 {
       align-self: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   #landing-page-hero,
   #about,
   #skills,
@@ -1295,22 +1310,27 @@ h1 {
   }
   .hero-intro .cta-btn {
     top: -1.5rem;
-    left: 13%;
+  }
+  .cta-section {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #about {
     overflow: auto;
   }
   #about button {
-    -ms-flex-item-align: initial;
-        -ms-grid-row-align: initial;
-        align-self: initial;
-    width: 70%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 100%;
   }
   #about #container {
     width: 100%;
     margin-bottom: 2rem;
   }
   #about #container .about-sign {
+    margin-top: 6rem;
     font-size: 10vw;
     line-height: 10vw;
     text-shadow: 0vw 0vw 6vw #F40A35;
@@ -1350,7 +1370,6 @@ h1 {
   .about-me-text .cta-btn {
     left: unset;
     top: 2rem;
-    right: -27%;
   }
   .cards-wrapper, .skills-wrapper {
     display: -webkit-box;
