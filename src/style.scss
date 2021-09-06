@@ -540,17 +540,22 @@ cursor: pointer;
 
 
 //<------------------------PROJECT CARD------------------------------------->
+#portfolio {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 15rem;
+  min-height: 90vh;
 
+}
 .cards-wrapper {
   display: grid;
   align-self: center;
   margin: auto;
  justify-content: center;
  align-items: center;
- grid-template-columns: repeat(3, 1fr);
- width: 85%;
- column-gap: 2rem;
+ grid-template-columns: repeat(2, 1fr);
  row-gap: 2rem;
+ column-gap: 2rem;
 }
 
 .project-container {
@@ -711,9 +716,12 @@ transform: matrix3d(0.77,0,0.64,.001,0.00,1,0.00,0,-0.64,0,0.77,0,0,0,0,1);
 }
 .portfolio-sign {
   transform: matrix3d(-0.77,0,-0.64,-.001,0.00,1,0.00,0,0.64,0,0.77,0,0,0,0,1);
-  -webkit-transform: matrix3d(0.77,0,-0.64,-.001,0.00,1,0.00,0,0.64,0,0.77,0,0,0,0,1);
-margin-left: 10rem;
+  -webkit-transform: matrix3d(0.77,0,-0.64,-.001,0.00,1,0.00,0,0.64,0,0.77,0,0,0,0,1); 
+  display: flex;
+  position: relative;
+  right: 8rem;
 }
+
 
 
 .about-me-facts {
@@ -869,7 +877,7 @@ margin-left: 10rem;
 #skills {
 display: flex;
 justify-content: center;
-align-items: center;
+margin-top: 15rem;
 }
 .skills-wrapper {
   display: flex;
@@ -960,23 +968,6 @@ align-items: center;
     width: 100%;
   }
   
-  & #container {
-    width: 100%;
-    margin-bottom: 2rem;
-  
-  & .about-sign {
-    margin-top: 6rem;
-   font-size: 10vw;
-   line-height: 10vw;
-   text-shadow: 0vw 0vw 6vw #F40A35;
-   text-shadow: 
-    -.1vw 0vw .25vw #a9f6ff, -.2vw 0vw .25vw #a9f6ff, -.4vw 0vw .25vw #a9f6ff, 
-    -.1vw 0vw .1vw #00ccc9, -.2vw 0vw .1vw  #00ccc9, -.4vw 0vw .1vw #00ccc9,
-    -.1vw 0vw .8vw #00ccc9, -.2vw 0vw .8vw  #00ccc9, -.4vw 0vw .8vw #00ccc9, .2vw 0vw .5vw #00ccc9,
-    -.1vw 0vw .5vw  #00ccc9, -.2vw 0vw .5vw #00ccc9, -.4vw 0vw .5vw #00ccc9, 
-    -.1vw 0vw 10vw var(--neon-color-turquoise), -.2vw 0vw 10vw var(--neon-color-turquoise), -.4vw 0vw 10vw var(--neon-color-turquoise);
-  }
-  }
   & .about-me-facts {
     height: 20rem;
     font-size: 0.9em;
@@ -999,6 +990,31 @@ align-items: center;
     top: 2rem;
   }
 }
+#container {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .portfolio-sign {
+    right: unset;
+  }
+}
+.about-sign, .portfolio-sign, .skills-sign {
+ margin-top: 6rem;
+ margin-bottom: 4rem;
+ font-size: 10vw;
+ line-height: 10vw;
+ text-shadow: 0vw 0vw 6vw #F40A35;
+ text-shadow: 
+  -.1vw 0vw .25vw #a9f6ff, -.2vw 0vw .25vw #a9f6ff, -.4vw 0vw .25vw #a9f6ff, 
+  -.1vw 0vw .1vw #00ccc9, -.2vw 0vw .1vw  #00ccc9, -.4vw 0vw .1vw #00ccc9,
+  -.1vw 0vw .8vw #00ccc9, -.2vw 0vw .8vw  #00ccc9, -.4vw 0vw .8vw #00ccc9, .2vw 0vw .5vw #00ccc9,
+  -.1vw 0vw .5vw  #00ccc9, -.2vw 0vw .5vw #00ccc9, -.4vw 0vw .5vw #00ccc9, 
+  -.1vw 0vw 10vw var(--neon-color-turquoise), -.2vw 0vw 10vw var(--neon-color-turquoise), -.4vw 0vw 10vw var(--neon-color-turquoise);
+}
+
+
 .cards-wrapper, .skills-wrapper {
   display: flex;
   flex-direction: column;

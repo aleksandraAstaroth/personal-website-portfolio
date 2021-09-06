@@ -6,11 +6,11 @@ const Skills = () => {
     return(
         <section id="skills">
             <div id="container">
-            <div className="skills-sign">
-                <i className="fa fa-heart-o" aria-hidden="true"></i> 
-                SKILLS
+                <div className="skills-sign">
+                    <i className="fa fa-heart-o" aria-hidden="true"></i> 
+                    SKILLS
+                </div>
             </div>
-        </div>
             <div className="skills-wrapper">
             <div className="hard-skills-wrapper">
                 <div className="icon-wrapper">

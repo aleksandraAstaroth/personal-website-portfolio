@@ -6,11 +6,11 @@ const Portfolio = () => {
     return(
         <section id="portfolio">
             <div id="container">
-            <div className="about-sign">
+            <div className="portfolio-sign">
                 <i className="fa fa-heart-o" aria-hidden="true"></i>
                 <span className="off">PO</span>RTFOLIO
             </div>
-        </div>
+            </div>
             <div className="cards-wrapper">
                 <Card projectName="A-Frame Game"
                     tags={["A-Frame", "Javascript", "Three.js"]}
