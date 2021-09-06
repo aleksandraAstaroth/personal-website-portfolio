@@ -764,9 +764,10 @@ transform: matrix3d(0.77,0,0.64,.001,0.00,1,0.00,0,-0.64,0,0.77,0,0,0,0,1);
     align-self: flex-end;
     margin-right: 2rem;
   }
-  & .cta-btn {
+  & .cta-section {
     position: relative;
-    left: 65%;
+    display: flex;
+    justify-content: right;
   }
 }
 .about-me-question {
@@ -806,7 +807,7 @@ transform: matrix3d(0.77,0,0.64,.001,0.00,1,0.00,0,-0.64,0,0.77,0,0,0,0,1);
   overflow: hidden;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
   &:hover {
-    box-shadow: 0 0 5px var(--neon-color-turquoise), 0 0 25px var(--neon-color-turquoise), 0 0 45px var(--neon-color-turquoise);
+    box-shadow: 0 0 5px var(--neon-color-turquoise), 0 0 25px var(--neon-color-turquoise), 0 0 35px var(--neon-color-turquoise);
     transition-delay: .4s;
   }
 
@@ -960,12 +961,14 @@ margin-top: 15rem;
 .cta-section {
   justify-content: center;
 }
+
 #about {
   overflow: auto;
 
   & button {
     align-self: center;
     width: 100%;
+    margin-top: 2rem;
   }
   
   & .about-me-facts {
@@ -985,6 +988,9 @@ margin-top: 15rem;
   flex-direction: column;
   align-items: center;
   width: 80%;
+  .cta-section {
+    justify-content: center;
+  }
   .cta-btn {
     left: unset;
     top: 2rem;

@@ -708,9 +708,10 @@ h1 {
   align-self: flex-end;
   margin-right: 2rem;
 }
-.about-me-text .cta-btn {
+.about-me-text .cta-section {
   position: relative;
-  left: 65%;
+  display: flex;
+  justify-content: right;
 }
 
 .about-me-question {
@@ -754,7 +755,7 @@ h1 {
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
 }
 .about-button:hover {
-  box-shadow: 0 0 5px var(--neon-color-turquoise), 0 0 25px var(--neon-color-turquoise), 0 0 45px var(--neon-color-turquoise);
+  box-shadow: 0 0 5px var(--neon-color-turquoise), 0 0 25px var(--neon-color-turquoise), 0 0 35px var(--neon-color-turquoise);
   transition-delay: 0.4s;
 }
 .about-button span {
@@ -903,6 +904,7 @@ h1 {
   #about button {
     align-self: center;
     width: 100%;
+    margin-top: 2rem;
   }
   #about .about-me-facts {
     height: 20rem;
@@ -921,6 +923,9 @@ h1 {
     flex-direction: column;
     align-items: center;
     width: 80%;
+  }
+  .about-me-text .cta-section {
+    justify-content: center;
   }
   .about-me-text .cta-btn {
     left: unset;
