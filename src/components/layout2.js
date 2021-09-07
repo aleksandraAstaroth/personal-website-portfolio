@@ -1,4 +1,4 @@
-import React, {useState} from'react';
+import React, {useState, useEffect} from'react';
 import { Link } from "gatsby"
 import Navbar from '../components/navbar';
 
@@ -7,8 +7,8 @@ export default function Layout({ location, children, description}) {
     const isRootPath = location.pathname === rootPath
 
     const [navChange, setNavChange] = useState(false)
-    // const [hamburgerMenuDisplay, setHamburgerMenuDisplay] = useState(false)
     
+useEffect(() => {
     const changeNavColor = () => {
         if (window.scrollY >= 360) {
             setNavChange(true);
@@ -18,6 +18,8 @@ export default function Layout({ location, children, description}) {
         }
     }
     window.addEventListener('scroll', changeNavColor);
+    
+}, []);
    
     let header
     if (isRootPath) {
