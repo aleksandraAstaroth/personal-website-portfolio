@@ -92,7 +92,7 @@ module.exports = {
       offset: -150,
       duration: 1500
     }
-  }, "gatsby-plugin-smoothscroll", "gatsby-plugin-react-helmet", "gatsby-plugin-gatsby-cloud" // this (optional) plugin enables Progressive Web App + Offline functionality
+  }, "gatsby-plugin-smoothscroll", "gatsby-plugin-react-helmet", "gatsby-plugin-gatsby-cloud", "gatsby-plugin-netlify" // this (optional) plugin enables Progressive Web App + Offline functionality
   // To learn more, visit: https://gatsby.dev/offline
   // `gatsby-plugin-offline`,
   ]
