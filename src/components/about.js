@@ -41,7 +41,7 @@ return (
         </div>
         <div className="about-me-text">
             <p>My name is Aleksandra. I’m a front-end developer student based in Stockholm. 
-                I got a very <em>inquisitive</em> mind; that means constant quesioning, analysing and looking at processes from different perspectives.</p> 
+                I got a very <em>inquisitive</em> mind; that means constant questioning, analysing and looking at processes from different perspectives.</p> 
                 
                 <p>Here’s where I should get to the point, list out my skills and show off my work...
                 I promise. I <em>will</em> get there...</p>
@@ -60,9 +60,9 @@ return (
                         <FadeIn className="facts" delay={1000} transitionDuration={500} >
                             <li>As a teenager I became a licenced glider pilot.</li>
                             <li>I came to Sweden 5 years ago, on my own, with a plan and money... that I didn't have.</li>
-                            <li>I've worked in various fast-paced service jobs including retail and the restaurant industry. My latest job position (before starting my frontend education) was a dog walker.</li>
+                            <li>I've worked in various fast-paced service jobs including retail and the restaurant industry. My latest job position was as a dog walker.</li>
                             <li>I enjoy exploring new ways of self-expression. As a hobby I practiced mixing techno music, which resulted in a few dj gigs around Stockholm.</li>
-                            <li>I also collaborated with a few internationally recognized alternative clothing brands when I was growing my social media reach. Along with that, I picked up interest in photography and photo editing using Adobe programs.</li>
+                            <li>I also collaborated with a few internationally recognized alternative clothing brands when I was growing my social media reach. Along with that, I picked up an interest in photography and photo editing using Adobe software.</li>
                         </FadeIn>
                         </ul>
                         <FadeIn className="about-me-question" visible={showSecondButton}  delay={1000} transitionDuration={400}>
@@ -77,7 +77,7 @@ return (
                </Expand>
                <Expand open={isOpenText2}>
                 <FadeIn className="about-me-text-2" visible={textFadeIn} delay={1000} transitionDuration={700}>
-                    <p>Experimenting with creative softwares has led me to becoming <del>obsessed</del> <ins>passionate</ins> about coding and development, which allows me to create new value utilising already gained skills/perspectives/experiences as contributions to new solutions</p>
+                    <p>Experimenting with creative software has led me to becoming <del>obsessed</del> <ins>passionate</ins> about coding and development, which allows me to create new value utilising already gained skills/perspectives/experiences as contributions to new solutions</p>
 
                     <p><em> Taking chances</em> and <em>calculating risks</em>, required <strong><em>resourcefullness</em></strong>, <strong><em>flexibility</em></strong> and <strong><em>adaptation</em></strong> to new situations. Therefore
                     deep diving head-first into new settings was always conscious choice of forcing my development and challenging myself in unknown areas.</p>

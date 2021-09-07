@@ -541,14 +541,15 @@ cursor: pointer;
 
 
 //<------------------------PROJECT CARD------------------------------------->
-#portfolio {
+.portfolio-wrapper {
+  position: relative;
   display: flex;
   flex-direction: row-reverse;
   margin-top: 15rem;
   min-height: 90vh;
-
 }
-.cards-wrapper {
+
+.cards-wrapper{
   display: grid;
   align-self: center;
   margin: auto;
@@ -558,6 +559,7 @@ cursor: pointer;
  row-gap: 2rem;
  column-gap: 2rem;
 }
+
 
 .project-container {
   display: flex;
@@ -757,6 +759,7 @@ transform: matrix3d(0.77,0,0.64,.001,0.00,1,0.00,0,-0.64,0,0.77,0,0,0,0,1);
   justify-content: flex-end;
   margin-right: 3rem;
 }
+
 .about-me-text{
   width: 50%;
   height: 90%;
@@ -771,6 +774,7 @@ transform: matrix3d(0.77,0,0.64,.001,0.00,1,0.00,0,-0.64,0,0.77,0,0,0,0,1);
     position: relative;
     display: flex;
     justify-content: right;
+    margin-top: 2rem;
   }
 }
 .about-me-question {
@@ -787,7 +791,6 @@ transform: matrix3d(0.77,0,0.64,.001,0.00,1,0.00,0,-0.64,0,0.77,0,0,0,0,1);
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
-  
 } 
 .delete {
   display: none;
@@ -933,7 +936,7 @@ margin-top: 15rem;
  #landing-page-hero,
  #about, 
  #skills, 
- #portfolio {
+ #portfolio,  .portfolio-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1004,7 +1007,7 @@ margin-top: 15rem;
   }
   .cta-btn {
     left: unset;
-    top: 2rem;
+    top: 1rem;
   }
 }
 #container {
@@ -1084,7 +1087,6 @@ margin-top: 15rem;
     justify-content: center;
   }
   .hamburger {
-    // position: absolute;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
     &:hover {

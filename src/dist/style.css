@@ -509,7 +509,8 @@ h1 {
   justify-content: center;
 }
 
-#portfolio {
+.portfolio-wrapper {
+  position: relative;
   display: flex;
   flex-direction: row-reverse;
   margin-top: 15rem;
@@ -716,6 +717,7 @@ h1 {
   position: relative;
   display: flex;
   justify-content: right;
+  margin-top: 2rem;
 }
 
 .about-me-question {
@@ -869,7 +871,7 @@ h1 {
   #landing-page-hero,
 #about,
 #skills,
-#portfolio {
+#portfolio, .portfolio-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -941,7 +943,7 @@ h1 {
   }
   .about-me-text .cta-btn {
     left: unset;
-    top: 2rem;
+    top: 1rem;
   }
 
   #container {
