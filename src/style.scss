@@ -66,8 +66,9 @@ height: 15vh;
   align-items: center;
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 200;
   padding: 0 3.5rem;
+
 }
 .active {
   background: rgba(0, 0, 0, 0.9);
@@ -751,6 +752,11 @@ transform: matrix3d(0.77,0,0.64,.001,0.00,1,0.00,0,-0.64,0,0.77,0,0,0,0,1);
     }
   }
 }
+ .about-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3rem;
+}
 .about-me-text{
   width: 50%;
   height: 90%;
@@ -758,11 +764,8 @@ transform: matrix3d(0.77,0,0.64,.001,0.00,1,0.00,0,-0.64,0,0.77,0,0,0,0,1);
   flex-direction: column;
   gap: 2rem;
   overflow: auto;
-
   & button {
-    width: 30%;
-    align-self: flex-end;
-    margin-right: 2rem;
+    width: 40%;
   }
   & .cta-section {
     position: relative;
@@ -771,7 +774,7 @@ transform: matrix3d(0.77,0,0.64,.001,0.00,1,0.00,0,-0.64,0,0.77,0,0,0,0,1);
   }
 }
 .about-me-question {
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: flex-end;
   gap: 5em;
@@ -981,13 +984,21 @@ margin-top: 15rem;
    flex-direction: column;
    width: 100%;
    align-items: center;
+   & p {
+     margin-right: unset;
+   }
  }
+}
+.about-button-wrapper {
+  justify-content: center;
+  margin-right: 0;
 }
 .about-me-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
+
   .cta-section {
     justify-content: center;
   }
@@ -1164,5 +1175,21 @@ nav ul {
 
   100% {
       transform: translateY(-9px) rotate(-45deg);
+  }
+}
+@media only screen and (max-width: 1620px) {
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+}
+@media only screen and (max-width: 1295px) {
+  .about-me-question {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   & p {
+     margin-right: 5rem;
+   }
   }
 }

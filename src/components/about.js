@@ -49,10 +49,12 @@ return (
                 It all starts with the mindset. I want to give you an insight into <em>how</em> I think, <em>what</em> actions I take, and <em>why</em> I do it this way.</p>
 
                 <p>Here’s a glimpse of my background that shaped me, so that it can help you get a sense of what kind of person I am. Each of these 5 points has taught me something valuable that helped me in other settings, but in a different form.</p>
+                <div className="about-button-wrapper">
                 <button {...buttonProps} onClick={handleClick}> <span></span>
                         <span></span>
                         <span></span>
                         <span></span>Get to know me</button>
+                </div>
                 <Expand open={isOpenText1}>
                         <ul className="about-me-facts">
                         <FadeIn className="facts" delay={1000} transitionDuration={500} >
@@ -65,10 +67,12 @@ return (
                         </ul>
                         <FadeIn className="about-me-question" visible={showSecondButton}  delay={1000} transitionDuration={400}>
                             <p>...where am I going with this?</p>
+                            <div className="about-button-wrapper">
                             <button {...buttonProps2} onClick={handleClick2}> <span></span>
                                     <span></span>
                                     <span></span>
                                     <span></span>Get to understand me</button>
+                            </div>
                         </FadeIn>
                </Expand>
                <Expand open={isOpenText2}>
