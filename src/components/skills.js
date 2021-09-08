@@ -27,7 +27,7 @@ const Skills = () => {
                                 <li>JavaScript</li>
                                 <li>React</li>
                                 <li>GatsbyJS</li>
-                                <li>Figma (UX design / prototyping)</li>
+                                <li>Figma (UX design)</li>
                             </ul>
                         </div>
                         <div className="department">
