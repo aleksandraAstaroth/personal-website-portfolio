@@ -21,7 +21,8 @@ const Skills = () => {
                         <div className="department">
                             <h4>Front-End Development</h4>
                             <ul>
-                                <li>HTML5/CSS3</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
                                 <li>SCSS</li>
                                 <li>JavaScript</li>
                                 <li>React</li>

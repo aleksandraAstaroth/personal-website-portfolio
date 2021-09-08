@@ -819,8 +819,7 @@ h1 {
 #skills {
   display: flex;
   justify-content: center;
-  margin-top: 9rem;
-  gap: 8rem;
+  margin: 9rem 2rem 2rem;
 }
 
 .skills-wrapper {
@@ -892,7 +891,7 @@ h1 {
 }
 
 .icon-wrapper img {
-  width: 60%;
+  width: 50%;
   height: auto;
 }
 
@@ -909,7 +908,7 @@ h1 {
 }
 
 .email img {
-  width: 3rem;
+  width: 2rem;
 }
 
 .copyright-wrapper {
@@ -1167,5 +1166,78 @@ h1 {
   }
   .about-me-question p {
     margin-right: 5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 85%;
+  }
+
+  .mh-title {
+    font-size: 0.7rem;
+    letter-spacing: 0.25rem;
+  }
+
+  .mh-description {
+    font-size: xx-small;
+  }
+  .mh-description .brackets {
+    display: none;
+  }
+
+  #landing-page-hero h1 {
+    font-size: 1.2rem;
+  }
+
+  .scroll-mark-wrapper {
+    position: relative;
+    top: -2rem;
+  }
+
+  .hero-intro {
+    line-height: 1.8rem;
+    gap: 0.5rem;
+    width: 87%;
+    gap: unset;
+    margin-bottom: 0;
+  }
+  .hero-intro p {
+    line-height: 1.2rem;
+  }
+
+  img {
+    width: 80%;
+    height: auto;
+  }
+
+  #portfolio, #skills {
+    margin-left: unset;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-info {
+    font-size: 0.7rem;
+  }
+  .project-info h5 {
+    font-size: 1.2rem;
+  }
+
+  .project-img-wrapper {
+    width: 320px;
+    height: auto;
+  }
+
+  .contact-text {
+    font-size: 0.7rem;
+  }
+  .contact-text .email {
+    margin-top: 0.2rem;
+  }
+  .contact-text img {
+    display: none;
   }
 }
