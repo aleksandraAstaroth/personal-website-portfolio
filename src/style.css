@@ -793,7 +793,7 @@ h1 {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  margin-top: 15rem;
+  margin-top: 9rem;
   min-height: 90vh;
 }
 
@@ -1226,7 +1226,8 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 15rem;
+  margin-top: 9rem;
+  gap: 8rem;
 }
 
 .skills-wrapper {
@@ -1279,7 +1280,7 @@ h1 {
   gap: 2rem;
 }
 
-.icon-wrapper {
+.skills-icon-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1292,6 +1293,89 @@ h1 {
           align-items: center;
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 7rem 2rem 2rem;
+  font-weight: lighter;
+  gap: 2rem;
+}
+
+#footer a, #footer h2 {
+  font-family: 'Rajdhani', sans-serif;
+  text-shadow: 0 0 2px var(--neon-color-pink), 0 0 5px var(--neon-color-pink), 0 0 10px var(--neon-color-pink), 0 0 15px var(--neon-color-pink), 0 0 20px var(--neon-color-pink), 0 0 25px var(--neon-color-pink);
+}
+
+#footer img {
+  margin-right: 1rem;
+}
+
+#footer .contact-wrapper {
+  display: inherit;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon-wrapper img {
+  width: 60%;
+  height: auto;
+}
+
+.contact-text {
+  text-align: right;
+  font-size: 0.9rem;
+  width: 60%;
+}
+
+.contact-text .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.email img {
+  width: 3rem;
+}
+
+.copyright-wrapper {
+  text-align: center;
+  font-size: smaller;
+  font-weight: 300;
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 0.2rem;
+  line-height: 150%;
+}
+
+.copyright-wrapper.copyright-wrapper span::before, .copyright-wrapper.copyright-wrapper span::after {
+  content: " : : ";
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1312,7 +1396,13 @@ h1 {
   }
   #landing-page-hero {
     position: relative;
-    top: -3rem;
+    top: -2rem;
+  }
+  #landing-page-hero h1 {
+    font-size: 1.8rem;
+  }
+  #landing-page-hero p {
+    font-size: 90%;
   }
   .hero-intro {
     display: inherit;
@@ -1419,12 +1509,15 @@ h1 {
     right: unset;
   }
   .about-sign, .portfolio-sign, .skills-sign {
-    margin-top: 6rem;
+    margin-top: unset;
     margin-bottom: 4rem;
     font-size: 10vw;
     line-height: 10vw;
     text-shadow: 0vw 0vw 6vw #F40A35;
     text-shadow: -0.1vw 0vw 0.25vw #a9f6ff, -0.2vw 0vw 0.25vw #a9f6ff, -0.4vw 0vw 0.25vw #a9f6ff, -0.1vw 0vw 0.1vw #00ccc9, -0.2vw 0vw 0.1vw #00ccc9, -0.4vw 0vw 0.1vw #00ccc9, -0.1vw 0vw 0.8vw #00ccc9, -0.2vw 0vw 0.8vw #00ccc9, -0.4vw 0vw 0.8vw #00ccc9, 0.2vw 0vw 0.5vw #00ccc9, -0.1vw 0vw 0.5vw #00ccc9, -0.2vw 0vw 0.5vw #00ccc9, -0.4vw 0vw 0.5vw #00ccc9, -0.1vw 0vw 10vw var(--neon-color-turquoise), -0.2vw 0vw 10vw var(--neon-color-turquoise), -0.4vw 0vw 10vw var(--neon-color-turquoise);
+  }
+  .about-sign {
+    margin-top: 5rem;
   }
   .cards-wrapper, .skills-wrapper {
     display: -webkit-box;
@@ -1470,13 +1563,13 @@ h1 {
     padding: 0;
   }
   .mh-title {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     letter-spacing: 0.3rem;
     font-weight: 300;
     text-shadow: 0 0 2px var(--white), 0 0 5px var(--white), 0 0 10px var(--neon-color-pink), 0 0 15px var(--neon-color-pink), 0 0 20px var(--neon-color-pink), 0 0 25px var(--neon-color-pink);
   }
   .mh-description {
-    font-size: small;
+    font-size: x-small;
     letter-spacing: 0.12rem;
   }
   .hamburger-wrapper {

@@ -34,7 +34,7 @@ export default function Navbar() {
                 <li><AnchorLink className="nav-link" to="#about">About</AnchorLink></li>
                 <li><AnchorLink  className="nav-link" to="#portfolio">Portfolio</AnchorLink></li>
                 <li><AnchorLink  className="nav-link" to="#skills">Skills</AnchorLink></li>
-                <li><AnchorLink  className="nav-link" to="#portfolio">Contact</AnchorLink ></li>
+                <li><AnchorLink  className="nav-link" to="#footer">Contact</AnchorLink ></li>
             </ul>
         </nav>
     )

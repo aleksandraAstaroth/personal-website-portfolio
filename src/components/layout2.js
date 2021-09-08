@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from'react';
 import { Link } from "gatsby"
 import Navbar from '../components/navbar';
+import Footer from '../components/footer'
 
 export default function Layout({ location, children, description}) {
     const rootPath = `${__PATH_PREFIX__}/`
@@ -50,9 +51,7 @@ useEffect(() => {
             <header>{header}</header>
             <main>{children}</main>
             <footer>
-                © {new Date().getFullYear()}, Built with
-                {` `}
-                <a href="https://www.gatsbyjs.com">Gatsby</a>
+                <Footer />
             </footer>
         </div>
     )

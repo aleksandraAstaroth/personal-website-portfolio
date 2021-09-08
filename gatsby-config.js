@@ -7,9 +7,10 @@ module.exports = {
       summary: `An aspiring Front-End Developer with infinite curiosity to learn new things and build visually pleasing, responsive web applications .`,
     },
     description: `Front-End Developer Portfolio`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://aleksandrarzepecka.com/`,
     social: {
       linkedin: `https://www.linkedin.com/in/aleksandra-r-74722b155/`,
+      github: `https://github.com/aleksandraAstaroth`
     },
   },
   plugins: [
@@ -114,11 +115,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Aleksandra Rzepecka Front-end Developer Portfolio`,
+        short_name: `Aleksandra Rzepecka Portfolio`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        background_color: `rgb(23, 27, 29)`,
+        theme_color: ` #00F9FF`,
         display: `minimal-ui`,
         icon: `src/images/website-icon.png`, // This path is relative to the root of the site.
       },
