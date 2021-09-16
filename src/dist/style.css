@@ -819,13 +819,14 @@ h1 {
 #skills {
   display: flex;
   justify-content: center;
-  margin: 9rem 2rem 2rem;
+  gap: 5rem;
+  margin-top: 9rem;
 }
 
 .skills-wrapper {
   display: flex;
   align-items: baseline;
-  gap: 4rem;
+  gap: 5rem;
 }
 .skills-wrapper h3 {
   padding-bottom: 2rem;
@@ -847,13 +848,9 @@ h1 {
   display: inline-block;
   font-weight: bold;
   width: 1em;
-  margin-left: 1em;
   text-shadow: 0 0 5px var(--neon-color-turquoise);
 }
 
-.hard-skills-wrapper {
-  width: 50%;
-}
 .hard-skills-wrapper .skills-area {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -864,7 +861,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-self: center;
 }
 
 #footer {
@@ -1156,6 +1152,18 @@ h1 {
   .cards-wrapper {
     display: flex;
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .skills-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+  .skills-wrapper .hard-skills-wrapper .skills-area {
+    gap: 1rem;
+  }
+  .skills-wrapper .skills-area {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 1295px) {

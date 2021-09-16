@@ -19,7 +19,7 @@ const Skills = () => {
                 </div>
                 <div className="skills-area">
                         <div className="department">
-                            <h4>Front-End Development</h4>
+                            <h4>Front-End</h4>
                             <ul>
                                 <li>HTML5</li>
                                 <li>CSS3</li>
@@ -27,11 +27,10 @@ const Skills = () => {
                                 <li>JavaScript</li>
                                 <li>React</li>
                                 <li>GatsbyJS</li>
-                                <li>Figma (UX design)</li>
                             </ul>
                         </div>
                         <div className="department">
-                            <h4>Back-End Development</h4>
+                            <h4>Back-End</h4>
                             <ul>
                                 <li>Node.js</li>
                                 <li>Express.js</li>
@@ -53,7 +52,7 @@ const Skills = () => {
                      <div className="department">
                         <h4>Version Control</h4>
                         <ul>
-                            <li>Git / Github</li>
+                            <li>Git</li>
                         </ul>
                     </div>
                     <div className="department">
@@ -61,6 +60,7 @@ const Skills = () => {
                         <ul>
                             <li>Adobe Photoshop</li>
                             <li>Adobe Lightroom</li>
+                            <li>Figma (UX design)</li>
                         </ul>
                         </div>
                     </div>

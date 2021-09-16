@@ -884,13 +884,15 @@ transform: matrix3d(0.77,0,0.64,.001,0.00,1,0.00,0,-0.64,0,0.77,0,0,0,0,1);
 #skills {
 display: flex;
 justify-content: center;
-margin: 9rem 2rem 2rem;
+gap: 5rem;
+margin-top: 9rem;
+
 }
 
 .skills-wrapper {
   display: flex;
   align-items: baseline;
-  gap: 4rem;
+  gap: 5rem;
 
   & h3 {
     padding-bottom: 2rem;
@@ -911,14 +913,13 @@ margin: 9rem 2rem 2rem;
       display: inline-block; 
       font-weight: bold;
       width: 1em; 
-      margin-left: 1em;
       text-shadow: 0 0 5px var(--neon-color-turquoise);
     }
   }
 
 }
 .hard-skills-wrapper {
-  width: 50%;
+  //width: 50%;
   & .skills-area {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -929,7 +930,6 @@ margin: 9rem 2rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-self: center;
 }
 
 #footer {
@@ -1258,6 +1258,21 @@ nav ul {
   display: flex;
   flex-direction: column;
 }
+}
+@media only screen and (max-width: 800px) {
+
+  .skills-wrapper {
+    justify-content: center;
+    align-items: center;
+
+  & .hard-skills-wrapper .skills-area{
+    gap: 1rem;
+  }
+    & .skills-area {
+      width: 100%;
+    }
+    
+  }
 }
 @media only screen and (max-width: 1295px) {
   .about-me-question {
