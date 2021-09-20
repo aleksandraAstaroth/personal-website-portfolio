@@ -15,7 +15,7 @@ const Hero = () => {
                 </h1>
                 <p>By combining creativity and problem solving with my big-picture mindset, I strive to create visually pleasing, responsive web applications that meet your needs in <br/>  multidimensional aspects.</p>
                 <div className="hero-btns">
-                    <Button text="Let's Talk" />
+                    <Button text="Let's Talk"/>
                 </div>
             </div>
             <AnchorLink className="scroll-mark-wrapper" to="#about">

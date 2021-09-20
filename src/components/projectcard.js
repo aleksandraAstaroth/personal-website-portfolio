@@ -1,7 +1,7 @@
 import React from "react"
 import ProjectImage from "../components/project-image"
 import Tags from "../components/tags"
-// const Card = ({projectName, projectInfo, projectLink, projectLinkName, source}) => {
+
 const Card = (props) => {
     return(
         <div className="project-container">
@@ -22,3 +22,4 @@ const Card = (props) => {
     )
 }
 export default Card
+

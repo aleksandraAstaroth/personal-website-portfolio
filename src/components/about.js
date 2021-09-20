@@ -40,7 +40,7 @@ return (
             </div>
         </div>
         <div className="about-me-text">
-            <p>My name is Aleksandra. I’m a front-end developer student based in Stockholm. 
+            <p>My name is Aleksandra. I’m a front-end developer student based in Stockholm, looking for an internship. 
                 I got a very <em>inquisitive</em> mind; that means constant questioning, analysing and looking at processes from different perspectives.</p> 
                 
                 <p>Here’s where I should get to the point, list out my skills and show off my work...

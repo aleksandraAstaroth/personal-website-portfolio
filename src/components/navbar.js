@@ -23,7 +23,7 @@ export default function Navbar() {
     return (
         <nav {...navListProps}>
         <div className="hamburger-wrapper">  
-            <button className="hamburger" aria-label="hamburger-menu" onClick={toggleHamburgerMenu}>
+            <button className="hamburger" aria-label="menu" onClick={toggleHamburgerMenu}>
                 <span className="line1" style={{ transform: showHamburger ? "translateY(9px) rotate(45deg)" : "translateY(0px) rotate(0deg)" }} onAnimationEnd={(e) => e.target.style.animation = "none"}></span>
                 <span className="line2" style={{ opacity: showHamburger ? 0 : 1 }} onAnimationEnd={(e) => e.target.style.animation = "none"}></span>
                 <span className="line3"style={{ transform: showHamburger ? "translateY(-9px) rotate(-45deg)" : "translateY(0px) rotate(0deg)" }}onAnimationEnd={(e) => e.target.style.animation = "none"}></span>
