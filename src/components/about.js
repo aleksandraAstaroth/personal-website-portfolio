@@ -40,7 +40,7 @@ return (
             </div>
         </div>
         <div className="about-me-text">
-            <p>My name is Aleksandra. I’m a front-end developer based in Stockholm. I graduated Hyper Island Frontend Developer Program in April 2022.</p>
+            <p>My name is Aleksandra. I’m a front-end developer based in Stockholm. I currently work as <strong>Web Developer</strong> at <strong>OhCleo</strong> ever since September 2021. I also graduated <i>Hyper Island Frontend Developer Program</i> in April 2022.</p>
                 <p>I got a very <em>inquisitive</em> mind; that means constant questioning, analysing and looking at processes from different perspectives.</p> 
                 
                 <p>Here’s where I should get to the point, list out my skills and show off my work...
