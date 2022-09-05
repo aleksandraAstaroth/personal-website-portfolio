@@ -3,6 +3,7 @@ import HardSkillsIcon from "../assets/images/HardSkills.svg"
 import SoftSkillsIcon from "../assets/images/SoftSkills.svg"
 
 const Skills = () => {
+
     return(
         <section id="skills">
             <div id="container">
@@ -19,18 +20,20 @@ const Skills = () => {
                 </div>
                 <div className="skills-area">
                         <div className="department">
-                            <h4>Front-End</h4>
+                            <h4>Front-end</h4>
                             <ul>
                                 <li>HTML5</li>
                                 <li>CSS3</li>
                                 <li>SCSS</li>
                                 <li>JavaScript</li>
+                                <li>Typescript</li>
                                 <li>React</li>
                                 <li>GatsbyJS</li>
+                                <li>Tailwind</li>
                             </ul>
                         </div>
                         <div className="department">
-                            <h4>Back-End</h4>
+                            <h4>Back-end</h4>
                             <ul>
                                 <li>Node.js</li>
                                 <li>Express.js</li>
@@ -74,12 +77,9 @@ const Skills = () => {
                         <ul>
                             <li>Big-picture thinking</li>
                             <li>Problem solving</li>
-                            <li>Pattern recognition</li>
                             <li>Analytical skills</li>
                             <li>Teamwork & Collaboration</li>
-                            <li>Empathy/Emotional Intelligence</li>
                             <li>Open Communication</li> 
-                            <li>Self-awareness</li>
                             <li>Resourcefullness</li>
                             <li>Adaptability</li>
                             <li>Working remotely</li>

@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Aleksandra Rzepecka`,
-    description: `Front-End Developer Portfolio`,
+    description: `Front-end Developer`,
     author: {
       name: `Aleksandra Rzepecka`,
-      summary: `An aspiring Front-End Developer with infinite curiosity to learn new things and build visually pleasing, responsive web applications .`,
+      summary: `Front-end Developer with infinite curiosity to learn new things and build visually pleasing, responsive web applications .`,
     },
-    description: `Front-End Developer Portfolio`,
+    description: `Front-end Developer`,
     siteUrl: `https://aleksandrarzepecka.com/`,
     social: {
       linkedin: `https://www.linkedin.com/in/aleksandra-r-74722b155/`,
@@ -115,7 +115,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Aleksandra Rzepecka Front-end Developer Portfolio`,
+        name: `Aleksandra Rzepecka Front-end Developer`,
         short_name: `Aleksandra Rzepecka Portfolio`,
         start_url: `/`,
         background_color: `rgb(23, 27, 29)`,

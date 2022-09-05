@@ -7,12 +7,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 module.exports = {
   siteMetadata: (_siteMetadata = {
     title: "Aleksandra Rzepecka",
-    description: "Front-End Developer Portfolio",
+    description: "Front-end Developer",
     author: {
       name: "Aleksandra Rzepecka",
-      summary: "An aspiring Front-End Developer with infinite curiosity to learn new things and build visually pleasing, responsive web applications ."
+      summary: "Front-end Developer with infinite curiosity to learn new things and build visually pleasing, responsive web applications ."
     }
-  }, _defineProperty(_siteMetadata, "description", "Front-End Developer Portfolio"), _defineProperty(_siteMetadata, "siteUrl", "https://aleksandrarzepecka.com/"), _defineProperty(_siteMetadata, "social", {
+  }, _defineProperty(_siteMetadata, "description", "Front-end Developer"), _defineProperty(_siteMetadata, "siteUrl", "https://aleksandrarzepecka.com/"), _defineProperty(_siteMetadata, "social", {
     linkedin: "https://www.linkedin.com/in/aleksandra-r-74722b155/",
     github: "https://github.com/aleksandraAstaroth"
   }), _siteMetadata),
@@ -78,7 +78,7 @@ module.exports = {
   }, {
     resolve: "gatsby-plugin-manifest",
     options: {
-      name: "Aleksandra Rzepecka Front-end Developer Portfolio",
+      name: "Aleksandra Rzepecka Front-end Developer",
       short_name: "Aleksandra Rzepecka Portfolio",
       start_url: "/",
       background_color: "rgb(23, 27, 29)",
