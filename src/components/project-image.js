@@ -16,8 +16,8 @@ images: allFile(filter: {extension: {regex: "/(png)/"}}) {
        base
        childImageSharp {
          gatsbyImageData(
-           width: 500
-           height: 320
+           width: 600
+           height: 420
            quality: 95
            placeholder: BLURRED
          )
