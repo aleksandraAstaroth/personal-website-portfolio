@@ -3,7 +3,32 @@ import HardSkillsIcon from "../assets/images/HardSkills.svg"
 import SoftSkillsIcon from "../assets/images/SoftSkills.svg"
 
 const Skills = () => {
-
+const hardSkills = [
+    {   "id": "Front-end",
+        "skills": ["HTML", "CSS3", "Javascript", "Typescript", "React", "GatsbyJS", "SCSS", "Tailwind"],
+    },
+     {
+        "id": "Back-end",
+        "skills": ["Node.js", "Express.js"],
+     },
+     {
+        "id": "WebGL",
+        "skills": ["A-Frame", "Three.js"],
+     },
+     {
+        "id": "App Development",
+        "skills": ["React Native"],
+     },
+     {
+        "id": "Version Control",
+        "skills": ["Git"],
+     },
+     {
+        "id": "Other",
+        "skills": ["Adobe Photoshop", "Adobe Lightroom", "Figma (UX design)"],
+     },
+]
+const softSkills = ["Big-picture thinking", "Problem solving", "Analytical skills", "Teamwork & Collaboration" , "Open communication", "Resourcefullness", "Adaptability", "Working remotely"]
     return(
         <section id="skills">
             <div id="container">
@@ -19,54 +44,16 @@ const Skills = () => {
                 <h3>Hard Skills</h3>
                 </div>
                 <div className="skills-area">
-                        <div className="department">
-                            <h4>Front-end</h4>
+                    {hardSkills.map((field) =>
+                         <div className="department">
+                            <h4>{field.id}</h4>
                             <ul>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>SCSS</li>
-                                <li>JavaScript</li>
-                                <li>Typescript</li>
-                                <li>React</li>
-                                <li>GatsbyJS</li>
-                                <li>Tailwind</li>
+                                {field.skills.map((skill, id) =>
+                                    <li key={id + 1}>{skill}</li>
+                                )}
                             </ul>
-                        </div>
-                        <div className="department">
-                            <h4>Back-end</h4>
-                            <ul>
-                                <li>Node.js</li>
-                                <li>Express.js</li>
-                            </ul>
-                        </div>
-                        <div className="department">
-                            <h4>WebGL</h4>
-                            <ul>
-                                <li>A-Frame</li>
-                                <li>Three.js</li>
-                            </ul>
-                        </div>
-                      <div className="department">
-                        <h4>App Development</h4>
-                        <ul>
-                            <li>React Native</li>
-                        </ul>
-                     </div>
-                     <div className="department">
-                        <h4>Version Control</h4>
-                        <ul>
-                            <li>Git</li>
-                        </ul>
-                    </div>
-                    <div className="department">
-                        <h4>Other</h4>
-                        <ul>
-                            <li>Adobe Photoshop</li>
-                            <li>Adobe Lightroom</li>
-                            <li>Figma (UX design)</li>
-                        </ul>
-                        </div>
-                    </div>
+                     </div>)}
+                    </div> 
                 </div>
             <div className="soft-skills-wrapper">
                 <div className="skills-icon-wrapper">
@@ -75,14 +62,7 @@ const Skills = () => {
                 </div>
                 <div className="skills-area"></div>
                         <ul>
-                            <li>Big-picture thinking</li>
-                            <li>Problem solving</li>
-                            <li>Analytical skills</li>
-                            <li>Teamwork & Collaboration</li>
-                            <li>Open Communication</li> 
-                            <li>Resourcefullness</li>
-                            <li>Adaptability</li>
-                            <li>Working remotely</li>
+                          {softSkills.map((skill, id) => <li key={id + 1}>{skill}</li>)}
                         </ul>
                     </div>
                 </div>

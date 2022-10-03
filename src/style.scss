@@ -51,9 +51,8 @@ body {
 #about,
 #skills,
 #portfolio {
-  height: auto;
   width: 100vw;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 a {
   text-decoration: none;
@@ -79,7 +78,7 @@ height: 15vh;
   position: fixed;
   width: 100%;
   z-index: 200;
-  padding: 0 3.5rem;
+  padding: 0 3rem;
 
 }
 .active {
@@ -168,7 +167,7 @@ height: 15vh;
 nav ul {
   list-style-type: none;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   font-weight: 100;
   font-size: 1rem;
 
@@ -192,7 +191,7 @@ nav ul {
   & span {
     height: 2px;
     width: 100%;
-    background: white;
+    background: var(--white);
     border-radius: 1.5rem;
 }
 }
@@ -530,28 +529,47 @@ cursor: pointer;
 //<------------------------PROJECT CARD------------------------------------->
 .portfolio-wrapper {
   position: relative;
+  margin: 0 5rem 0;
   display: flex;
-  flex-direction: row-reverse;
-  margin-top: 9rem;
+  flex-direction: column;
+  justify-content: center;
 }
-
-.cards-wrapper{
+.portfolio-wrapper > #container {
+  display: inherit;
+  align-self: flex-end;
+  margin: 0 3rem 0;
+  position: relative;
+  top: 8rem;
+}
+.cards-wrapper {
   display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  justify-content: center;
   align-self: center;
-  margin: auto;
- justify-content: center;
- align-items: center;
- grid-template-columns: repeat(2, 1fr);
- row-gap: 2rem;
- column-gap: 2rem;
+  height: 100%;
+}
+.cards-wrapper > div:nth-child(odd) {
+  padding-right: 5%;
+  padding-bottom: 80px;
 }
 
+.cards-wrapper > div:nth-child(even) {
+  padding-top: 60%;
+  padding-left: 60px;
+  margin: auto 0 0 0;
+}
+
+
+.cards-wrapper > div > :nth-child(1) {
+  float: right;
+  padding: 0px 0 16px 0;
+}
+
+.cards-wrapper > div:last-child {
+  padding-bottom: 0px;
+}
 
 .project-container {
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  height: 100%;
   font-family: 'Rajdhani', sans-serif;
   text-transform: uppercase;
 }
@@ -701,7 +719,6 @@ transform: matrix3d(0.77,0,0.64,.001,0.00,1,0.00,0,-0.64,0,0.77,0,0,0,0,1);
   -webkit-transform: matrix3d(0.77,0,-0.64,-.001,0.00,1,0.00,0,0.64,0,0.77,0,0,0,0,1); 
   display: flex;
   position: relative;
-  right: 8rem;
 }
 
 
@@ -878,7 +895,7 @@ margin-top: 9rem;
     padding-bottom: 1rem;
   }
   & img {
-    max-width: 10rem;
+    max-width: 8rem;
     height: auto;
   }
   & li {
@@ -898,7 +915,7 @@ margin-top: 9rem;
   & .skills-area {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 }
 .skills-icon-wrapper {
@@ -967,8 +984,7 @@ margin-top: 9rem;
 @media only screen and (max-width: 1024px) {
  #landing-page-hero,
  #about, 
- #skills, 
- #portfolio,  .portfolio-wrapper {
+ #skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1049,14 +1065,14 @@ margin-top: 9rem;
   }
 }
 #container {
-  width: 100%;
-  margin-bottom: 2rem;
+  width: 100%; 
   display: flex;
   justify-content: center;
   align-items: center;
-  & .portfolio-sign {
-    right: unset;
-  }
+}
+.portfolio-wrapper > #container {
+  top: initial;
+  position: relative;
 }
 
 .about-sign, .portfolio-sign, .skills-sign {
@@ -1081,17 +1097,22 @@ margin-top: 9rem;
   align-items: center;
 }
 
-
-}
-
-
-@media only screen and (max-width: 1200px) {
-.cards-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.cards-wrapper > div:nth-child(odd),
+.cards-wrapper > div:nth-child(even) {
+  padding: unset;
+  margin: unset;
+  margin-bottom: 2rem;
 }
 }
+.cards-wrapper > div {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.cards-wrapper > div:last-child {
+  padding-bottom: unset;
+}
+
 @media only screen and (min-width: 1024px) {
   .hamburger {
      display: none;
@@ -1212,12 +1233,7 @@ nav ul {
       transform: translateY(-9px) rotate(-45deg);
   }
 }
-@media only screen and (max-width: 1620px) {
-.cards-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-}
+
 @media only screen and (max-width: 800px) {
 
   .skills-wrapper {
@@ -1279,7 +1295,7 @@ nav ul {
     width: 80%;
     height: auto;
   }
- #portfolio, #skills {
+#skills {
    margin-left: unset;
    margin-top: 5rem;
    display: flex;

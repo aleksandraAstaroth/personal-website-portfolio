@@ -48,9 +48,8 @@ body {
 #about,
 #skills,
 #portfolio {
-  height: auto;
   width: 100vw;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 a {
@@ -83,7 +82,7 @@ a:focus:not(.scroll-mark-wrapper) {
   position: fixed;
   width: 100%;
   z-index: 200;
-  padding: 0 3.5rem;
+  padding: 0 3rem;
 }
 
 .active {
@@ -222,7 +221,7 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   font-weight: 100;
   font-size: 1rem;
 }
@@ -260,7 +259,7 @@ nav ul .mobile {
 .hamburger span {
   height: 2px;
   width: 100%;
-  background: white;
+  background: var(--white);
   border-radius: 1.5rem;
 }
 
@@ -802,44 +801,62 @@ h1 {
 
 .portfolio-wrapper {
   position: relative;
+  margin: 0 5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin-top: 9rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio-wrapper > #container {
+  display: inherit;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0 3rem 0;
+  position: relative;
+  top: 8rem;
 }
 
 .cards-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-row-align: center;
-      align-self: center;
-  margin: auto;
+  -ms-grid-columns: (minmax(auto, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(auto, 1fr));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  row-gap: 2rem;
-  -webkit-column-gap: 2rem;
-          column-gap: 2rem;
+  -ms-grid-row-align: center;
+      align-self: center;
+  height: 100%;
+}
+
+.cards-wrapper > div:nth-child(odd) {
+  padding-right: 5%;
+  padding-bottom: 80px;
+}
+
+.cards-wrapper > div:nth-child(even) {
+  padding-top: 60%;
+  padding-left: 60px;
+  margin: auto 0 0 0;
+}
+
+.cards-wrapper > div > :nth-child(1) {
+  float: right;
+  padding: 0px 0 16px 0;
+}
+
+.cards-wrapper > div:last-child {
+  padding-bottom: 0px;
 }
 
 .project-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-self: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
   font-family: 'Rajdhani', sans-serif;
   text-transform: uppercase;
 }
@@ -1011,7 +1028,6 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  right: 8rem;
 }
 
 .about-me-facts {
@@ -1260,7 +1276,7 @@ h1 {
 }
 
 .skills-wrapper img {
-  max-width: 10rem;
+  max-width: 8rem;
   height: auto;
 }
 
@@ -1282,7 +1298,7 @@ h1 {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .skills-icon-wrapper {
@@ -1384,8 +1400,7 @@ h1 {
 @media only screen and (max-width: 1024px) {
   #landing-page-hero,
   #about,
-  #skills,
-  #portfolio, .portfolio-wrapper {
+  #skills {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1496,7 +1511,6 @@ h1 {
   }
   #container {
     width: 100%;
-    margin-bottom: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1507,8 +1521,9 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
   }
-  #container .portfolio-sign {
-    right: unset;
+  .portfolio-wrapper > #container {
+    top: initial;
+    position: relative;
   }
   .about-sign, .portfolio-sign, .skills-sign {
     margin-top: unset;
@@ -1532,21 +1547,21 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
   }
+  .cards-wrapper > div:nth-child(odd),
+  .cards-wrapper > div:nth-child(even) {
+    padding: unset;
+    margin: unset;
+    margin-bottom: 2rem;
+  }
 }
 
-@media only screen and (max-width: 1200px) {
-  .cards-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+.cards-wrapper > div {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.cards-wrapper > div:last-child {
+  padding-bottom: unset;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1717,18 +1732,6 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 1620px) {
-  .cards-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 @media only screen and (max-width: 800px) {
   .skills-wrapper {
     -webkit-box-pack: center;
@@ -1793,7 +1796,7 @@ h1 {
     width: 80%;
     height: auto;
   }
-  #portfolio, #skills {
+  #skills {
     margin-left: unset;
     margin-top: 5rem;
     display: -webkit-box;
