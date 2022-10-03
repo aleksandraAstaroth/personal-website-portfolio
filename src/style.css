@@ -1276,7 +1276,7 @@ h1 {
 }
 
 .skills-wrapper img {
-  max-width: 10rem;
+  max-width: 8rem;
   height: auto;
 }
 
@@ -1298,7 +1298,7 @@ h1 {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .skills-icon-wrapper {
