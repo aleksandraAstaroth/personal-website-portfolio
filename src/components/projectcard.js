@@ -15,7 +15,7 @@ const Card = (props) => {
                                 <h5>{props.projectName}</h5>
                                 <hr></hr>
                                 <p>{props.projectInfo}</p>
-                                <div><a href={props.projectLink}>{props.projectLinkText}</a></div>
+                                <div><a href={props.projectLink}  rel="noreferrer" target="_blank" >{props.projectLinkText}</a></div>
                         </div>
                 </div>
         </div>

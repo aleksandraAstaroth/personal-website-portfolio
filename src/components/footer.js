@@ -8,9 +8,11 @@ const Footer = () => {
         <section id="footer">
             <div className="contact-wrapper">
                 <div className="icon-wrapper">
-                    <div><a href="https://www.linkedin.com/in/aleksandrarzepecka/"><img src={LinkedInIcon} alt="linkedin icon"></img></a></div>
+                    <div><a href="https://www.linkedin.com/in/aleksandrarzepecka/" rel="noreferrer"
+                    target="_blank"><img src={LinkedInIcon} alt="linkedin icon"></img></a></div>
 
-                    <div><a href="https://github.com/aleksandraAstaroth"><img src={GithubIcon} alt="github icon"></img></a></div>
+                    <div><a href="https://github.com/aleksandraAstaroth" rel="noreferrer"
+                    target="_blank"><img src={GithubIcon} alt="github icon"></img></a></div>
                     
                 </div>
                 <div className="contact-text">
@@ -26,7 +28,8 @@ const Footer = () => {
             <div className="copyright-wrapper">
                 <span>© {new Date().getFullYear()} Aleksandra Rzepecka </span><br/> Built using
                 {` `}
-                <a href="https://www.gatsbyjs.com">Gatsby</a>
+                <a href="https://www.gatsbyjs.com" rel="noreferrer"
+                    target="_blank">Gatsby</a>
             </div>
         </section>
     )

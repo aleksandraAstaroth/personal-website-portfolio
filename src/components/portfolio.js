@@ -13,6 +13,20 @@ const Portfolio = () => {
                 </div>
             </div>
             <div className="cards-wrapper">
+            <Card projectName="OhCleo Platform"
+                      tags={["React", "Next.js", "Tailwind", "Typescript"]}
+                      projectInfo="OhCleo AB multi-user mulitimedia social platform built using Next.JS with Typescript, styled with Tailwind"
+                      projectLink="https://ohcleo.com"
+                      projectLinkText="Go to Website"
+                      projectPreview="ohcleoplatform.png"
+                       />
+                <Card projectName="OhCleo Company Website (old)"
+                      tags={["React", "Gatsby", "CSS", "GraphQL", "Contentful"]}
+                      projectInfo="OhCleo AB (old) company website and blog built using Gatsby React framework"
+                      projectLink="https://flamboyant-goldwasser-365818.netlify.app/"
+                      projectLinkText="Go to Website"
+                      projectPreview="ohcleogatsby.png"
+                       />
                 <Card projectName="Portfolio Website"
                     tags={["Gatsby", "React", "SCSS"]}
                     projectInfo="Personal Website-Portfolio built using Gatsby React framework (this website)"  
