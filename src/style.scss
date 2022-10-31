@@ -316,7 +316,7 @@ letter-spacing: 0.1rem;
 border: 0;
 min-width: 8rem;
 padding: 1rem 3.5rem;
-height: 3rem;
+// height: 3rem;
 transition: background 0.2s;
 cursor: pointer;
 }
@@ -1019,13 +1019,12 @@ margin-top: 9rem;
    top: -1.5rem;
 }
 }
+
 .cta-section {
   justify-content: center;
 }
 
 #about {
-  overflow: auto;
-
   & button {
     align-self: center;
     width: 100%;
@@ -1064,15 +1063,21 @@ margin-top: 9rem;
     top: 1rem;
   }
 }
+.about-me-text-2 {
+  margin-bottom: 7rem;
+}
 #container {
   width: 100%; 
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .portfolio-wrapper > #container {
   top: initial;
   position: relative;
+  margin: unset;
+  margin: 0 auto;
 }
 
 .about-sign, .portfolio-sign, .skills-sign {
@@ -1088,7 +1093,7 @@ margin-top: 9rem;
   -.1vw 0vw 10vw var(--neon-color-turquoise), -.2vw 0vw 10vw var(--neon-color-turquoise), -.4vw 0vw 10vw var(--neon-color-turquoise);
 }
 .about-sign {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .cards-wrapper, .skills-wrapper {

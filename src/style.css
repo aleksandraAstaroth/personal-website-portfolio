@@ -417,7 +417,6 @@ h1 {
   border: 0;
   min-width: 8rem;
   padding: 1rem 3.5rem;
-  height: 3rem;
   -webkit-transition: background 0.2s;
   transition: background 0.2s;
   cursor: pointer;
@@ -1451,9 +1450,6 @@ h1 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #about {
-    overflow: auto;
-  }
   #about button {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -1509,6 +1505,9 @@ h1 {
     left: unset;
     top: 1rem;
   }
+  .about-me-text-2 {
+    margin-bottom: 7rem;
+  }
   #container {
     width: 100%;
     display: -webkit-box;
@@ -1524,6 +1523,8 @@ h1 {
   .portfolio-wrapper > #container {
     top: initial;
     position: relative;
+    margin: unset;
+    margin: 0 auto;
   }
   .about-sign, .portfolio-sign, .skills-sign {
     margin-top: unset;
@@ -1533,7 +1534,7 @@ h1 {
     text-shadow: -0.1vw 0vw 0.25vw #a9f6ff, -0.2vw 0vw 0.25vw #a9f6ff, -0.4vw 0vw 0.25vw #a9f6ff, -0.1vw 0vw 0.1vw #00ccc9, -0.2vw 0vw 0.1vw #00ccc9, -0.4vw 0vw 0.1vw #00ccc9, -0.1vw 0vw 0.8vw #00ccc9, -0.2vw 0vw 0.8vw #00ccc9, -0.4vw 0vw 0.8vw #00ccc9, 0.2vw 0vw 0.5vw #00ccc9, -0.1vw 0vw 0.5vw #00ccc9, -0.2vw 0vw 0.5vw #00ccc9, -0.4vw 0vw 0.5vw #00ccc9, -0.1vw 0vw 10vw var(--neon-color-turquoise), -0.2vw 0vw 10vw var(--neon-color-turquoise), -0.4vw 0vw 10vw var(--neon-color-turquoise);
   }
   .about-sign {
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
   .cards-wrapper, .skills-wrapper {
     display: -webkit-box;
