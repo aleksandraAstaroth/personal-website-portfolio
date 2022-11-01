@@ -579,7 +579,7 @@ h1 {
 }
 .project-info h5 {
   font-size: 1.7rem;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.3rem;
   padding-top: 0.3rem;
   padding-bottom: 0.6rem;
@@ -615,7 +615,7 @@ h1 {
 .tag-list {
   list-style-type: none;
   letter-spacing: 0.1rem;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 0.7rem;
   display: flex;
   gap: 1rem;
@@ -959,13 +959,10 @@ h1 {
 
   #landing-page-hero {
     position: relative;
-    top: -2rem;
+    top: -5rem;
   }
   #landing-page-hero h1 {
     font-size: 1.8rem;
-  }
-  #landing-page-hero p {
-    font-size: 90%;
   }
 
   .hero-intro {
@@ -1103,8 +1100,14 @@ h1 {
   }
 
   .mh-description {
-    font-size: x-small;
-    letter-spacing: 0.12rem;
+    font-size: small;
+    letter-spacing: 0.26rem;
+  }
+
+  .mh-title b span,
+.mh-title b span:nth-of-type(2),
+.sub b span {
+    animation: none;
   }
 
   .hamburger-wrapper {
@@ -1153,6 +1156,29 @@ h1 {
     float: right;
     right: 2.5rem;
   }
+
+  .scroll-mark-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arrow, .arrow:first-child, .arrow:nth-child(2) {
+    position: relative;
+    animation: none;
+  }
+
+  .arrow:nth-child(3) {
+    opacity: 1;
+    width: 35%;
+    top: -8px;
+  }
+
+  .arrow:nth-child(2) {
+    opacity: 1;
+    width: 50%;
+  }
 }
 @keyframes line1 {
   0% {
@@ -1188,6 +1214,15 @@ h1 {
   }
 }
 @media only screen and (max-width: 800px) {
+  .portfolio-wrapper {
+    margin: 0 4rem 0;
+  }
+
+  .project-info h5 {
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+  }
+
   .skills-wrapper {
     justify-content: center;
     align-items: center;
@@ -1197,6 +1232,32 @@ h1 {
   }
   .skills-wrapper .skills-area {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #landing-page-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-intro {
+    width: 87%;
+  }
+
+  .portfolio-wrapper {
+    margin: 0 2rem 0;
+  }
+
+  .tag-list {
+    letter-spacing: 0.07em;
+    gap: 0.6em;
+  }
+
+  .project-info h5 {
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+  }
+  .project-info p {
+    font-size: 0.9rem;
   }
 }
 @media only screen and (max-width: 1295px) {
@@ -1215,6 +1276,10 @@ h1 {
     font-size: smaller;
   }
 
+  .mh-description {
+    font-size: calc(80%);
+    letter-spacing: 0.2rem;
+  }
   .mh-description .brackets {
     display: none;
   }
@@ -1226,17 +1291,6 @@ h1 {
   .scroll-mark-wrapper {
     position: relative;
     top: -2rem;
-  }
-
-  .hero-intro {
-    line-height: 1.8rem;
-    gap: 0.5rem;
-    width: 87%;
-    gap: unset;
-    margin-bottom: 0;
-  }
-  .hero-intro p {
-    line-height: 1.2rem;
   }
 
   img {
@@ -1254,14 +1308,14 @@ h1 {
   }
 
   .project-info {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .project-info h5 {
     font-size: 1.2rem;
   }
 
   .project-img-wrapper {
-    width: 320px;
+    max-width: 320px;
     height: auto;
   }
 
