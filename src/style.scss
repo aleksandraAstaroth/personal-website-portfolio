@@ -1195,26 +1195,6 @@ nav ul {
    right: 2.5rem;
  }
 }
-.scroll-mark-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.arrow, .arrow:first-child, .arrow:nth-child(2)  {
-  position: relative;
-  animation: none;
-}
-.arrow:nth-child(3) {
-  opacity: 1;
-  width: 35%;
-  top: -8px;
-}
- .arrow:nth-child(2){
-  opacity: 1;
-  width: 50%;
-}
 
 }
 //----------ANIMATION FOR HAMBURGER-------//
@@ -1280,6 +1260,27 @@ nav ul {
     }
     
   }
+  .scroll-mark-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .arrow, .arrow:first-child, .arrow:nth-child(2)  {
+    position: relative;
+    animation: none;
+  }
+  .arrow:nth-child(3) {
+    opacity: 1;
+    width: 35%;
+    top: -8px;
+  }
+   .arrow:nth-child(2){
+    opacity: 1;
+    width: 50%;
+  }
+  
 }
 @media only screen and (max-width: 600px) {
   #landing-page-hero {

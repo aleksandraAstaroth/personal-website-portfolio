@@ -1650,33 +1650,6 @@ h1 {
     float: right;
     right: 2.5rem;
   }
-  .scroll-mark-wrapper {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .arrow, .arrow:first-child, .arrow:nth-child(2) {
-    position: relative;
-    -webkit-animation: none;
-            animation: none;
-  }
-  .arrow:nth-child(3) {
-    opacity: 1;
-    width: 35%;
-    top: -8px;
-  }
-  .arrow:nth-child(2) {
-    opacity: 1;
-    width: 50%;
-  }
 }
 
 @-webkit-keyframes line1 {
@@ -1784,6 +1757,33 @@ h1 {
   }
   .skills-wrapper .skills-area {
     width: 100%;
+  }
+  .scroll-mark-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .arrow, .arrow:first-child, .arrow:nth-child(2) {
+    position: relative;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .arrow:nth-child(3) {
+    opacity: 1;
+    width: 35%;
+    top: -8px;
+  }
+  .arrow:nth-child(2) {
+    opacity: 1;
+    width: 50%;
   }
 }
 

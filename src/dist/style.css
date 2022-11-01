@@ -1156,29 +1156,6 @@ h1 {
     float: right;
     right: 2.5rem;
   }
-
-  .scroll-mark-wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .arrow, .arrow:first-child, .arrow:nth-child(2) {
-    position: relative;
-    animation: none;
-  }
-
-  .arrow:nth-child(3) {
-    opacity: 1;
-    width: 35%;
-    top: -8px;
-  }
-
-  .arrow:nth-child(2) {
-    opacity: 1;
-    width: 50%;
-  }
 }
 @keyframes line1 {
   0% {
@@ -1232,6 +1209,29 @@ h1 {
   }
   .skills-wrapper .skills-area {
     width: 100%;
+  }
+
+  .scroll-mark-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arrow, .arrow:first-child, .arrow:nth-child(2) {
+    position: relative;
+    animation: none;
+  }
+
+  .arrow:nth-child(3) {
+    opacity: 1;
+    width: 35%;
+    top: -8px;
+  }
+
+  .arrow:nth-child(2) {
+    opacity: 1;
+    width: 50%;
   }
 }
 @media only screen and (max-width: 600px) {
