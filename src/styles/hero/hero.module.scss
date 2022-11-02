@@ -175,6 +175,40 @@ $easeInOutQuad: cubic-bezier(0.455, 0.030, 0.515, 0.955);
 //       top: -1.5rem;
 //    }
    }
+
+   @media only screen and (max-width: 800px) {
+   .heroIntro {
+    line-height: 2.1rem;
+    position: relative;
+    .text2, .text4 {
+      animation: none;
+      font-weight: 500;
+      text-shadow: var(--text-shadow-pink);
+    }
+  }
+}
+.scroll-mark-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow, .arrow:first-child, .arrow:nth-child(2)  {
+  position: relative;
+  animation: none;
+}
+.arrow:nth-child(3) {
+  opacity: 1;
+  width: 35%;
+  top: -8px;
+}
+ .arrow:nth-child(2){
+  opacity: 1;
+  width: 50%;
+}
+
+}
 @media only screen and (max-width: 600px) {
   .landingPageHero {
        h1 {
@@ -183,6 +217,9 @@ $easeInOutQuad: cubic-bezier(0.455, 0.030, 0.515, 0.955);
      }
      .heroIntro {
       width: 87%;
+      & p {
+        width: 90%;
+      }
     }
 }
 @media only screen and (max-width: 400px) {
@@ -192,8 +229,12 @@ $easeInOutQuad: cubic-bezier(0.455, 0.030, 0.515, 0.955);
         font-size: 1.2rem;
       }
     }
+    .heroIntro p {
+      font-size: 14px;
+      width: 95%;
+    }
     .scroll-mark-wrapper {
       position: relative;
-      top: -2rem;
     }
-}}
+
+}

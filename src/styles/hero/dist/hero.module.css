@@ -20,8 +20,7 @@ h1 {
   font-weight: 600;
   font-family: "Orbitron", sans-serif;
   letter-spacing: 0.15rem;
-  -webkit-animation: neonGlow 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          animation: neonGlow 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: neonGlow 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .text3 {
@@ -38,10 +37,8 @@ h1 {
   content: "|";
   background: var(--white);
   opacity: 0;
-  -webkit-animation: cursor 1.5s infinite;
-          animation: cursor 1.5s infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation: cursor 1.5s infinite;
+  animation-timing-function: ease-in-out;
   display: inline;
 }
 
@@ -64,18 +61,15 @@ h1 {
   height: 6px;
   opacity: 0;
   transform: scale3d(0.5, 0.5, 0.5);
-  -webkit-animation: move 3s ease-out infinite;
-          animation: move 3s ease-out infinite;
+  animation: move 3s ease-out infinite;
 }
 
 .arrow:first-child {
-  -webkit-animation: move 3s ease-out 1s infinite;
-          animation: move 3s ease-out 1s infinite;
+  animation: move 3s ease-out 1s infinite;
 }
 
 .arrow:nth-child(2) {
-  -webkit-animation: move 3s ease-out 1s infinite;
-          animation: move 3s ease-out 1s infinite;
+  animation: move 3s ease-out 1s infinite;
 }
 
 .arrow:before,
@@ -99,24 +93,6 @@ h1 {
   transform: skew(0deg, -30deg);
 }
 
-@-webkit-keyframes move {
-  25% {
-    opacity: 1;
-  }
-  33% {
-    opacity: 1;
-    transform: translateY(30px);
-  }
-  67% {
-    opacity: 1;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
-  }
-}
-
 @keyframes move {
   25% {
     opacity: 1;
@@ -132,23 +108,6 @@ h1 {
   100% {
     opacity: 0;
     transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
-  }
-}
-@-webkit-keyframes cursor {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 @keyframes cursor {
@@ -168,14 +127,6 @@ h1 {
     opacity: 0;
   }
 }
-@-webkit-keyframes neonGlow {
-  0% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 22px var(--neon-color-pink), 0 0 40px var(--neon-color-pink), 0 0 60px var(--neon-color-pink), 0 0 80px var(--neon-color-pink), 0 0 100px var(--neon-color-pink);
-  }
-  100% {
-    text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 8px rgba(255, 255, 255, 0.8), 0 0 10px var(--neon-color-pink), 0 0 20px var(--neon-color-pink), 0 0 30px var(--neon-color-pink), 0 0 40px var(--neon-color-pink), 0 0 50px var(--neon-color-pink);
-  }
-}
 @keyframes neonGlow {
   0% {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 22px var(--neon-color-pink), 0 0 40px var(--neon-color-pink), 0 0 60px var(--neon-color-pink), 0 0 80px var(--neon-color-pink), 0 0 100px var(--neon-color-pink);
@@ -190,6 +141,7 @@ h1 {
     flex-direction: column;
     align-items: center;
   }
+
   .landingPageHero {
     position: relative;
     top: -5rem;
@@ -197,6 +149,7 @@ h1 {
   .landingPageHero h1 {
     font-size: 1.8rem;
   }
+
   .heroIntro {
     display: inherit;
     flex-direction: inherit;
@@ -218,8 +171,7 @@ h1 {
     position: relative;
   }
   .heroIntro .text2, .heroIntro .text4 {
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
     font-weight: 500;
     text-shadow: var(--text-shadow-pink);
   }
@@ -235,8 +187,7 @@ h1 {
 @media only screen and (max-width: 1024px) {
   .arrow, .arrow:first-child, .arrow:nth-child(2) {
     position: relative;
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -256,6 +207,7 @@ h1 {
   .landingPageHero h1 {
     font-size: 1.5rem;
   }
+
   .heroIntro {
     width: 87%;
   }
@@ -267,11 +219,13 @@ h1 {
   .landingPageHero h1 {
     font-size: 1.2rem;
   }
+
   .heroIntro p {
     font-size: 14px;
     width: 95%;
   }
+
   .scroll-mark-wrapper {
     position: relative;
   }
-}/*# sourceMappingURL=hero.module.css.map */
+}
