@@ -538,39 +538,65 @@ nav ul {
   position: relative;
   top: 8rem;
 }
+// .cards-wrapper {
+//   display: grid;
+//   grid-template-columns: repeat(2, minmax(auto, 1fr));
+//   justify-content: center;
+//   align-self: center;
+//   height: 100%;
+// }
+// .cards-wrapper > div:nth-child(odd) {
+//   padding-right: 5%;
+//   padding-bottom: 80px;
+// }
+
+// .cards-wrapper > div:nth-child(even) {
+//   padding-top: 60%;
+//   padding-left: 60px;
+//   margin: auto 0 0 0;
+// }
+
+
+// .cards-wrapper > div > :nth-child(1) {
+//   float: right;
+//   padding: 0px 0 16px 0;
+// }
+
+// .cards-wrapper > div:last-child {
+//   padding-bottom: 0px;
+// }
+
+.project-container {
+  font-family: 'Rajdhani', sans-serif;
+  text-transform: uppercase;
+}
 .cards-wrapper {
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 1fr));
   justify-content: center;
   align-self: center;
   height: 100%;
+  > div {
+     &:nth-child(odd) {
+      padding-right: 5%;
+      padding-bottom: 80px;
+    }
+     &:nth-child(even) {
+      padding-top: 60%;
+      padding-left: 60px;
+      margin: auto 0 0 0;
+    } 
+    &:last-child {
+      padding-bottom: 0px;
+    }
+   > div {
+      &:nth-child(1) {
+        float: right;
+        padding: 0px 0 16px 0;
+      }
+    }
+  }
 }
-.cards-wrapper > div:nth-child(odd) {
-  padding-right: 5%;
-  padding-bottom: 80px;
-}
-
-.cards-wrapper > div:nth-child(even) {
-  padding-top: 60%;
-  padding-left: 60px;
-  margin: auto 0 0 0;
-}
-
-
-.cards-wrapper > div > :nth-child(1) {
-  float: right;
-  padding: 0px 0 16px 0;
-}
-
-.cards-wrapper > div:last-child {
-  padding-bottom: 0px;
-}
-
-.project-container {
-  font-family: 'Rajdhani', sans-serif;
-  text-transform: uppercase;
-}
-
 .project-info {
   position: absolute;
   margin-left: 1rem;
@@ -1306,16 +1332,16 @@ letter-spacing: 0.2rem;
 }
 }
 }
-@media only screen and (max-width: 1295px) {
-  .about-me-question {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-end;
-   & p {
-     margin-right: 5rem;
-   }
-  }
-}
+// @media only screen and (max-width: 1295px) {
+//   .about-me-question {
+//    display: flex;
+//    flex-direction: column;
+//    align-items: flex-end;
+//    & p {
+//      margin-right: 5rem;
+//    }
+//   }
+// }
 @media only screen and (max-width: 400px) {
 
 .mh-title {
