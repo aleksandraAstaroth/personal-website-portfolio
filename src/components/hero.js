@@ -19,7 +19,7 @@ const Hero = () => {
                 </div>
             </div>
             <AnchorLink className={style.scrollMarkWrapper} to="#about">
-                <span className={style.scrollText}>Scroll down</span>
+                <span>Scroll down</span>
                 <span className={style["arrow"]}></span>
                 <span className={style["arrow"]}></span>
                 <span className={style["arrow"]}></span>

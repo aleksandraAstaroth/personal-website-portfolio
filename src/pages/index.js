@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout2"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Hero from "../components/hero"
 import About from "../components/about"
 import Skills from "../components/skills"
@@ -13,10 +13,9 @@ import "normalize.css"
 const Index = ({ data, location }) => {
     // const siteTitle = data.site.siteMetadata?.title || `Title`
     const siteDescription = data.site.siteMetadata?.description || `Description`
-    console.log(data.site.siteMetadata)
     return (
         <Layout location={location} description={siteDescription}>
-            <SEO title="Home" />
+            <Seo title="Home" />
             <Hero />
             <About />
             <Portfolio />
