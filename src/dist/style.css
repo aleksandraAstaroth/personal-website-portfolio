@@ -204,46 +204,6 @@ nav ul .mobile {
   display: flex;
 }
 
-.portfolio-wrapper {
-  position: relative;
-  margin: 0 5rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.portfolio-wrapper > .container {
-  display: inherit;
-  align-self: flex-end;
-  margin: 0 3rem 0;
-  position: relative;
-  top: 8rem;
-}
-
-.cards-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(auto, 1fr));
-  justify-content: center;
-  align-self: center;
-  height: 100%;
-}
-.cards-wrapper > div:nth-child(odd) {
-  padding-right: 5%;
-  padding-bottom: 80px;
-}
-.cards-wrapper > div:nth-child(even) {
-  padding-top: 60%;
-  padding-left: 60px;
-  margin: auto 0 0 0;
-}
-.cards-wrapper > div:last-child {
-  padding-bottom: 0px;
-}
-.cards-wrapper > div > div:nth-child(1) {
-  float: right;
-  padding: 0px 0 16px 0;
-}
-
 .tag-list {
   list-style-type: none;
   letter-spacing: 0.1rem;
@@ -402,46 +362,13 @@ nav ul .mobile {
     justify-content: center;
   }
 
-  #about button {
-    align-self: center;
-    width: 100%;
-    margin-top: 2rem;
-  }
-  #about .about-me-facts {
-    font-size: 0.9em;
-  }
-  #about .about-me-question {
-    gap: 2rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
-  #about .about-me-question p {
-    margin-right: unset;
-  }
-
-  .about-button-wrapper {
-    justify-content: center;
-    margin-right: 0;
-  }
-
-  .about-me-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-  }
-  .about-me-text .cta-section {
+  .cta-section {
     justify-content: center;
   }
-  .about-me-text .cta-btn {
+
+  .cta-btn {
     left: unset;
     top: 1rem;
-  }
-
-  .about-me-text-2 {
-    margin-bottom: 7rem;
   }
 
   .container {
@@ -449,13 +376,6 @@ nav ul .mobile {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .portfolio-wrapper > .container {
-    top: initial;
-    position: relative;
-    margin: unset;
-    margin: 0 auto;
   }
 
   .about-sign, .portfolio-sign, .skills-sign {
@@ -469,35 +389,13 @@ nav ul .mobile {
   .about-sign {
     margin-top: 2rem;
   }
-
-  .cards-wrapper, .skills-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cards-wrapper > div:nth-child(odd),
-.cards-wrapper > div:nth-child(even) {
-    padding: unset;
-    margin: unset;
-    margin-bottom: 2rem;
-  }
 }
-.cards-wrapper > div {
-  position: relative;
-  margin-bottom: 2rem;
-}
-
-.cards-wrapper > div:last-child {
-  padding-bottom: unset;
-}
-
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) and (min-width: 1024px) {
   .hamburger {
     display: none;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) and (max-width: 1024px) {
   #header-fixed {
     padding: 0.1rem 2.5rem;
   }
@@ -572,44 +470,46 @@ nav ul .mobile {
     right: 2.5rem;
   }
 }
-@keyframes line1 {
-  0% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(9px) rotate(0deg);
-  }
-  100% {
-    transform: translateY(9px) rotate(45deg);
-  }
-}
-@keyframes line2 {
-  0% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
+@media only screen and (max-width: 1024px) {
+  @keyframes line1 {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+      transform: translateY(9px) rotate(45deg);
+    }
   }
 }
-@keyframes line3 {
-  0% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-9px) rotate(0deg);
-  }
-  100% {
-    transform: translateY(-9px) rotate(-45deg);
+@media only screen and (max-width: 1024px) {
+  @keyframes line2 {
+    0% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 }
-@media only screen and (max-width: 800px) {
-  .portfolio-wrapper {
-    margin: 0 4rem 0;
+@media only screen and (max-width: 1024px) {
+  @keyframes line3 {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+      transform: translateY(-9px) rotate(-45deg);
+    }
   }
-
+}
+@media only screen and (max-width: 1024px) and (max-width: 800px) {
   .skills-wrapper {
     justify-content: center;
     align-items: center;
@@ -621,17 +521,13 @@ nav ul .mobile {
     width: 100%;
   }
 }
-@media only screen and (max-width: 600px) {
-  .portfolio-wrapper {
-    margin: 0 2rem 0;
-  }
-
+@media only screen and (max-width: 1024px) and (max-width: 600px) {
   .tag-list {
     letter-spacing: 0.07em;
     gap: 0.6em;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1024px) and (max-width: 400px) {
   .mh-title {
     letter-spacing: 0.25rem;
     font-size: smaller;

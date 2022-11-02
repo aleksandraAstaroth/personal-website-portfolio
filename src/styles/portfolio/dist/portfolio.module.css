@@ -45,21 +45,25 @@
     margin: unset;
     margin: 0 auto;
   }
+
   .cards-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .cards-wrapper > div:nth-child(odd),
 .cards-wrapper > div:nth-child(even) {
     padding: unset;
     margin: unset;
     margin-bottom: 2rem;
   }
+
   .cards-wrapper > div {
     position: relative;
     margin-bottom: 2rem;
   }
+
   .cards-wrapper > div:last-child {
     padding-bottom: unset;
   }
@@ -73,4 +77,4 @@
   .portfolio-wrapper {
     margin: 0 2rem 0;
   }
-}/*# sourceMappingURL=portfolio.module.css.map */
+}
