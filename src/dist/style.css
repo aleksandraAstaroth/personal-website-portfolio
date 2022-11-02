@@ -17,8 +17,7 @@
   --neon-color-turquoise: #00F9FF;
   --white: rgb(255, 255, 255);
   --background-color: rgb(23, 27, 29);
-  --text-shadow-pink: 0 0 2px var(--white),
-                      0 0 5px var(--white),
+  --text-shadow-pink: 0 0 5px var(--white),
                       0 0 10px var(--neon-color-pink),
                       0 0 15px var(--neon-color-pink),
                       0 0 20px var(--neon-color-pink),
@@ -1211,6 +1210,17 @@ h1 {
     width: 100%;
   }
 
+  .hero-intro {
+    line-height: 2.1rem;
+    position: relative;
+    top: 2rem;
+  }
+  .hero-intro .text2, .hero-intro .text4 {
+    animation: none;
+    font-weight: 500;
+    text-shadow: var(--text-shadow-pink);
+  }
+
   .scroll-mark-wrapper {
     position: relative;
     display: flex;
@@ -1241,6 +1251,9 @@ h1 {
 
   .hero-intro {
     width: 87%;
+  }
+  .hero-intro p {
+    width: 90%;
   }
 
   .portfolio-wrapper {
@@ -1284,13 +1297,20 @@ h1 {
     display: none;
   }
 
+  #landing-page-hero {
+    height: 100vh;
+  }
   #landing-page-hero h1 {
     font-size: 1.2rem;
   }
 
+  .hero-intro p {
+    font-size: 14px;
+    width: 95%;
+  }
+
   .scroll-mark-wrapper {
     position: relative;
-    top: -2rem;
   }
 
   img {
