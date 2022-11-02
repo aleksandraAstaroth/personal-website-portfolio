@@ -31,7 +31,7 @@ const hardSkills = [
 const softSkills = ["Big-picture thinking", "Problem solving", "Analytical skills", "Teamwork & Collaboration" , "Open communication", "Resourcefullness", "Adaptability", "Working remotely"]
     return(
         <section id="skills">
-            <div id="container">
+            <div className="container">
                 <div className="skills-sign">
                     <i className="fa fa-heart-o" aria-hidden="true"></i> 
                     SKILLS

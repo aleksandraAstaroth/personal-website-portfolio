@@ -2,6 +2,8 @@ import React, {useState} from "react"
 import Button from "./button";
 import Expand from "react-expand-animated";
 import FadeIn from 'react-fade-in';
+import * as style from '../styles/about/about.module.scss'
+import { symbol } from "prop-types";
 
 const About = () => {
     const [isOpenText1, setIsOpenText1] = useState(false)
@@ -12,34 +14,32 @@ const About = () => {
     const [showSecondButton, setShowSecondButton ] = useState(false)
 
   const handleClick = () => {
-    console.log("Button clicked")
     setIsOpenText1(true)
     setTimeout(() => {setDeleteButton(true)}, 200)
     setTimeout(() => {setShowSecondButton(true)}, 6000)
   }
 
   const handleClick2 = () => {
-    console.log("Another Button clicked")
     setIsOpenText2(true)
     setTimeout(() => {setDelete2ndButton(true)}, 200)
     setTextFadeIn(true)
   }
 const buttonProps = { 
-className: deleteButton ? "delete" : "about-button"
+className: deleteButton ? style.hide : style.aboutButton
 }
 const buttonProps2 = {
-    className: delete2ndButton ? "delete" : "about-button"
+    className: delete2ndButton ? style.hide : style.aboutButton
 }
 
 return (
-    <section id="about">
-        <div id="container">
+    <section className={style.about}>
+        <div className="container">
             <div className="about-sign">
                 <i className="fa fa-heart-o" aria-hidden="true"></i>
                 <span className="off">A</span>BOUT ME
             </div>
         </div>
-        <div className="about-me-text">
+        <div className={style.aboutMeText}>
             <p>My name is Aleksandra. I’m a front-end developer based in Stockholm. I currently work as <strong>Web Developer</strong> at <strong>OhCleo</strong> ever since September 2021. I also graduated <i>Hyper Island Frontend Developer Program</i> in April 2022.</p>
                 <p>I got a very <em>inquisitive</em> mind; that means constant questioning, analysing and looking at processes from different perspectives.</p> 
                 
@@ -48,15 +48,15 @@ return (
                 <p>First thing that you should know about me - <strong><em>I am a big-picture thinker</em></strong>.<br/></p>
 
                 <p>Here’s a glimpse of my background that shaped me, so that it can help you get a sense of what kind of person I am.</p>
-                <div className="about-button-wrapper">
+                <div className={style.aboutButtonWrapper}>
                 <button {...buttonProps} onClick={handleClick}> <span></span>
                         <span></span>
                         <span></span>
                         <span></span>Get to know me</button>
                 </div>
                 <Expand open={isOpenText1}>
-                        <ul className="about-me-facts">
-                        <FadeIn className="facts" delay={1000} transitionDuration={500} >
+                        <ul className={style.aboutMeFacts}>
+                        <FadeIn className={style.facts} delay={1000} transitionDuration={500} >
                             <li>As a teenager I became a licenced glider pilot.</li>
                             <li>I came to Sweden 6 years ago, on my own, without a plan or money.</li>
                             <li>I've worked in various fast-paced service jobs including retail and the restaurant industry. I worked also as a dog walker.</li>
@@ -64,9 +64,9 @@ return (
                             <li>I also collaborated with a few international alternative clothing brands when I was growing my social media reach. Along with that, I picked up an interest in photography and photo editing using Adobe Software.</li>
                         </FadeIn>
                         </ul>
-                        <FadeIn className="about-me-question" visible={showSecondButton}  delay={1000} transitionDuration={400}>
+                        <FadeIn className={style.aboutMeQuestion} visible={showSecondButton}  delay={1000} transitionDuration={400}>
                             <p>...where am I going with this?</p>
-                            <div className="about-button-wrapper">
+                            <div className={style.aboutButtonWrapper}>
                             <button {...buttonProps2} onClick={handleClick2}> <span></span>
                                     <span></span>
                                     <span></span>
@@ -75,7 +75,7 @@ return (
                         </FadeIn>
                </Expand>
                <Expand open={isOpenText2}>
-                <FadeIn className="about-me-text-2" visible={textFadeIn} delay={1000} transitionDuration={700}>
+                <FadeIn className={style.aboutMeText2} visible={textFadeIn} delay={1000} transitionDuration={700}>
                     <p>Experimenting with creative software has led me to becoming <del>obsessed</del> <ins>passionate</ins> about coding and development, which allows me to create new value utilising already gained skills/perspectives/experiences as contributions to new solutions</p>
 
                     <p><em> Taking chances</em> and <em>calculating risks</em>, required <strong><em>resourcefullness</em></strong>, <strong><em>flexibility</em></strong> and <strong><em>adaptation</em></strong> to new situations. Therefore

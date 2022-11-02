@@ -6,7 +6,7 @@ const Portfolio = () => {
     return(
         <section id="portfolio">
         <div className="portfolio-wrapper">
-            <div id="container">
+            <div className="container">
                 <div className="portfolio-sign">
                     <i className="fa fa-heart-o" aria-hidden="true"></i>
                 PORTFOLIO
