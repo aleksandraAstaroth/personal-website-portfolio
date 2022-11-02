@@ -1404,7 +1404,6 @@ h1 {
   .hero-intro {
     line-height: 2.1rem;
     position: relative;
-    top: 2rem;
   }
   .hero-intro .text2, .hero-intro .text4 {
     -webkit-animation: none;
