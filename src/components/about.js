@@ -3,7 +3,6 @@ import Button from "./button";
 import Expand from "react-expand-animated";
 import FadeIn from 'react-fade-in';
 import * as style from '../styles/about/about.module.scss'
-import { symbol } from "prop-types";
 
 const About = () => {
     const [isOpenText1, setIsOpenText1] = useState(false)
@@ -25,14 +24,14 @@ const About = () => {
     setTextFadeIn(true)
   }
 const buttonProps = { 
-className: deleteButton ? style.hide : style.aboutButton
+className: deleteButton ? style.remove : style.aboutButton
 }
 const buttonProps2 = {
-    className: delete2ndButton ? style.hide : style.aboutButton
+    className: delete2ndButton ? style.remove : style.aboutButton
 }
 
 return (
-    <section className={style.about}>
+    <section className={style.about} id="about">
         <div className="container">
             <div className="about-sign">
                 <i className="fa fa-heart-o" aria-hidden="true"></i>

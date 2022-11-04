@@ -61,8 +61,8 @@ a {
 
 
 .global-header {
-width: 100%;
-height: 15vh;
+  width: 100%;
+  height: 15vh;
 }
 
 #header-fixed {
@@ -1136,12 +1136,13 @@ margin-top: 9rem;
 // .cards-wrapper > div:last-child {
 //   padding-bottom: unset;
 // }
-
+}
 @media only screen and (min-width: 1024px) {
   .hamburger {
      display: none;
    }
  }
+ 
 @media only screen and (max-width: 1024px) {
 #header-fixed {
   padding: 0.1rem 2.5rem;
@@ -1218,7 +1219,7 @@ nav ul {
  }
 }
 
-}
+
 //----------ANIMATION FOR HAMBURGER-------//
 @keyframes line1 {
   0% {
@@ -1261,7 +1262,7 @@ nav ul {
       transform: translateY(-9px) rotate(-45deg);
   }
 }
-
+}
 @media only screen and (max-width: 800px) {
 // .portfolio-wrapper {
 //   margin: 0 4rem 0;
@@ -1395,6 +1396,5 @@ letter-spacing: 0.2rem;
   img {
     display: none;
   }
-}
 }
 }

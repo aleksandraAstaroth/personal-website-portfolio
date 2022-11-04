@@ -8,11 +8,11 @@ const Card = (props) => {
         <div className={style.projectContainer}>
                 <div className={style.projectInnerContainer}>
                         <div className={style.projectImgWrapper}>
-                            <ProjectImage className={style.projectImg} src={props.projectPreview} alt="project preview image" />
+                            <ProjectImage src={props.projectPreview} alt="project preview image" />
                         </div>
                         <div className={style.gradient}></div>
                         <div className={style.projectInfo}>
-                                <Tags className={style.tagContainer} tagList={props.tags}/>
+                                <Tags tagList={props.tags}/>
                                 <h5>{props.projectName}</h5>
                                 <hr></hr>
                                 <p>{props.projectInfo}</p>

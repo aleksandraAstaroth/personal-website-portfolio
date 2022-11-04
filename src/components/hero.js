@@ -6,7 +6,7 @@ import * as style from "../styles/hero/hero.module.scss"
 
 const Hero = () => {
     return (
-        <section className={style.landingPageHero}>
+        <section id="landing-page-hero" className={style.landingPageHero}>
             <div className={style.heroIntro}>
                 <h1>
                     <span className={style.text1}>hi there, </span>

@@ -4,7 +4,7 @@ import * as style from "../styles/portfolio/portfolio.module.scss"
 
 const Portfolio = () => {
     return(
-        <section className={style.portfolio}>
+        <section id="portfolio">
         <div className={style.portfolioWrapper}>
             <div className="container">
                 <div className="portfolio-sign">
