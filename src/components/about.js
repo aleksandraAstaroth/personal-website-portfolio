@@ -19,7 +19,7 @@ const About = () => {
   }
 
   const handleClick2 = () => {
-    console.log("Another Button clicked")
+    // console.log("Another Button clicked")
     setIsOpenText2(true)
     setTimeout(() => {setDelete2ndButton(true)}, 200)
     setTextFadeIn(true)
