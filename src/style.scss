@@ -878,7 +878,6 @@ display: flex;
 justify-content: center;
 gap: 5rem;
 margin-top: 9rem;
-
 }
 
 .skills-wrapper {
@@ -910,6 +909,10 @@ margin-top: 9rem;
   }
 
 }
+.skills-wrapper {
+  text-align: center;
+}
+
 .hard-skills-wrapper {
   & .skills-area {
     display: grid;

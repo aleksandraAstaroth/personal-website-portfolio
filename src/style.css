@@ -1055,6 +1055,10 @@ h1 {
   text-shadow: 0 0 5px var(--neon-color-turquoise);
 }
 
+.skills-wrapper {
+  text-align: center;
+}
+
 .hard-skills-wrapper .skills-area {
   display: grid;
   grid-template-columns: 1fr 1fr;
