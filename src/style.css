@@ -738,6 +738,11 @@ h1 {
   margin: auto 0 0 0;
 }
 
+.cards-wrapper > div > :nth-child(1) {
+  float: right;
+  padding: 0px 0 0;
+}
+
 .cards-wrapper > div:last-child {
   padding-bottom: 0px;
 }
