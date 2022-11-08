@@ -1481,9 +1481,6 @@ h1 {
   .mh-description .brackets {
     display: none;
   }
-  #landing-page-hero {
-    height: 100vh;
-  }
   #landing-page-hero h1 {
     font-size: 1.2rem;
   }
