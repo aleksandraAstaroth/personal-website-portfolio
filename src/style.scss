@@ -559,10 +559,10 @@ cursor: pointer;
 }
 
 
-.cards-wrapper > div > :nth-child(1) {
-  float: right;
-  padding: 0px 0 16px 0;
-}
+// .cards-wrapper > div > :nth-child(1) {
+//   float: right;
+//   padding: 0px 0 16px 0;
+// }
 
 .cards-wrapper > div:last-child {
   padding-bottom: 0px;
@@ -878,7 +878,6 @@ display: flex;
 justify-content: center;
 gap: 5rem;
 margin-top: 9rem;
-
 }
 
 .skills-wrapper {
@@ -910,6 +909,10 @@ margin-top: 9rem;
   }
 
 }
+.skills-wrapper {
+  text-align: center;
+}
+
 .hard-skills-wrapper {
   & .skills-area {
     display: grid;
@@ -1034,7 +1037,6 @@ margin-top: 9rem;
    gap: 2rem;
    display: flex;
    flex-direction: column;
-   width: 100%;
    align-items: center;
    & p {
      margin-right: unset;
@@ -1098,11 +1100,12 @@ margin-top: 9rem;
   align-items: center;
 }
 
+
 .cards-wrapper > div:nth-child(odd),
 .cards-wrapper > div:nth-child(even) {
   padding: unset;
   margin: unset;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 }
 .cards-wrapper > div {
@@ -1112,6 +1115,7 @@ margin-top: 9rem;
 
 .cards-wrapper > div:last-child {
   padding-bottom: unset;
+  margin-bottom: unset;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1318,6 +1322,9 @@ letter-spacing: 0.2rem;
  p {
   font-size: 0.9rem;
 }
+}
+.gradient {
+  background: linear-gradient(15deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.892) 25%, rgba(0, 0, 0, 0.639) 45%, rgba(25, 17, 37, 0) 74%);
 }
 }
 @media only screen and (max-width: 1295px) {

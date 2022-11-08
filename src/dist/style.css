@@ -557,11 +557,6 @@ h1 {
   margin: auto 0 0 0;
 }
 
-.cards-wrapper > div > :nth-child(1) {
-  float: right;
-  padding: 0px 0 16px 0;
-}
-
 .cards-wrapper > div:last-child {
   padding-bottom: 0px;
 }
@@ -879,6 +874,10 @@ h1 {
   text-shadow: 0 0 5px var(--neon-color-turquoise);
 }
 
+.skills-wrapper {
+  text-align: center;
+}
+
 .hard-skills-wrapper .skills-area {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -998,7 +997,6 @@ h1 {
     gap: 2rem;
     display: flex;
     flex-direction: column;
-    width: 100%;
     align-items: center;
   }
   #about .about-me-question p {
@@ -1064,7 +1062,7 @@ h1 {
 .cards-wrapper > div:nth-child(even) {
     padding: unset;
     margin: unset;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 }
 .cards-wrapper > div {
@@ -1074,6 +1072,7 @@ h1 {
 
 .cards-wrapper > div:last-child {
   padding-bottom: unset;
+  margin-bottom: unset;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1270,6 +1269,10 @@ h1 {
   }
   .project-info p {
     font-size: 0.9rem;
+  }
+
+  .gradient {
+    background: linear-gradient(15deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.892) 25%, rgba(0, 0, 0, 0.639) 45%, rgba(25, 17, 37, 0) 74%);
   }
 }
 @media only screen and (max-width: 1295px) {
