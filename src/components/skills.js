@@ -1,6 +1,7 @@
 import React from "react";
 import HardSkillsIcon from "../assets/images/HardSkills.svg"
 import SoftSkillsIcon from "../assets/images/SoftSkills.svg"
+import * as style from "../styles/skills/skills.module.scss"
 
 const Skills = () => {
 const hardSkills = [
@@ -29,21 +30,22 @@ const hardSkills = [
      },
 ]
 const softSkills = ["Big-picture thinking", "Problem solving", "Analytical skills", "Teamwork & Collaboration" , "Open communication", "Resourcefullness", "Adaptability", "Working remotely"]
+
     return(
-        <section id="skills">
+        <section id="skills" className={style.skills}>
             <div className="container">
                 <div className="skills-sign">
                     <i className="fa fa-heart-o" aria-hidden="true"></i> 
                     SKILLS
                 </div>
             </div>
-            <div className="skills-wrapper">
-            <div className="hard-skills-wrapper">
-                <div className="skills-icon-wrapper">
+            <div className={style.skillsWrapper}>
+            <div className={style.hardSkillsWrapper}>
+                <div className={style.skillsIconWrapper}>
                     <img src={HardSkillsIcon} alt="neon style icon depicting computer screen representing hard skills" />
                 <h3>Hard Skills</h3>
                 </div>
-                <div className="skills-area">
+                <div className={style.skillsArea}>
                     {hardSkills.map((field) =>
                          <div className="department">
                             <h4>{field.id}</h4>
@@ -55,12 +57,12 @@ const softSkills = ["Big-picture thinking", "Problem solving", "Analytical skill
                      </div>)}
                     </div> 
                 </div>
-            <div className="soft-skills-wrapper">
-                <div className="skills-icon-wrapper">
+            <div className={style.softSkillsWrapper}>
+                <div className={style.skillsIconWrapper}>
                     <img src={SoftSkillsIcon} alt="neon style icon depicting a person with speech bubble, heart, light bulb ,representing soft skills" />
                     <h3>Soft Skills</h3>
                 </div>
-                <div className="skills-area"></div>
+                <div className={style.skillsArea}></div>
                         <ul>
                           {softSkills.map((skill, id) => <li key={id + 1}>{skill}</li>)}
                         </ul>

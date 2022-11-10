@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700");
@@ -246,53 +245,6 @@ nav ul .mobile {
   position: relative;
 }
 
-#skills {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  margin-top: 9rem;
-}
-
-.skills-wrapper {
-  display: flex;
-  align-items: baseline;
-  gap: 5rem;
-}
-.skills-wrapper h3 {
-  padding-bottom: 2rem;
-  padding-top: 1rem;
-}
-.skills-wrapper h4 {
-  padding-bottom: 1rem;
-}
-.skills-wrapper img {
-  max-width: 8rem;
-  height: auto;
-}
-.skills-wrapper li {
-  list-style: none;
-}
-.skills-wrapper li::before {
-  content: "•";
-  color: turquoise;
-  display: inline-block;
-  font-weight: bold;
-  width: 1em;
-  text-shadow: 0 0 5px var(--neon-color-turquoise);
-}
-
-.hard-skills-wrapper .skills-area {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.skills-icon-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #footer {
   display: flex;
   flex-direction: column;
@@ -350,14 +302,6 @@ nav ul .mobile {
 }
 
 @media only screen and (max-width: 1024px) {
-  #landing-page-hero,
-#about,
-#skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .cta-section {
     justify-content: center;
   }
@@ -504,18 +448,6 @@ nav ul .mobile {
     }
   }
 }
-@media only screen and (max-width: 800px) {
-  .skills-wrapper {
-    justify-content: center;
-    align-items: center;
-  }
-  .skills-wrapper .hard-skills-wrapper .skills-area {
-    gap: 1rem;
-  }
-  .skills-wrapper .skills-area {
-    width: 100%;
-  }
-}
 @media only screen and (max-width: 600px) {
   .tag-list {
     letter-spacing: 0.07em;
@@ -534,20 +466,6 @@ nav ul .mobile {
   }
   .mh-description .brackets {
     display: none;
-  }
-
-  img {
-    width: 80%;
-    height: auto;
-  }
-
-  #skills {
-    margin-left: unset;
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .contact-text {

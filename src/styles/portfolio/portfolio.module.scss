@@ -36,7 +36,7 @@
    > div {
       &:nth-child(1) {
         float: right;
-        padding: 0px 0 16px 0;
+        padding: 0px 0 0 0;
       }
     }
   }
@@ -90,7 +90,7 @@
 .cards-wrapper > div:nth-child(even) {
   padding: unset;
   margin: unset;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .cards-wrapper > div {
@@ -100,6 +100,7 @@
 
 .cards-wrapper > div:last-child {
   padding-bottom: unset;
+  margin-bottom: unset;
 }
   }
 @media only screen and (max-width: 800px) {

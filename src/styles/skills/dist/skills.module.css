@@ -67,6 +67,7 @@
     width: 80%;
     height: auto;
   }
+
   .skills {
     margin-left: unset;
     margin-top: 5rem;
@@ -75,4 +76,4 @@
     justify-content: center;
     align-items: center;
   }
-}/*# sourceMappingURL=skills.module.css.map */
+}
