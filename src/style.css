@@ -43,7 +43,6 @@ body {
 }
 
 section {
-  width: 100vw;
   margin-bottom: 2rem;
 }
 
@@ -281,62 +280,6 @@ nav ul .mobile {
   position: relative;
 }
 
-#footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 7rem 2rem 2rem;
-  font-weight: lighter;
-  gap: 2rem;
-}
-#footer a, #footer h2 {
-  font-family: "Rajdhani", sans-serif;
-  text-shadow: var(--text-shadow-pink);
-}
-#footer img {
-  margin-right: 1rem;
-}
-#footer .contact-wrapper {
-  display: inherit;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.icon-wrapper img {
-  width: 50%;
-  height: auto;
-}
-
-.contact-text {
-  text-align: right;
-  font-size: 1rem;
-  width: 60%;
-}
-.contact-text .email {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-.email img {
-  width: 2rem;
-}
-
-.copyright-wrapper {
-  text-align: center;
-  font-size: smaller;
-  font-weight: 300;
-  font-family: "Rajdhani", sans-serif;
-  letter-spacing: 0.2rem;
-  line-height: 150%;
-}
-.copyright-wrapper.copyright-wrapper span::before, .copyright-wrapper.copyright-wrapper span::after {
-  content: " : : ";
-}
-
 @media only screen and (max-width: 1024px) {
   .cta-section {
     justify-content: center;
@@ -520,15 +463,6 @@ nav ul .mobile {
     letter-spacing: 0.2rem;
   }
   .mh-description .brackets {
-    display: none;
-  }
-  .contact-text {
-    font-size: 0.7rem;
-  }
-  .contact-text .email {
-    margin-top: 0.2rem;
-  }
-  .contact-text img {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
