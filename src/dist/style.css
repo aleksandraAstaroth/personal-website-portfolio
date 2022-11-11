@@ -847,8 +847,11 @@ h1 {
 #skills {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 4rem;
   margin-top: 9rem;
+}
+#skills > #container {
+  width: 25%;
 }
 
 .skills-wrapper {
@@ -958,6 +961,10 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  #skills > #container {
+    width: 100%;
   }
 
   #landing-page-hero {
@@ -1206,6 +1213,8 @@ h1 {
   .skills-wrapper {
     justify-content: center;
     align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
   .skills-wrapper .hard-skills-wrapper .skills-area {
     gap: 1rem;
@@ -1279,6 +1288,15 @@ h1 {
   .gradient {
     background: linear-gradient(15deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.892) 25%, rgba(0, 0, 0, 0.639) 45%, rgba(25, 17, 37, 0) 74%);
   }
+
+  #skills {
+    gap: 3rem;
+  }
+
+  .skills-wrapper {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 @media only screen and (max-width: 1295px) {
   .about-me-question {
@@ -1323,12 +1341,19 @@ h1 {
   }
 
   #skills {
-    margin-left: unset;
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .hard-skills-wrapper .skills-area {
+    display: flex;
+    flex-direction: column;
+  }
+  .hard-skills-wrapper .skills-area .department {
+    padding-bottom: 1rem;
   }
 
   .project-info {
