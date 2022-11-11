@@ -192,10 +192,6 @@
   .about-me-text .cta-section {
     justify-content: center;
   }
-  .about-me-text .cta-btn {
-    left: unset;
-    top: 1rem;
-  }
   .about-me-text-2 {
     margin-bottom: 7rem;
   }

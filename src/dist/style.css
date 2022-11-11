@@ -192,16 +192,6 @@ nav ul .mobile {
   border-radius: 1.5rem;
 }
 
-.hero-btns {
-  width: 100%;
-  margin-top: 4rem;
-}
-
-.cta-section {
-  width: 100%;
-  display: flex;
-}
-
 .tag-list {
   list-style-type: none;
   letter-spacing: 0.1rem;
@@ -245,14 +235,6 @@ nav ul .mobile {
 }
 
 @media only screen and (max-width: 1024px) {
-  .cta-section {
-    justify-content: center;
-  }
-
-  .cta-section {
-    justify-content: center;
-  }
-
   .cta-btn {
     left: unset;
     top: 1rem;

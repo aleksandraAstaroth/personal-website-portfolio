@@ -164,3 +164,13 @@
     .cta-btn:nth-of-type(2) {
     --primary-hue: 260;
     }
+    .cta-section {
+      display: flex;
+    }
+    
+    @media only screen and (max-width: 1024px) {
+      .cta-section {
+        justify-content: center;
+      }
+     
+    }

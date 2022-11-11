@@ -14,7 +14,7 @@ const Hero = () => {
                     <span className={style.text3}>a  <span className={style.text4}>Front-end Developer</span><br/> with an infinite curiosity to learn new things </span>
                 </h1>
                 <p>By combining creativity and problem solving with my big-picture mindset, I strive to create visually pleasing, responsive web applications that meet your needs in <br/>  multidimensional aspects.</p>
-                <div className="hero-btns">
+                <div className={style.heroBtns}>
                     <Button text="Let's Talk"/>
                 </div>
             </div>

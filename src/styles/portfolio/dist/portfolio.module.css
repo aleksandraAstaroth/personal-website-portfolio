@@ -6,11 +6,12 @@
   justify-content: center;
 }
 
-.portfolio-wrapper > * {
+.portfolio-wrapper > div:first-of-type {
   display: inherit;
   align-self: flex-end;
   margin: 0 3rem 0;
   position: relative;
+  top: 8rem;
 }
 
 .cards-wrapper {
@@ -38,7 +39,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .portfolio-wrapper > * {
+  .portfolio-wrapper > div:first-of-type {
     top: initial;
     position: relative;
     margin: unset;

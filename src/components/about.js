@@ -83,7 +83,9 @@ return (
                     <p> My extroverted nature of a curious kid plays probably the biggest role; through socialising and A LOT OF QUESTIONS <em>(yes, I am THAT person)</em> I got to learn new things and understand different perspectives - <em>see the bigger picture</em>, analyse it, and look for opportunities. <br/>
                     Now that I've introduced myself, let's collaborate and create something awesome together!  
                     </p>
-                    <Button text="Let's Talk" />
+                    <div className={style.ctaSection}>
+                        <Button text="Let's Talk" />
+                    </div>
                  </FadeIn>
                  </Expand>
         </div>
