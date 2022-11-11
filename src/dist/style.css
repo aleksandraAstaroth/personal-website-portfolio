@@ -235,11 +235,6 @@ nav ul .mobile {
 }
 
 @media only screen and (max-width: 1024px) {
-  .cta-btn {
-    left: unset;
-    top: 1rem;
-  }
-
   .container {
     width: 100%;
     display: flex;
