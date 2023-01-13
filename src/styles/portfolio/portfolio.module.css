@@ -1,0 +1,77 @@
+.portfolio-wrapper {
+  position: relative;
+  margin: 0 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-wrapper > :first-child {
+  display: inherit;
+  align-self: flex-end;
+  margin: 0 3rem 0;
+  position: relative;
+  top: 8rem;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  justify-content: center;
+  align-self: center;
+  height: 100%;
+}
+.cards-wrapper > div:nth-child(odd) {
+  padding-right: 5%;
+  padding-bottom: 80px;
+}
+.cards-wrapper > div:nth-child(even) {
+  padding-top: 60%;
+  padding-left: 60px;
+  margin: auto 0 0 0;
+}
+.cards-wrapper > div:last-child {
+  padding-bottom: 0px;
+}
+.cards-wrapper > div > div:nth-child(1) {
+  float: right;
+  padding: 0px 0 0 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .portfolio-wrapper > div:first-of-type {
+    top: initial;
+    position: relative;
+    margin: unset;
+    margin: 0 auto;
+  }
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards-wrapper > div:nth-child(odd),
+.cards-wrapper > div:nth-child(even) {
+    padding: unset;
+    margin: unset;
+    margin-bottom: 3rem;
+  }
+  .cards-wrapper > div {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .cards-wrapper > div:last-child {
+    padding-bottom: unset;
+    margin-bottom: unset;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .portfolio-wrapper {
+    margin: 0 4rem 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .portfolio-wrapper {
+    margin: 0 2rem 0;
+  }
+}/*# sourceMappingURL=portfolio.module.css.map */

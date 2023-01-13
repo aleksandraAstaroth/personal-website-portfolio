@@ -1,18 +1,18 @@
 import React from 'react'
 import Card from "../components/projectcard"
-
+import * as style from "../styles/portfolio/portfolio.module.scss"
 
 const Portfolio = () => {
     return(
         <section id="portfolio">
-        <div className="portfolio-wrapper">
-            <div id="container">
+        <div className={style.portfolioWrapper}>
+            <div className="container">
                 <div className="portfolio-sign">
                     <i className="fa fa-heart-o" aria-hidden="true"></i>
                 PORTFOLIO
                 </div>
             </div>
-            <div className="cards-wrapper">
+            <div className={style.cardsWrapper}>
             <Card projectName="OhCleo Platform"
                       tags={["React", "Next.js", "Tailwind", "Typescript"]}
                       projectInfo="OhCleo AB multi-user mulitimedia social platform built using Next.JS with Typescript, styled with Tailwind"
