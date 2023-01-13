@@ -1,0 +1,116 @@
+.project-container {
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+}
+
+.project-info {
+  position: absolute;
+  margin-left: 1rem;
+  margin-bottom: 0.3rem;
+}
+.project-info h5 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.6rem;
+}
+.project-info hr {
+  border-bottom: none;
+}
+.project-info p {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  text-transform: none;
+  letter-spacing: 0.05rem;
+}
+.project-info div {
+  position: absolute;
+  padding-top: 0.5rem;
+  opacity: 0;
+}
+.project-info a {
+  letter-spacing: 0.3rem;
+  font-weight: lighter;
+}
+.project-info a::before {
+  content: "[ ";
+}
+.project-info a::after {
+  content: " ]";
+}
+.project-info a:hover, .project-info a:focus {
+  text-shadow: var(--text-shadow-turquoise);
+}
+
+.project-inner-container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+.project-inner-container .project-info > * {
+  transition: transform 200ms, opacity 200ms;
+}
+.project-inner-container:hover {
+  transition: 300ms;
+  transform: scale(1.04);
+  box-shadow: 0 0 5px var(--neon-color-turquoise), 0 0 15px var(--neon-color-turquoise), 0 0 35px var(--neon-color-turquoise);
+}
+.project-inner-container:hover .project-info > * {
+  transform: translate3d(0, -2rem, 0);
+}
+.project-inner-container:hover .project-info .tag-list {
+  transition-delay: 0ms;
+}
+.project-inner-container:hover .project-info h5 {
+  transition-delay: 60ms;
+}
+.project-inner-container:hover .project-info hr {
+  transition-delay: 110ms;
+}
+.project-inner-container:hover .project-info p {
+  transition-delay: 150ms;
+}
+.project-inner-container:hover .project-info div {
+  opacity: 1;
+  transition-delay: 190ms;
+}
+
+.gradient {
+  position: absolute;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(15deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.892) 10%, rgba(0, 0, 0, 0.639) 35%, rgba(25, 17, 37, 0) 64%);
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .project-info h5 {
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .project-info h5 {
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+  }
+  .project-info p {
+    font-size: 0.9rem;
+  }
+  .gradient {
+    background: linear-gradient(15deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.892) 25%, rgba(0, 0, 0, 0.639) 45%, rgba(25, 17, 37, 0) 74%);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .project-info {
+    font-size: 0.8rem;
+  }
+  .project-info h5 {
+    font-size: 1.2rem;
+  }
+  .project-img-wrapper {
+    max-width: 320px;
+    height: auto;
+  }
+}/*# sourceMappingURL=projectcard.module.css.map */

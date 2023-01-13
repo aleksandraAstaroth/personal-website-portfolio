@@ -5,12 +5,14 @@ export default function Navbar() {
     const [stylingMobile, setStylingMobile] = useState(false);
     const [showHamburger, setShowHamburger] = useState(false);
 
-    const navListProps = {
-        className: stylingMobile ? "mobile" : ""
-    }
+    const navElements = [
+        {path: "/",name: "Home"},
+        {path: "#about", name: "About"},
+        {path: "#portfolio", name: "Portfolio"},
+        {path: "#skills", name: "Skills"},
+        {path: "#footer", name: "Contact"}]
 
     const toggleHamburgerMenu = () => {
-        console.log("button clicked")
         setShowHamburger(!showHamburger)
         setStylingMobile(!stylingMobile)
         animateHamburgerButton()
@@ -21,7 +23,7 @@ export default function Navbar() {
       }
 
     return (
-        <nav {...navListProps}>
+        <nav className={stylingMobile ? "mobile" : ""}>
         <div className="hamburger-wrapper">  
             <button className="hamburger" aria-label="menu" onClick={toggleHamburgerMenu}>
                 <span className="line1" style={{ transform: showHamburger ? "translateY(9px) rotate(45deg)" : "translateY(0px) rotate(0deg)" }} onAnimationEnd={(e) => e.target.style.animation = "none"}></span>
@@ -29,12 +31,10 @@ export default function Navbar() {
                 <span className="line3"style={{ transform: showHamburger ? "translateY(-9px) rotate(-45deg)" : "translateY(0px) rotate(0deg)" }}onAnimationEnd={(e) => e.target.style.animation = "none"}></span>
             </button>
         </div>
-            <ul className={ showHamburger ? "" : "hide"}>
-                <li><AnchorLink className="nav-link" to="/">Home</AnchorLink></li>
-                <li><AnchorLink className="nav-link" to="#about">About</AnchorLink></li>
-                <li><AnchorLink  className="nav-link" to="#portfolio">Portfolio</AnchorLink></li>
-                <li><AnchorLink  className="nav-link" to="#skills">Skills</AnchorLink></li>
-                <li><AnchorLink  className="nav-link" to="#footer">Contact</AnchorLink ></li>
+            <ul className={showHamburger ? "" : "hide"}>
+                {navElements.map((element, id) => {
+                    return  <li key={id + 1}><AnchorLink className="nav-link" to={element.path}>{element.name}</AnchorLink></li>
+                })}
             </ul>
         </nav>
     )
