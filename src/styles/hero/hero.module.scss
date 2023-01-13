@@ -175,10 +175,12 @@ $easeInOutQuad: cubic-bezier(0.455, 0.030, 0.515, 0.955);
     & .text4 {
       float: right;
     }
-//     & .cta-btn {
-//       top: -1.5rem;
-//    }
    }
+   .hero-btns {
+    margin-top: 2.5rem;
+  }
+  
+}
 
    @media only screen and (max-width: 800px) {
    .heroIntro {
@@ -190,7 +192,7 @@ $easeInOutQuad: cubic-bezier(0.455, 0.030, 0.515, 0.955);
       text-shadow: var(--text-shadow-pink);
     }
   }
-}
+
 .scroll-mark-wrapper {
   position: relative;
   display: flex;

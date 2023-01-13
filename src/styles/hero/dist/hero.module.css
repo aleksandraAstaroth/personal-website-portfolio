@@ -169,8 +169,12 @@ h1 {
   .heroIntro .text4 {
     float: right;
   }
+
+  .hero-btns {
+    margin-top: 2.5rem;
+  }
 }
-@media only screen and (max-width: 1024px) and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .heroIntro {
     line-height: 2.1rem;
     position: relative;
@@ -180,29 +184,25 @@ h1 {
     font-weight: 500;
     text-shadow: var(--text-shadow-pink);
   }
-}
-@media only screen and (max-width: 1024px) {
+
   .scroll-mark-wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-}
-@media only screen and (max-width: 1024px) {
+
   .arrow, .arrow:first-child, .arrow:nth-child(2) {
     position: relative;
     animation: none;
   }
-}
-@media only screen and (max-width: 1024px) {
+
   .arrow:nth-child(3) {
     opacity: 1;
     width: 35%;
     top: -8px;
   }
-}
-@media only screen and (max-width: 1024px) {
+
   .arrow:nth-child(2) {
     opacity: 1;
     width: 50%;

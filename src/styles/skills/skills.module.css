@@ -2,8 +2,13 @@
 .skills {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 4rem;
   margin-top: 9rem;
+}
+
+.skills > :first-child {
+  width: unset;
+  width: 25%;
 }
 
 .skills-wrapper {
@@ -60,17 +65,31 @@
     margin-left: 2rem;
     margin-right: 2rem;
   }
+  .skills > :first-child {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 800px) {
   .skills-wrapper {
     justify-content: center;
     align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
   .skills-wrapper .hard-skills-wrapper .skills-area {
     gap: 1rem;
   }
   .skills-wrapper .skills-area {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .skills {
+    gap: 3rem;
+  }
+  .skills-wrapper {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -84,5 +103,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .hard-skills-wrapper .skills-area {
+    display: flex;
+    flex-direction: column;
+  }
+  .hard-skills-wrapper .skills-area .department {
+    padding-bottom: 1rem;
   }
 }/*# sourceMappingURL=skills.module.css.map */

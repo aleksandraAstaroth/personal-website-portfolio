@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.portfolio-wrapper > div:first-of-type {
+.portfolio-wrapper > :first-child {
   display: inherit;
   align-self: flex-end;
   margin: 0 3rem 0;
