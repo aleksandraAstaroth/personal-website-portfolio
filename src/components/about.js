@@ -23,12 +23,6 @@ const About = () => {
     setTimeout(() => {setDelete2ndButton(true)}, 200)
     setTextFadeIn(true)
   }
-const buttonProps = { 
-className: deleteButton ? style.remove : style.aboutButton
-}
-const buttonProps2 = {
-    className: delete2ndButton ? style.remove : style.aboutButton
-}
 
 return (
     <section className={style.about} id="about">
@@ -39,7 +33,7 @@ return (
             </div>
         </div>
         <div className={style.aboutMeText}>
-            <p>My name is Aleksandra. I’m a front-end developer based in Stockholm. I currently work as <strong>Web Developer</strong> at <strong>OhCleo</strong> ever since September 2021. I also graduated <i>Hyper Island Frontend Developer Program</i> in April 2022.</p>
+            <p>My name is Aleksandra. I’m a front-end developer based in Stockholm. I currently work as a <strong>Web Developer</strong> at <strong>OhCleo</strong> ever since September 2021. I also graduated 1.5 year long <i>Hyper Island Frontend Developer Program</i> in April 2022.</p>
                 <p>I got a very <em>inquisitive</em> mind; that means constant questioning, analysing and looking at processes from different perspectives.</p> 
                 
                 <p>Here’s where I should get to the point, list out my skills and show off my work...
@@ -48,7 +42,7 @@ return (
 
                 <p>Here’s a glimpse of my background that shaped me, so that it can help you get a sense of what kind of person I am.</p>
                 <div className={style.aboutButtonWrapper}>
-                <button {...buttonProps} onClick={handleClick}> <span></span>
+                <button className={ deleteButton ? style.remove : style.aboutButton} onClick={handleClick}> <span></span>
                         <span></span>
                         <span></span>
                         <span></span>Get to know me</button>
@@ -66,7 +60,7 @@ return (
                         <FadeIn className={style.aboutMeQuestion} visible={showSecondButton}  delay={1000} transitionDuration={400}>
                             <p>...where am I going with this?</p>
                             <div className={style.aboutButtonWrapper}>
-                            <button {...buttonProps2} onClick={handleClick2}> <span></span>
+                            <button className={ delete2ndButton ? style.remove : style.aboutButton} onClick={handleClick2}> <span></span>
                                     <span></span>
                                     <span></span>
                                     <span></span>Get to understand me</button>
@@ -89,7 +83,6 @@ return (
                  </FadeIn>
                  </Expand>
         </div>
-    
     </section>
 )
 }
