@@ -33,7 +33,7 @@ return (
             </div>
         </div>
         <div className={style.aboutMeText}>
-            <p>My name is Aleksandra. I’m a front-end developer based in Stockholm. I currently work as a <strong>Web Developer</strong> at <strong>OhCleo</strong> ever since September 2021. I also graduated 1.5 year long <i>Hyper Island Frontend Developer Program</i> in April 2022.</p>
+            <p>My name is Aleksandra. I’m a front-end developer based in Stockholm. I currently work as a <strong>Frontend Developer</strong> at <strong>Lurkit</strong> ever since May this year (2023).I have been working professionally as a Web Developer for 2 years. I also graduated 2-year-long <i>Hyper Island Frontend Developer Program</i> before that.</p>
                 <p>I got a very <em>inquisitive</em> mind; that means constant questioning, analysing and looking at processes from different perspectives.</p> 
                 
                 <p>Here’s where I should get to the point, list out my skills and show off my work...
