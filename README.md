@@ -1,7 +1,7 @@
  # Personal Project - Hyper Island FED22
  
  ### Final product: 
- <a href="https://aleksandrarzepecka.com">Click here to view the website</a>
+ <a href="https://aleksandrarzepecka.net">Click here to view the website</a>
  
 ##  Personal Website - Portfolio
 
@@ -16,7 +16,6 @@
 * React
 * SCSS / Sass
 * CSS3
-*  <a href="https://github.com/gkaemmer/react-fade-in">react-fade-in</a>
 *  <a href="https://github.com/sonybinhle/react-expand-animated">react-expand-animated</a>
  _____________________________________________________
 Used <a href="https://github.com/gatsbyjs/gatsby-starter-blog">gatsby-starter-blog</a> as a starter base for the project
