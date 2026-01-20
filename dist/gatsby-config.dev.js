@@ -51,31 +51,6 @@ module.exports = {
   //   },
   // },
   {
-    resolve: "gatsby-plugin-feed",
-    options: {
-      query: "\n          {\n            site {\n              siteMetadata {\n                title\n                description\n                siteUrl\n                site_url: siteUrl\n              }\n            }\n          }\n        ",
-      feeds: [{
-        serialize: function serialize(_ref) {
-          var _ref$query = _ref.query,
-              site = _ref$query.site,
-              allMarkdownRemark = _ref$query.allMarkdownRemark;
-          return allMarkdownRemark.nodes.map(function (node) {
-            return Object.assign({}, node.frontmatter, {
-              description: node.excerpt,
-              date: node.frontmatter.date,
-              url: site.siteMetadata.siteUrl + node.fields.slug,
-              guid: site.siteMetadata.siteUrl + node.fields.slug,
-              custom_elements: [{
-                "content:encoded": node.html
-              }]
-            });
-          });
-        },
-        query: "\n              {\n                allMarkdownRemark(\n                  sort: { order: DESC, fields: [frontmatter___date] },\n                ) {\n                  nodes {\n                    excerpt\n                    html\n                    fields {\n                      slug\n                    }\n                    frontmatter {\n                      title\n                      date\n                    }\n                  }\n                }\n              }\n            ",
-        output: "/rss.xml"
-      }]
-    }
-  }, {
     resolve: "gatsby-plugin-manifest",
     options: {
       name: "Aleksandra Rzepecka Front-end Developer",

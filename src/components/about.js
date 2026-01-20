@@ -1,13 +1,11 @@
 import React, {useState} from "react"
 import Button from "./button";
 import Expand from "react-expand-animated";
-import FadeIn from 'react-fade-in';
 import * as style from '../styles/about/about.module.scss'
 
 const About = () => {
     const [isOpenText1, setIsOpenText1] = useState(false)
     const [isOpenText2, setIsOpenText2] = useState(false)
-    const [textFadeIn, setTextFadeIn] = useState(false)
     const [deleteButton, setDeleteButton] = useState(false)
     const [delete2ndButton, setDelete2ndButton] = useState(false)
     const [showSecondButton, setShowSecondButton ] = useState(false)
@@ -21,7 +19,6 @@ const About = () => {
   const handleClick2 = () => {
     setIsOpenText2(true)
     setTimeout(() => {setDelete2ndButton(true)}, 200)
-    setTextFadeIn(true)
   }
 
 return (
@@ -33,7 +30,7 @@ return (
             </div>
         </div>
         <div className={style.aboutMeText}>
-            <p>My name is Aleksandra. I’m a front-end developer based in Stockholm. I currently work as a <strong>Frontend Developer</strong> at <strong>Lurkit</strong> ever since May this year (2023).I have been working professionally as a Web Developer for 2 years. I also graduated 2-year-long <i>Hyper Island Frontend Developer Program</i> before that.</p>
+            <p>My name is Aleksandra. I’m a front-end developer based in Stockholm. I currently work as a <strong>Frontend Developer</strong> at <strong>Lurkit</strong> ever since May 2023. I have been working professionally as a Web Developer nearly 5 years. Prior to that I also graduated 2-year-long <i>Hyper Island Frontend Developer Program</i></p>
                 <p>I got a very <em>inquisitive</em> mind; that means constant questioning, analysing and looking at processes from different perspectives.</p> 
                 
                 <p>Here’s where I should get to the point, list out my skills and show off my work...
@@ -49,15 +46,15 @@ return (
                 </div>
                 <Expand open={isOpenText1}>
                         <ul className={style.aboutMeFacts}>
-                        <FadeIn className={style.facts} delay={1000} transitionDuration={500} >
+                        <div className={style.facts} delay={1000} transitionDuration={500} >
                             <li>As a teenager I became a licenced glider pilot.</li>
                             <li>I came to Sweden 6 years ago, on my own, without a plan or money.</li>
                             <li>I've worked in various fast-paced service jobs including retail and the restaurant industry. I worked also as a dog walker.</li>
                             <li>I enjoy exploring new ways of self-expression. I practiced mixing music, which resulted in a few gigs around Stockholm.</li>
                             <li>I also collaborated with a few international alternative clothing brands when I was growing my social media reach. Along with that, I picked up an interest in photography and photo editing using Adobe Software.</li>
-                        </FadeIn>
+                        </div>
                         </ul>
-                        <FadeIn className={style.aboutMeQuestion} visible={showSecondButton}  delay={1000} transitionDuration={400}>
+                        <div className={style.aboutMeQuestion} visible={showSecondButton} delay={1000} transitionDuration={400}>
                             <p>...where am I going with this?</p>
                             <div className={style.aboutButtonWrapper}>
                             <button className={ delete2ndButton ? style.remove : style.aboutButton} onClick={handleClick2}> <span></span>
@@ -65,10 +62,10 @@ return (
                                     <span></span>
                                     <span></span>Get to understand me</button>
                             </div>
-                        </FadeIn>
+                        </div>
                </Expand>
                <Expand open={isOpenText2}>
-                <FadeIn className={style.aboutMeText2} visible={textFadeIn} delay={1000} transitionDuration={700}>
+                <div className={style.aboutMeText2}>
                     <p>Experimenting with creative software has led me to becoming <del>obsessed</del> <ins>passionate</ins> about coding and development, which allows me to create new value utilising already gained skills/perspectives/experiences as contributions to new solutions</p>
 
                     <p><em> Taking chances</em> and <em>calculating risks</em>, required <strong><em>resourcefullness</em></strong>, <strong><em>flexibility</em></strong> and <strong><em>adaptation</em></strong> to new situations. Therefore
@@ -80,7 +77,7 @@ return (
                     <div className={style.ctaSection}>
                         <Button text="Let's Talk" />
                     </div>
-                 </FadeIn>
+                 </div>
                  </Expand>
         </div>
     </section>
