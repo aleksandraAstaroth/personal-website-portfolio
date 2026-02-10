@@ -1,76 +1,102 @@
-import React from 'react'
-import Card from "../components/projectcard"
-import * as style from "../styles/portfolio/portfolio.module.scss"
+import Card from "../components/projectcard";
+import * as style from "../styles/portfolio/portfolio.module.scss";
 
 const Portfolio = () => {
-    return(
-        <section id="portfolio">
-        <div className={style.portfolioWrapper}>
-            <div className="container">
-                <div className="portfolio-sign">
-                    <i className="fa fa-heart-o" aria-hidden="true"></i>
-                PORTFOLIO
-                </div>
-            </div>
-            <div className={style.cardsWrapper}>
-            <Card projectName="OhCleo Platform"
-                      tags={["React", "Next.js", "Tailwind", "Typescript"]}
-                      projectInfo="OhCleo AB multi-user mulitimedia social platform built using Next.JS with Typescript, styled with Tailwind"
-                      projectLink="https://ohcleo.com"
-                      projectLinkText="Go to Website"
-                      projectPreview="ohcleoplatform.png"
-                       />
-                <Card projectName="OhCleo Company Website (old)"
-                      tags={["React", "Gatsby", "CSS", "GraphQL", "Contentful"]}
-                      projectInfo="OhCleo AB (old) company website and blog built using Gatsby React framework"
-                      projectLink="https://flamboyant-goldwasser-365818.netlify.app/"
-                      projectLinkText="Go to Website"
-                      projectPreview="ohcleogatsby.png"
-                       />
-                <Card projectName="Portfolio Website"
-                    tags={["Gatsby", "React", "SCSS"]}
-                    projectInfo="Personal Website-Portfolio built using Gatsby React framework (this website)"  
-                    projectLink="https://github.com/aleksandraAstaroth/personal-website-portfolio" 
-                    projectLinkText="Source code" 
-                    projectPreview="portfolio.png"/>
+  return (
+    <section id="portfolio">
+      <div className={style.portfolioWrapper}>
+        <div className="container">
+          <div className="portfolio-sign">
+            <i className="fa fa-heart-o" aria-hidden="true"></i>
+            PORTFOLIO
+          </div>
+        </div>
+        <div className={style.cardsWrapper}>
+          <Card
+            projectName="Scalable simple e-commerce Next.js shop"
+            tags={[
+              "Next.js",
+              "Tailwind CSS",
+              "Typescript",
+              "Zustand",
+              "GraphQL",
+            ]}
+            projectInfo="Simple scalable e-commerce shop built using Next.js with Typescript and Platzi Fake Store API."
+            projectLink="https://github.com/aleksandraAstaroth/e-commerce-store"
+            projectLinkText="Source code"
+            projectPreview="ecommercenextstore.png"
+          />
+          <Card
+            projectName="OhCleo Platform"
+            tags={["React", "Next.js", "Tailwind", "Typescript"]}
+            projectInfo="OhCleo AB multi-user mulitimedia social platform built using Next.JS with Typescript, styled with Tailwind"
+            projectLink="https://ohcleo.com"
+            projectLinkText="Go to Website"
+            projectPreview="ohcleoplatform.png"
+          />
+          <Card
+            projectName="OhCleo Company Website (old)"
+            tags={["React", "Gatsby", "CSS", "GraphQL", "Contentful"]}
+            projectInfo="OhCleo AB (old) company website and blog built using Gatsby React framework"
+            projectLink="https://flamboyant-goldwasser-365818.netlify.app/"
+            projectLinkText="Go to Website"
+            projectPreview="ohcleogatsby.png"
+          />
+          <Card
+            projectName="Portfolio Website"
+            tags={["Gatsby", "React", "SCSS"]}
+            projectInfo="Personal Website-Portfolio built using Gatsby React framework (this website)"
+            projectLink="https://github.com/aleksandraAstaroth/personal-website-portfolio"
+            projectLinkText="Source code"
+            projectPreview="portfolio.png"
+          />
 
-                <Card projectName="A-Frame Game"
-                    tags={["A-Frame", "Javascript", "Three.js"]}
-                    projectInfo="Small 3D web based game/experience, built using A-Frame"  
-                    projectLink="https://github.com/aleksandraAstaroth/tiny-nightmares" 
-                    projectLinkText="github" 
-                    projectPreview="tinynightmare.png"/>
-        
-                 <Card projectName="Pomodoro Timer" 
-                        tags={["React", "SCSS", "CSS3"]}
-                        projectInfo="Timer for Pomodoro technique built with React" 
-                        projectLink="https://github.com/aleksandraAstaroth/neon-pomodoro-app" 
-                        projectLinkText="github"
-                        projectPreview="pomodoro.png"
-                        />
-                    <Card projectName="Trime"
-                            tags={["React Native", "App Development"]}
-                            projectInfo="Client brief, mockup of redesigned Trime app - first shot at React Native "
-                            projectLink="https://github.com/emiliafrisell/Trime-React-Native"
-                            projectLinkText="github"
-                            projectPreview="trime.png" />
+          <Card
+            projectName="A-Frame Game"
+            tags={["A-Frame", "Javascript", "Three.js"]}
+            projectInfo="Small 3D web based game/experience, built using A-Frame"
+            projectLink="https://github.com/aleksandraAstaroth/tiny-nightmares"
+            projectLinkText="github"
+            projectPreview="tinynightmare.png"
+          />
 
-                    <Card projectName="Internago"
-                        tags={["React", "Gatsby"]}
-                        projectInfo="Client brief for payroll company Internago AB"
-                        projectLink="https://github.com/internago/internago-webpage"
-                        projectLinkText="github" 
-                        projectPreview="internago.png" />
+          <Card
+            projectName="Pomodoro Timer"
+            tags={["React", "SCSS", "CSS3"]}
+            projectInfo="Timer for Pomodoro technique built with React"
+            projectLink="https://github.com/aleksandraAstaroth/neon-pomodoro-app"
+            projectLinkText="github"
+            projectPreview="pomodoro.png"
+          />
+          <Card
+            projectName="Trime"
+            tags={["React Native", "App Development"]}
+            projectInfo="Client brief, mockup of redesigned Trime app - first shot at React Native "
+            projectLink="https://github.com/emiliafrisell/Trime-React-Native"
+            projectLinkText="github"
+            projectPreview="trime.png"
+          />
 
-                    <Card projectName="Tic-Tac-Toe"
-                        tags={["Javascript", "CSS3"]}
-                        projectInfo="VanillaJS Tic-Tac-Toe project" 
-                        projectLink="https://github.com/aleksandraAstaroth/neon-pomodoro-app" 
-                        projectLinkText="github" 
-                        projectPreview="tictactoe.png" />
-                </div>
-            </div>
-        </section>
-    )
-}
-export default Portfolio
+          <Card
+            projectName="Internago"
+            tags={["React", "Gatsby"]}
+            projectInfo="Client brief for payroll company Internago AB"
+            projectLink="https://github.com/internago/internago-webpage"
+            projectLinkText="github"
+            projectPreview="internago.png"
+          />
+
+          <Card
+            projectName="Tic-Tac-Toe"
+            tags={["Javascript", "CSS3"]}
+            projectInfo="VanillaJS Tic-Tac-Toe project"
+            projectLink="https://github.com/aleksandraAstaroth/neon-pomodoro-app"
+            projectLinkText="github"
+            projectPreview="tictactoe.png"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+export default Portfolio;
