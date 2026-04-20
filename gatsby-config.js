@@ -1,4 +1,5 @@
 module.exports = {
+  jsxRuntime: "automatic",
   siteMetadata: {
     title: `Aleksandra Rzepecka`,
     description: `Front-end Developer`,
@@ -6,16 +7,15 @@ module.exports = {
       name: `Aleksandra Rzepecka`,
       summary: `Front-end Developer with infinite curiosity to learn new things and build visually pleasing, responsive web applications .`,
     },
-    description: `Front-end Developer`,
     siteUrl: `https://aleksandrarzepecka.com/`,
     social: {
-      linkedin: `https://www.linkedin.com/in/aleksandra-r-74722b155/`,
-      github: `https://github.com/aleksandraAstaroth`
+      linkedin: `https://www.linkedin.com/in/aleksandrarzepecka/`,
+      github: `https://github.com/aleksandraAstaroth`,
     },
   },
   plugins: [
     `gatsby-plugin-image`,
-  
+
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
@@ -60,7 +60,7 @@ module.exports = {
     //     trackingId: `ADD YOUR TRACKING ID HERE`,
     //   },
     // },
-   
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -78,7 +78,7 @@ module.exports = {
       options: {
         offset: -150,
         duration: 1500,
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-sass`,
@@ -86,7 +86,7 @@ module.exports = {
         cssLoaderOptions: {
           camelCase: false,
         },
-    },
+      },
     },
 
     `gatsby-plugin-smoothscroll`,
@@ -97,4 +97,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

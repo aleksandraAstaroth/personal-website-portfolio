@@ -1,21 +1,20 @@
 "use strict";
 
-var _siteMetadata;
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 module.exports = {
-  siteMetadata: (_siteMetadata = {
+  jsxRuntime: "automatic",
+  siteMetadata: {
     title: "Aleksandra Rzepecka",
     description: "Front-end Developer",
     author: {
       name: "Aleksandra Rzepecka",
       summary: "Front-end Developer with infinite curiosity to learn new things and build visually pleasing, responsive web applications ."
+    },
+    siteUrl: "https://aleksandrarzepecka.com/",
+    social: {
+      linkedin: "https://www.linkedin.com/in/aleksandrarzepecka/",
+      github: "https://github.com/aleksandraAstaroth"
     }
-  }, _defineProperty(_siteMetadata, "description", "Front-end Developer"), _defineProperty(_siteMetadata, "siteUrl", "https://aleksandrarzepecka.com/"), _defineProperty(_siteMetadata, "social", {
-    linkedin: "https://www.linkedin.com/in/aleksandra-r-74722b155/",
-    github: "https://github.com/aleksandraAstaroth"
-  }), _siteMetadata),
+  },
   plugins: ["gatsby-plugin-image", // {
   //   resolve: `gatsby-source-filesystem`,
   //   options: {

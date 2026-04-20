@@ -29,7 +29,7 @@ const Portfolio = () => {
           <Card
             projectName="OhCleo Platform"
             tags={["React", "Next.js", "Tailwind", "Typescript"]}
-            projectInfo="OhCleo AB multi-user mulitimedia social platform built using Next.JS with Typescript, styled with Tailwind"
+            projectInfo="OhCleo AB multi-user multimedia social platform built using Next.JS with Typescript, styled with Tailwind"
             projectLink="https://ohcleo.com"
             projectLinkText="Go to Website"
             projectPreview="ohcleoplatform.png"
