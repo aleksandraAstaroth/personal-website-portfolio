@@ -37,25 +37,23 @@ const About = () => {
       </div>
       <div className={style.aboutMeText}>
         <p>
-          My name is Aleksandra. I’m a front-end developer based in Stockholm. I
-          currently work as a <strong>Frontend Developer</strong> at{" "}
-          <strong>Lurkit</strong> ever since May 2023. I have been working
-          professionally as a Web Developer nearly <strong>5 years</strong>.
-          Prior to that I also graduated{" "}
-          <i>Hyper Island Frontend Developer Program</i>
+          My name is Aleksandra. I’m a <strong>front-end developer</strong>{" "}
+          based in Stockholm. I have been working professionally as a web
+          developer for nearly <strong>5 years</strong>. Prior to that I
+          graduated from the <i>Hyper Island Frontend Developer Program</i>.
         </p>
         <p>
-          I got a very <em>inquisitive</em> mind; that means constant
-          questioning, analysing and looking at processes from different
+          I have a very <em>inquisitive</em> mind, which means I’m constantly
+          questioning, analyzing, and looking at processes from different
           perspectives.
         </p>
 
         <p>
-          Here’s where I should get to the point, list out my skills and show
-          off my work... I promise. I <em>will</em> get there...
+          Here’s where I should get to the point, list my skills, and show off
+          my work... I promise, I’ll get there.
         </p>
         <p>
-          First thing that you should know about me -{" "}
+          First, though, here’s something you should know about me:{" "}
           <strong>
             <em>I am a big-picture thinker</em>
           </strong>
@@ -63,8 +61,8 @@ const About = () => {
         </p>
 
         <p>
-          Here’s a glimpse of my background that shaped me, so that it can help
-          you get a sense of what kind of person I am.
+          Here’s a glimpse into my background that shaped me, to help you get a
+          sense of the kind of person I am.
         </p>
         <div className={style.aboutButtonWrapper}>
           <button
@@ -158,7 +156,7 @@ const About = () => {
               role; through socializing and A LOT OF QUESTIONS{" "}
               <em>(yes, I am THAT person)</em> I got to learn new things and
               understand different perspectives -{" "}
-              <em>see the bigger picture</em>, analyse it, and look for
+              <em>see the bigger picture</em>, analyze it, and look for
               opportunities. <br />
               Now that I've introduced myself, let's collaborate and create
               something awesome together!
